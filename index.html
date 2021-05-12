@@ -35,6 +35,9 @@
       integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
       crossorigin="anonymous"
     />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
   </head>
   <body>
     <!-- Landing Page / Main Page -->
@@ -42,49 +45,44 @@
       <!-- sidebar and navbar container -->
       <div id="sidebar-navbar-container">
         <!-- Sidebar button - Opens up sidebar -->
-        <nav class="sidebar-button">
-          <button class="button-link">+</button>
-        </nav>
+        <div class="sidebar-button">
+          <a href="#"></a>
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
         <!-- Navigation Bar -->
         <nav class="navbar">
           <ul class="navbar-links">
-            <li class="navbar-link">
-              <button class="button-link">
-                <span class="icon-link"><i class="fas fa-user-circle"></i></span>
-                About Me
+            <li class="navbar-link" >
+              <button  class=navbar-button onclick="showTab('about-me')"><span class="icon-link" ><i class="fas fa-user-circle"></i></span>
+                <span class="nav-header">About Me</span> 
               </button>
             </li>
-            <li class="navbar-link">
-              <button class="button-link">
-                <div>
-                  <span class="icon-link"><i class="fas fa-university"></i></span>
-                  <span class="icon-link"><i class="fas fa-briefcase"></i></span>
-                </div>
-                Work And Education
-              </button>
+            <li class="navbar-link " >
+              <button  class=navbar-button onclick="showTab('work-education')">
+                <span class="icon-link"><i class="fas fa-university"></i></span>
+               <span class="nav-header">Work and Education</span> 
+            </button>
             </li>
             <li class="navbar-link">
-              <button class="button-link">
-                <span class="icon-link"><i class="fas fa-tools"></i></span>
-                Skills
+              <button  class=navbar-button  onclick="showTab('skills')"><span class="icon-link"><i class="fas fa-tools"></i></span>
+                <span class="nav-header">Skills</span> 
               </button>
             </li>
-            <li class="navbar-link">
-              <button class="button-link">
-                <span class="icon-link"><i class="fas fa-tasks"></i></span>
-                Projects
+            <li class="navbar-link" >
+              <button  class=navbar-button onclick="showTab('projects')"><span class="icon-link"><i class="fas fa-tools"></i></span>
+                <span class="nav-header">Projects</span> 
               </button>
             </li>
-            <li class="navbar-link">
-              <button class="button-link">
-                <span class="icon-link"><i class="fas fa-users"></i></span>
-                Testimonials
+            <li class="navbar-link" >
+              <button  class=navbar-button onclick="showTab('testimonials')"><span class="icon-link"><i class="fas fa-users"></i></span>
+                <span class="nav-header">Testimonial</span> 
               </button>
             </li>
-            <li class="navbar-link">
-              <button class="button-link">
-                <span class="icon-link"><i class="fas fa-address-book"></i></span>
-                Contact
+            <li class="navbar-link" >
+              <button class=navbar-button onclick="showTab('contact-me')"><span class="icon-link"><i class="fas fa-address-book"></i></span>
+                <span class="nav-header">Contact Me</span> 
               </button>
             </li>
           </ul>
@@ -96,10 +94,10 @@
         <section class="left-section">
           <!-- image -->
           <div class="image">
-            <img src="./images/Gideon-an-Unlikely-Hero.jpg" alt="cover">
+            <img src="./images/C8 Apr21 Gideon Daniels (2).JPG" alt="cover">
           </div>
-          <!-- Name -->
-          <div class="title"><h3 class="name">Gideon Daniels</h3></div>
+          <div class="info">
+            <div class="title"><h3 class="name">Gideon Daniels</h3></div>
           <!-- Skils -->
           <div class="subtitle-skills">
             <h3>Skills</h3>
@@ -117,15 +115,18 @@
               <a href="" class="link"><span class="text">Contact Me</span></a>
             </button>
           </div>
+          </div>
+
+          
         </section>
         <!-- Rigth section [Displaying content-About Section, Work and Education, Skills, Projects, Testimonial, Contact Me] -->
         <section class="right-section">
           <!-----------------------------------------About Me Section ---------------------------------------------->
-          <div id="about-me-section" class="main-sidebar">
+          <div id="about-me" class="main-content-sidebar active">
             <h2 class="heading">About Me</h2>
             <div class="bio-container">
               <div class="left-bio-container">
-                <h2>BIO</h2>
+                <h2>Hello I am Gideon</h2>
                 <p>
                   I am a quiet, honest and kind individual. I adapt easily to
                   situations and environments that I am not used to. I am an
@@ -142,59 +143,59 @@
                     <span>Freelance</span><span>Available</span>
                   </li>
                   <li class="info">
-                    <span>Address</span><span>South Africa , Western Cape</span>
+                    <span>Address</span><span>South Africa,Western Cape</span>
                   </li>
                 </ul>
               </div>
-              <div class="passion">
-                <div class="passion-container">
-                  <h2 class="heading">Passion</h2>
-                  <p>
-                    My passion for the tech industry came from the moment I laid
-                    eyes on video games and when my parents asked no one else
-                    but me to fix the TV stations. I loved solving problems that
-                    require you to go deep into the settings of the software.
-                    It's a good feeling discovering something that no one else
-                    has thought about yet and that's why I feel so passionate
-                    about the tech industry. It's a platform where you can
-                    create whatever your mind desires within the limits of your
-                    imagination.
-                  </p>
-                </div>
-                <div class="passion-board-container">
-                  <ul class="all-info">
-                    <li class="info">
-                      <span>Reading</span><span>Fiction</span
-                      ><span>Mythologies</span
-                      ><span>Lores, Legends & Myths</span>
-                    </li>
-                    <li class="info">
-                      <span
-                        >Documentaries about certain changes in the world</span
-                      >
-                    </li>
-                    <li class="info">
-                      <span>Playing online games and watching anime. </span>
-                    </li>
-                    <li class="info">
-                      <p>
-                        I like observing and talking to different types of
-                        people: I love the psychology about how people behave
-                        and interact with each other.
-                      </p>
-                    </li>
-                    <li class="info">
-                      <span>Sports</span> <span>Soccer</span><span>Chess</span
-                      ><span>table tennis</span>
-                    </li>
-                  </ul>
-                </div>
+            </div>
+            <div class="passion">
+              <div class="passion-container">
+                <h2 class="heading">Passion</h2>
+                <p>
+                  My passion for the tech industry came from the moment I laid
+                  eyes on video games and when my parents asked no one else
+                  but me to fix the TV stations. I loved solving problems that
+                  require you to go deep into the settings of the software.
+                  It's a good feeling discovering something that no one else
+                  has thought about yet and that's why I feel so passionate
+                  about the tech industry. It's a platform where you can
+                  create whatever your mind desires within the limits of your
+                  imagination.
+                </p>
+              </div>
+              <div class="passion-board-container">
+                <ul class="all-info">
+                  <li class="info">
+                    <span>Reading</span><span>Fiction</span
+                    ><span>Mythologies</span
+                    ><span>Lores, Legends & Myths</span>
+                  </li>
+                  <li class="info">
+                    <span
+                      >Documentaries about certain changes in the world</span
+                    >
+                  </li>
+                  <li class="info">
+                    <span>Playing online games and watching anime. </span>
+                  </li>
+                  <li class="info">
+                    <p>
+                      I like observing and talking to different types of
+                      people: I love the psychology about how people behave
+                      and interact with each other.
+                    </p>
+                  </li>
+                  <li class="info">
+                    <span>Sports</span> <span>Soccer</span><span>Chess</span
+                    ><span>table tennis</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
           <!-- ---------------------------------END OF ABOUT ME SECTION------------------------------------- -->
           <!-- ------------------------------------Skills Section --------------------------------------------------->
-          <div id="skills" class="main-sidebar">
+          <div id="skills" class="main-content-sidebar">
             <!-- Soft Skills -->
             <h2 class="heading">Soft Skills</h2>
             <div class="soft-skills-container">
@@ -235,6 +236,7 @@
                 <img src="" alt="Microsoft Excel Fundamentals" />
               </div>
             </div>
+          </div>
             <!-- ----------------------------------------End OF Skills Section ------------------------------------->
             <!-- ------------------------------------Work and Education Section---------------------------------- -->
             <div id="work-education" class="main-content-sidebar">
@@ -343,10 +345,10 @@
                 </div>
               </div>
             </div>
-          </div>
+          
           <!-- ------------------------------------End of Testimonials --------------------------------------------------------- -->
-          <!-- Projects -->
-          <div id="projects-cards" class="main-content-sidebar">
+          <!------------------------------------------ Projects ----------------------------------------------------->
+          <div id="projects" class="main-content-sidebar">
             <h2 class="heading">Project</h2>
             <!-- Navbar for projects -->
             <div class="projects-navbar-container">
@@ -437,9 +439,9 @@
               </div>
             </div>
           </div>
-          <!-- End of Projects -->
+          <!--------------------------------------------------- End of Projects -------------------------------------------------->
           <!-- Contact Form -->
-          <div id="contact-form" class="main-content-sidebar">
+          <div id="contact-me" class="main-content-sidebar">
             <h2 class="heading">Contact Me</h2>
             <!-- Contact-Navigation Bar -->
             <div class="contact-form-navbar">
@@ -486,12 +488,12 @@
         </section>
       </div>
       <!-- Sidebar container -->
-      <div id="left-sidebar-container">
+      <!-- <div id="left-sidebar-container">
           <div></div>
           <div class="close-sidebar">
             <button class="close-button">X</button>
           </div>
-      </div>
+      </div> -->
       <!-- Footer -->
       <div class="footer">
         <!-- <p>Made with <span>x</span> By Gideon Daniels</p> -->
@@ -500,6 +502,7 @@
     </div>
     <!-- -------------------------END----------------------------- -->
     <!-- Script tags under here -->
+    <!-- owl carousel scripts -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
       integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
@@ -522,5 +525,7 @@
         });
       });
     </script>
+    <!-- -----------------------------button on click script------------------------------- -->
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
