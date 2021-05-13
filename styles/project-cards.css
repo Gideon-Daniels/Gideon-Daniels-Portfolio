@@ -1,0 +1,37 @@
+#projects {
+  display: flex;
+  flex-direction: column;
+  height: 98%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 15px 5%;
+  /* overflow: scroll; */
+}
+
+#projects .projects-navbar-container .navbar-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5%;
+}
+
+#projects .project-cards-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  gap: 2px;
+}
+
+#projects .project-cards-container .project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 48%;
+  height: 48%;
+  /* padding: 15px 15px; */
+  border-top: 2px solid #e1e1e1;
+  border-right: 2px solid #e1e1e1;
+  border-radius: 5px;
+}
