@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./styles/navigation-bar.css" />
     <link rel="stylesheet" href="./styles/sidebar.css" />
     <link rel="stylesheet" href="./styles/about-me.css" />
-    <link rel="stylesheet" href="./skills.css" />
+    <link rel="stylesheet" href="./styles/skills.css" />
     <link rel="stylesheet" href="./styles/work-and-education.css" />
     <link rel="stylesheet" href="./styles/testimonial.css" />
     <link rel="stylesheet" href="./styles/project-cards.css" />
@@ -36,8 +36,11 @@
       crossorigin="anonymous"
     />
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Landing Page / Main Page -->
@@ -45,44 +48,53 @@
       <!-- sidebar and navbar container -->
       <div id="sidebar-navbar-container">
         <!-- Sidebar button - Opens up sidebar -->
-        <div class="sidebar-button">
+        <!-- <div class="sidebar-button">
           <a href="#"></a>
           <div class="line1"></div>
           <div class="line2"></div>
           <div class="line3"></div>
-        </div>
+        </div> -->
         <!-- Navigation Bar -->
         <nav class="navbar">
           <ul class="navbar-links">
-            <li class="navbar-link" >
-              <button  class=navbar-button onclick="showTab('about-me')"><span class="icon-link" ><i class="fas fa-user-circle"></i></span>
-                <span class="nav-header">About Me</span> 
+            <li class="navbar-link">
+              <button class="navbar-button" onclick="showTab('about-me')">
+                <span class="icon-link"
+                  ><i class="fas fa-user-circle"></i
+                ></span>
+                <span class="nav-header">About Me</span>
               </button>
-            </li>
-            <li class="navbar-link " >
-              <button  class=navbar-button onclick="showTab('work-education')">
-                <span class="icon-link"><i class="fas fa-university"></i></span>
-               <span class="nav-header">Work and Education</span> 
-            </button>
             </li>
             <li class="navbar-link">
-              <button  class=navbar-button  onclick="showTab('skills')"><span class="icon-link"><i class="fas fa-tools"></i></span>
-                <span class="nav-header">Skills</span> 
+              <button class="navbar-button" onclick="showTab('work-education')">
+                <span class="icon-link"><i class="fas fa-university"></i></span>
+                <span class="nav-header">Work and Education</span>
               </button>
             </li>
-            <li class="navbar-link" >
-              <button  class=navbar-button onclick="showTab('projects')"><span class="icon-link"><i class="fas fa-tools"></i></span>
-                <span class="nav-header">Projects</span> 
+            <li class="navbar-link">
+              <button class="navbar-button" onclick="showTab('skills')">
+                <span class="icon-link"><i class="fas fa-tools"></i></span>
+                <span class="nav-header">Skills</span>
               </button>
             </li>
-            <li class="navbar-link" >
-              <button  class=navbar-button onclick="showTab('testimonials')"><span class="icon-link"><i class="fas fa-users"></i></span>
-                <span class="nav-header">Testimonial</span> 
+            <li class="navbar-link">
+              <button class="navbar-button" onclick="showTab('projects')">
+                <span class="icon-link"><i class="fas fa-tools"></i></span>
+                <span class="nav-header">Projects</span>
               </button>
             </li>
-            <li class="navbar-link" >
-              <button class=navbar-button onclick="showTab('contact-me')"><span class="icon-link"><i class="fas fa-address-book"></i></span>
-                <span class="nav-header">Contact Me</span> 
+            <li class="navbar-link">
+              <button class="navbar-button" onclick="showTab('testimonials')">
+                <span class="icon-link"><i class="fas fa-users"></i></span>
+                <span class="nav-header">Testimonial</span>
+              </button>
+            </li>
+            <li class="navbar-link">
+              <button class="navbar-button" onclick="showTab('contact-me')">
+                <span class="icon-link"
+                  ><i class="fas fa-address-book"></i
+                ></span>
+                <span class="nav-header">Contact Me</span>
               </button>
             </li>
           </ul>
@@ -91,36 +103,50 @@
       <!-- content container -->
       <div id="main-content-container">
         <!-- Left section [image, name, skills, social links,download cv and contact me] -->
-        <section class="left-section">
+        <div class="left-section">
           <!-- image -->
           <div class="image">
-            <img src="./images/C8 Apr21 Gideon Daniels (2).JPG" alt="cover">
+            <img src="./images/C8 Apr21 Gideon Daniels (2).jpg" alt="cover" />
           </div>
           <div class="info">
-            <div class="title"><h3 class="name">Gideon Daniels</h3></div>
-          <!-- Skils -->
-          <div class="subtitle-skills">
-            <h3>Skills</h3>
+            <div><h3 class="name">Gideon Daniels</h3></div>
+            <!-- Skils -->
+            <div class="subtitle-skills">
+              <h3>Website Developer</h3>
+            </div>
+            <!-- social links -->
+            <div class="social">
+              <ul class="links">
+                <li class="link">
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </li>
+                <li class="link">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="link">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+              </ul>
+            </div>
+            <!-- buttons -->
+            <div class="buttons">
+              <!-- Download CV - Downloads CV File -->
+              <button class="button">
+                <a href="#" class="link"
+                  ><span class="text">Download CV</span></a
+                >
+              </button>
+              <!-- Contact Me Buttons - Opens Form -->
+              <button class="button">
+                <a href="#" class="link"
+                  ><span class="text">Contact Me</span></a
+                >
+              </button>
+            </div>
           </div>
-          <!-- social links -->
-          <div class="social"></div>
-          <!-- buttons -->
-          <div class="buttons">
-            <!-- Download CV - Downloads CV File -->
-            <button class="button">
-              <a href="" class="link"><span class="text">Download CV</span></a>
-            </button>
-            <!-- Contact Me Buttons - Opens Form -->
-            <button class="button">
-              <a href="" class="link"><span class="text">Contact Me</span></a>
-            </button>
-          </div>
-          </div>
-
-          
-        </section>
+        </div>
         <!-- Rigth section [Displaying content-About Section, Work and Education, Skills, Projects, Testimonial, Contact Me] -->
-        <section class="right-section">
+        <div class="right-section">
           <!-----------------------------------------About Me Section ---------------------------------------------->
           <div id="about-me" class="main-content-sidebar active">
             <h2 class="heading">About Me</h2>
@@ -135,15 +161,17 @@
               </div>
               <div class="right-bio-container">
                 <ul class="all-info">
-                  <li class="info"><span>Age</span><span>24</span></li>
                   <li class="info">
-                    <span>Residence</span><span>Ravensmead</span>
+                    <span class="highlight">Age</span>
+                    <span>24</span>
                   </li>
                   <li class="info">
-                    <span>Freelance</span><span>Available</span>
+                    <span class="highlight">Residence</span
+                    ><span>Ravensmead</span>
                   </li>
                   <li class="info">
-                    <span>Address</span><span>South Africa,Western Cape</span>
+                    <span class="highlight">Country</span
+                    ><span>South Africa</span>
                   </li>
                 </ul>
               </div>
@@ -153,44 +181,45 @@
                 <h2 class="heading">Passion</h2>
                 <p>
                   My passion for the tech industry came from the moment I laid
-                  eyes on video games and when my parents asked no one else
-                  but me to fix the TV stations. I loved solving problems that
-                  require you to go deep into the settings of the software.
-                  It's a good feeling discovering something that no one else
-                  has thought about yet and that's why I feel so passionate
-                  about the tech industry. It's a platform where you can
-                  create whatever your mind desires within the limits of your
+                  eyes on video games and when my parents asked no one else but
+                  me to fix the TV stations. I loved solving problems that
+                  require you to go deep into the settings of the software. It's
+                  a good feeling discovering something that no one else has
+                  thought about yet and that's why I feel so passionate about
+                  the tech industry. It's a platform where you can create
+                  whatever your mind desires within the limits of your
                   imagination.
                 </p>
               </div>
-              <div class="passion-board-container">
+              <!-- Finish Passion Board -->
+              <!-- <div class="passion-board-container">
                 <ul class="all-info">
                   <li class="info">
-                    <span>Reading</span><span>Fiction</span
-                    ><span>Mythologies</span
-                    ><span>Lores, Legends & Myths</span>
+                    <span class="highlight">Reading</span><span>Fiction</span
+                    ><span>Mythologies</span><span>Lores, Legends & Myths</span>
                   </li>
                   <li class="info">
-                    <span
-                      >Documentaries about certain changes in the world</span
-                    >
+                    <span class="highlight">Documentaries</span>
+                    <span>about certain changes in the world</span>
                   </li>
                   <li class="info">
-                    <span>Playing online games and watching anime. </span>
+                    <span class="highlight"
+                      >Playing online games and watching anime.
+                    </span>
                   </li>
                   <li class="info">
-                    <p>
-                      I like observing and talking to different types of
-                      people: I love the psychology about how people behave
-                      and interact with each other.
+                    <p class="highlight">
+                      I like observing and talking to different types of people:
+                      I love the psychology about how people behave and interact
+                      with each other.
                     </p>
                   </li>
                   <li class="info">
-                    <span>Sports</span> <span>Soccer</span><span>Chess</span
-                    ><span>table tennis</span>
+                    <span class="highlight">Sports</span> <span>Soccer</span
+                    ><span>Chess</span><span>table tennis</span>
                   </li>
                 </ul>
-              </div>
+              </div> -->
             </div>
           </div>
           <!-- ---------------------------------END OF ABOUT ME SECTION------------------------------------- -->
@@ -201,151 +230,162 @@
             <div class="soft-skills-container">
               <div class="soft-skill">
                 <h3 class="skill-heading">Problem Solver</h3>
-                <img src="" alt="Problem Solver" />
+                <img src="./images/clipart2585365.png" alt="Problem Solver" />
               </div>
               <div class="soft-skill">
                 <h3 class="skill-heading">Attention To Detail</h3>
-                <img src="" alt="Attention To Detail" />
+                <img
+                  src="./images/PinClipart.com_toiletries-clipart_5512623.png"
+                  alt="Attention To Detail"
+                />
               </div>
               <div class="soft-skill">
                 <h3 class="skill-heading">Out-of-the-box thinker</h3>
-                <img src="" alt="Out-of-the-box thinker" />
+                <img
+                  src="./images/PinClipart.com_spirit-clipart_756702.png"
+                  alt="Out-of-the-box thinker"
+                />
               </div>
               <div class="soft-skill">
                 <h3 class="skill-heading">Teamwork</h3>
-                <img src="" alt="Teamwork" />
+                <img src="./images/pngaaa.com-2489844.png" alt="Teamwork" />
               </div>
             </div>
             <!-- Technical Skills -->
-            <h2 class="heading">Technical Skills</h2>
+            <!-- <h2 class="heading">Technical Skills</h2>
             <div class="technical-skills-container">
               <div class="technical-skill">
                 <h3 class="skill-heading">HTML CSS</h3>
-                <img src="" alt="HTML CSS" />
+                <img src="./images/Daco_1270973.png" alt="HTML CSS" />
               </div>
               <div class="soft-skill">
                 <h3 class="skill-heading">Java Fundamentals</h3>
-                <img src="" alt="Java Fundamentals" />
+                <img src="./images/pngegg.png" alt="Java Fundamentals" />
               </div>
               <div class="soft-skill">
                 <h3 class="skill-heading">Microsoft Word Fundamentals</h3>
-                <img src="" alt="Microsoft Word Fundamentals" />
+                <img
+                  src="./images/toppng.com-word-icon-microsoft-word-ico-767x767.png"
+                  alt="Microsoft Word Fundamentals"
+                />
               </div>
               <div class="soft-skill">
                 <h3 class="skill-heading">Microsoft Excel Fundamentals</h3>
-                <img src="" alt="Microsoft Excel Fundamentals" />
+                <img
+                  src="./images/clipart2394456.png"
+                  alt="Microsoft Excel Fundamentals"
+                />
+              </div>
+            </div>
+          </div> -->
+          <!-- ----------------------------------------End OF Skills Section ------------------------------------->
+          <!-- ------------------------------------Work and Education Section---------------------------------- -->
+          <div id="work-education" class="main-content-sidebar">
+            <div class="work-wrapper">
+              <div class="line"></div>
+              <div class="work">
+                <span class="work-icon">x</span>
+                <h2 class="heading">Work</h2>
+                <div class="work-details">
+                  <h3 class="duration">
+                    <span>2014</span><span>December</span>
+                  </h3>
+                  <h2 class="heading">Jured Installations Works CC</h2>
+                  <p class="role">
+                    I was working as a asssitant . I fetch equipment, cut
+                    metals,cleaned stations and helped with heavy lifting
+                  </p>
+                </div>
+                <div class="work-details">
+                  <h3 class="duration">
+                    <span>2015</span><span>December</span>
+                  </h3>
+                  <h2 class="heading">Pest Control</h2>
+                  <p class="role">
+                    I was working as a asssitant . I helped cleaned building and
+                    fumigate buildings and machinery
+                  </p>
+                </div>
+                <div class="work-details">
+                  <h3 class="duration"><p>February 2016 - August 2016</p></h3>
+                  <h2 class="heading">Ster-Kinokor</h2>
+                  <p class="role">
+                    I was working as a asssitant Cashier.I worked in ticket
+                    sales department, food and beverages and catering department
+                  </p>
+                </div>
+                <div class="work-details">
+                  <h3 class="duration"><p>2015-2021</p></h3>
+                  <h2 class="heading">YMCA</h2>
+                  <p class="role">Volunteering in youth programs</p>
+                </div>
+              </div>
+            </div>
+            <div class="education-wrapper">
+              <div class="line">x</div>
+              <div class="education">
+                <span class="education-icon">x</span>
+                <h2 class="heading">Education</h2>
+                <div class="education-details">
+                  <h3 class="duration">2010-2014</h3>
+                  <h2 class="heading">Ravensmead High School</h2>
+                  <p class="qualification">Matric</p>
+                </div>
+                <div class="work-details">
+                  <h3 class="duration">2015 - 2018</h3>
+                  <h2 class="heading">Northlink College</h2>
+                  <p class="qualification">Electrical Engineering N5</p>
+                </div>
               </div>
             </div>
           </div>
-            <!-- ----------------------------------------End OF Skills Section ------------------------------------->
-            <!-- ------------------------------------Work and Education Section---------------------------------- -->
-            <div id="work-education" class="main-content-sidebar">
-              <div class="work-wrapper">
-                <div class="line"></div>
-                <div class="work">
-                  <span class="work-icon">x</span>
-                  <h2 class="heading">Work</h2>
-                  <div class="work-details">
-                    <h3 class="duration">
-                      <span>2014</span><span>December</span>
-                    </h3>
-                    <h2 class="heading">Jured Installations Works CC</h2>
-                    <p class="role">
-                      I was working as a asssitant . I fetch equipment, cut
-                      metals,cleaned stations and helped with heavy lifting
-                    </p>
-                  </div>
-                  <div class="work-details">
-                    <h3 class="duration">
-                      <span>2015</span><span>December</span>
-                    </h3>
-                    <h2 class="heading">Pest Control</h2>
-                    <p class="role">
-                      I was working as a asssitant . I helped cleaned building
-                      and fumigate buildings and machinery
-                    </p>
-                  </div>
-                  <div class="work-details">
-                    <h3 class="duration"><p>February 2016 - August 2016</p></h3>
-                    <h2 class="heading">Ster-Kinokor</h2>
-                    <p class="role">
-                      I was working as a asssitant Cashier.I worked in ticket
-                      sales department, food and beverages and catering
-                      department
-                    </p>
-                  </div>
-                  <div class="work-details">
-                    <h3 class="duration"><p>2015-2021</p></h3>
-                    <h2 class="heading">YMCA</h2>
-                    <p class="role">Volunteering in youth programs</p>
-                  </div>
-                </div>
+          <!-- -------------------------------End Of Work and Education Section ----------------------------------------->
+          <!-- ---------------------------------------Testimonials -------------------------------------------------------->
+          <div id="testimonials" class="main-content-sidebar">
+            <!-- <div class="owl-carousel"> -->
+            <!-- Testimonial-->
+            <div class="testimonial">
+              <div class="testimonial-image">
+                <img src="" alt="img-1" />
               </div>
-              <div class="education-wrapper">
-                <div class="line">x</div>
-                <div class="education">
-                  <span class="education-icon">x</span>
-                  <h2 class="heading">Education</h2>
-                  <div class="education-details">
-                    <h3 class="duration">2010-2014</h3>
-                    <h2 class="heading">Ravensmead High School</h2>
-                    <p class="qualification">Matric</p>
-                  </div>
-                  <div class="work-details">
-                    <h3 class="duration">2015 - 2018</h3>
-                    <h2 class="heading">Northlink College</h2>
-                    <p class="qualification">Electrical Engineering N5</p>
-                  </div>
-                </div>
+              <div class="testimonial-details">
+                <h2 class="heading">Name</h2>
+                <h3 class="testimonial-role">Role</h3>
+                <p class="testimonial-description"></p>
               </div>
             </div>
-            <!-- -------------------------------End Of Work and Education Section ----------------------------------------->
-            <!-- ---------------------------------------Testimonials -------------------------------------------------------->
-            <div id="testimonials" class="main-content-sidebar">
-              <!-- <div class="owl-carousel"> -->
-              <!-- Testimonial-->
-              <div class="testimonial">
-                <div class="testimonial-image">
-                  <img src="" alt="img-1" />
-                </div>
-                <div class="testimonial-details">
-                  <h2 class="heading">Name</h2>
-                  <h3 class="testimonial-role">Role</h3>
-                  <p class="testimonial-description"></p>
-                </div>
+            <div class="testimonial">
+              <div class="testimonial-image">
+                <img src="" alt="img-1" />
               </div>
-              <div class="testimonial">
-                <div class="testimonial-image">
-                  <img src="" alt="img-1" />
-                </div>
-                <div class="testimonial-details">
-                  <h2 class="heading">Name</h2>
-                  <h3 class="testimonial-role">Role</h3>
-                  <p class="testimonial-description"></p>
-                </div>
-              </div>
-              <div class="testimonial">
-                <div class="testimonial-image">
-                  <img src="" alt="img-1" />
-                </div>
-                <div class="testimonial-details">
-                  <h2 class="heading">Name</h2>
-                  <h3 class="testimonial-role">Role</h3>
-                  <p class="testimonial-description"></p>
-                </div>
-              </div>
-              <div class="testimonial">
-                <div class="testimonial-image">
-                  <img src="" alt="img-1" />
-                </div>
-                <div class="testimonial-details">
-                  <h2 class="heading">Name</h2>
-                  <h3 class="testimonial-role">Role</h3>
-                  <p class="testimonial-description"></p>
-                </div>
+              <div class="testimonial-details">
+                <h2 class="heading">Name</h2>
+                <h3 class="testimonial-role">Role</h3>
+                <p class="testimonial-description"></p>
               </div>
             </div>
-          
+            <div class="testimonial">
+              <div class="testimonial-image">
+                <img src="" alt="img-1" />
+              </div>
+              <div class="testimonial-details">
+                <h2 class="heading">Name</h2>
+                <h3 class="testimonial-role">Role</h3>
+                <p class="testimonial-description"></p>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-image">
+                <img src="" alt="img-1" />
+              </div>
+              <div class="testimonial-details">
+                <h2 class="heading">Name</h2>
+                <h3 class="testimonial-role">Role</h3>
+                <p class="testimonial-description"></p>
+              </div>
+            </div>
+          </div>
+
           <!-- ------------------------------------End of Testimonials --------------------------------------------------------- -->
           <!------------------------------------------ Projects ----------------------------------------------------->
           <div id="projects" class="main-content-sidebar">
@@ -364,7 +404,7 @@
             </div>
             <!-- Projects-cards-container -->
             <div class="project-cards-container">
-              <!-- Contact Form Card -->
+              <!-- Project Card 1 -->
               <div class="project-card card-1">
                 <div class="card-image">
                   <img src="" alt="card-image-1" />
@@ -382,63 +422,71 @@
                   <button class="button live"><a href="#">Live</a></button>
                   <button class="button github"><a href="#">Github</a></button>
                 </div>
-                <!-- Project Timeline -->
-                <div class="project-card card-1">
-                  <div class="card-image">
-                    <img src="" alt="card-image-1" />
-                  </div>
-                  <div class="card-details">
-                    <h2 class="heading">Timeline</h2>
-                    <p class="card-description">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Similique asperiores maxime officiis hic obcaecati expedita
-                      in ab dolorum incidunt perspiciatis mollitia neque quos
-                      animi, perferendis culpa magnam magni quae adipisci?
-                    </p>
-                  </div>
-                  <div class="buttons">
-                    <button class="button live"><a href="#">Live</a></button>
-                    <button class="button github"><a href="#">Github</a></button>
-                  </div>
-                  <!-- Project Cards -->
-                  <div class="project-card card-1">
-                    <div class="card-image">
-                      <img src="" alt="card-image-1" />
-                    </div>
-                    <div class="card-details">
-                      <h2 class="heading">Project Cards</h2>
-                      <p class="card-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Similique asperiores maxime officiis hic obcaecati expedita
-                        in ab dolorum incidunt perspiciatis mollitia neque quos
-                        animi, perferendis culpa magnam magni quae adipisci?
-                      </p>
-                    </div>
-                    <div class="buttons">
-                      <button class="button live"><a href="#">Live</a></button>
-                      <button class="button github"><a href="#">Github</a></button>
-                    </div>
-                    <!-- Project Sneaker Site -->
-                    <div class="project-card card-1">
-                      <div class="card-image">
-                        <img src="" alt="card-image-1" />
-                      </div>
-                      <div class="card-details">
-                        <h2 class="heading">Sneaker Site</h2>
-                        <p class="card-description">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                          Similique asperiores maxime officiis hic obcaecati expedita
-                          in ab dolorum incidunt perspiciatis mollitia neque quos
-                          animi, perferendis culpa magnam magni quae adipisci?
-                        </p>
-                      </div>
-                      <div class="buttons">
-                        <button class="button live"><a href="#">Live</a></button>
-                        <button class="button github"><a href="#">Github</a></button>
-                      </div>
+              </div>
+              <!-- Project Card 2 -->
+              <div class="project-card card-2">
+                <div class="card-image">
+                  <img src="" alt="card-image-2" />
+                </div>
+                <div class="card-details">
+                  <h2 class="heading">Timeline</h2>
+                  <p class="card-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Similique asperiores maxime officiis hic obcaecati expedita
+                    in ab dolorum incidunt perspiciatis mollitia neque quos
+                    animi, perferendis culpa magnam magni quae adipisci?
+                  </p>
+                </div>
+                <div class="buttons">
+                  <button class="button live"><a href="#">Live</a></button>
+                  <button class="button github"><a href="#">Github</a></button>
+                </div>
+              </div>
+
+              <!-- Project Card 3 -->
+              <div class="project-card card-3">
+                <div class="card-image">
+                  <img src="" alt="card-image-3" />
+                </div>
+                <div class="card-details">
+                  <h2 class="heading">Project Cards</h2>
+                  <p class="card-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Similique asperiores maxime officiis hic obcaecati expedita
+                    in ab dolorum incidunt perspiciatis mollitia neque quos
+                    animi, perferendis culpa magnam magni quae adipisci?
+                  </p>
+                </div>
+                <div class="buttons">
+                  <button class="button live"><a href="#">Live</a></button>
+                  <button class="button github"><a href="#">Github</a></button>
+                </div>
+              </div>
+
+              <!-- Project Card 4 -->
+              <div class="sneaker-site card-4">
+                <div class="card-image">
+                  <img src="" alt="card-image-4" />
+                </div>
+                <div class="card-details">
+                  <h2 class="heading">Sneaker Site</h2>
+                  <p class="card-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Similique asperiores maxime officiis hic obcaecati expedita
+                    in ab dolorum incidunt perspiciatis mollitia neque quos
+                    animi, perferendis culpa magnam magni quae adipisci?
+                  </p>
+                </div>
+                <div class="buttons">
+                  <button class="button live"><a href="#">Live</a></button>
+                  <button class="button github">
+                    <a href="#">Github</a>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
+
           <!--------------------------------------------------- End of Projects -------------------------------------------------->
           <!-- Contact Form -->
           <div id="contact-me" class="main-content-sidebar">
@@ -450,42 +498,75 @@
                   <span>x</span>
                   <h3>Call Me</h3>
                   <span>0726078261</span>
-                </a></li>
+                </li>
                 <li class="details Home">
-                 <span>x</span>
+                  <span>x</span>
                   <h3>Home</h3>
                   <span>Ravensmead , Western Cape</span>
-                </a></li>
+                </li>
                 <li class="details call-me">
                   <span>x</span>
                   <h3>Email</h3>
                   <span>gideondaniels.dragoonix@gmail.com</span>
-                </a></li>
+                </li>
                 <li class="details call-me">
                   <span>x</span>
                   <h3>WhatsApp</h3>
                   <span>0726078261</span>
-                </a></li>  
+                </li>
               </ul>
             </div>
-            <form class="form" action="https://formspree.io/f/mbjqlpgn" method="POST">
+            <form
+              class="form"
+              action="https://formspree.io/f/mbjqlpgn"
+              method="POST"
+            >
               <div class="name-email">
                 <label for="name">Name</label>
-                <input type="text" class="contact-groups" name="name" id="email" placeholder="Name" required>
+                <input
+                  type="text"
+                  class="contact-groups"
+                  name="name"
+                  id="email"
+                  placeholder="Name"
+                  required
+                />
                 <label for="email">Email</label>
-                <input type="email" class="contact-groups" name="email" id="email" placeholder="Email" required>
+                <input
+                  type="email"
+                  class="contact-groups"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
               </div>
               <label for="subject"></label>
-              <input type="text" class="contact-groups" name="subject" id="subject" placeholder="Subject" required>
-             <label for="textarea"></label>
-             <textarea name="textarea" id="textarea" cols="30" rows="10" class="contact-groups" placeholder="Your Message" required></textarea>
-             <div class="contact-groups">
-               <button class="button" type="submit">Submit</button>
-             </div>
+              <input
+                type="text"
+                class="contact-groups"
+                name="subject"
+                id="subject"
+                placeholder="Subject"
+                required
+              />
+              <label for="textarea"></label>
+              <textarea
+                name="textarea"
+                id="textarea"
+                cols="30"
+                rows="10"
+                class="contact-groups"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <div class="contact-groups">
+                <button class="button" type="submit">Submit</button>
+              </div>
             </form>
           </div>
           <!-- End of Contact Form -->
-        </section>
+        </div>
       </div>
       <!-- Sidebar container -->
       <!-- <div id="left-sidebar-container">
@@ -525,6 +606,8 @@
         });
       });
     </script>
+    <!-- owl carousel end -->
+
     <!-- -----------------------------button on click script------------------------------- -->
     <script src="./scripts/index.js"></script>
   </body>

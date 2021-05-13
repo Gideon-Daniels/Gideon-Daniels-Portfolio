@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
   padding: 2% 2%;
-  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
 }
 .bio-container {
   /* height: auto; */
@@ -39,6 +40,14 @@
   border-right: 1px solid #e1e1e1;
   width: 50%;
 }
+/* Passion Container */
+.passion-container {
+  border-top: 1px solid #e1e1e1;
+}
+.passion-container .heading {
+  margin-top: 10px;
+}
+
 .all-info {
   position: relative;
   height: 100%;
@@ -51,4 +60,17 @@
 
 .all-info .info {
   border-bottom: 1px solid #e1e1e1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info .highlight {
+  border-radius: 2px;
+  background-color: #50a3a2;
+  color: white;
+}
+
+.passion-container p {
+  margin-top: 15px;
+  line-height: 25px;
 }
