@@ -1,10 +1,124 @@
 #work-education {
   display: flex;
+  /* flex-wrap: wrap; */
   height: 98%;
   margin-bottom: 5px;
   margin-top: 5px;
   padding: 15px 5%;
+  gap: 1px;
   /* overflow: scroll; */
+  /* border: 1px solid salmon; */
+}
+/*--------------- work--------------- */
+#work-education .work-wrapper {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  /* border: salmon solid 1px; */
+  /* padding: 5px 5px; */
+  display: flex;
+}
+/* 
+.work-wrapper .line {
+  position: relative;
+  width: 11px;
+  height: 100%;
+  background-color: #85d17b;
+} */
+
+.work-wrapper .work {
+  position: relative;
+  margin-left: 11px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* border-left: #85d17b 2px solid; */
+  /* height: 200px; */
+}
+
+.work .work-details {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #e1e1e1;
+  border-radius: 5px;
+  padding: 2% 5%;
+  font-size: 10px;
+  text-align: center;
+}
+
+.work-details:hover {
+  background-color: #85d17b;
+  color: white;
+  font-size: 12px;
+}
+
+.work-details .heading {
+  text-decoration: none;
+}
+
+/* -------------------education-------------- */
+#work-education .education-wrapper {
+  position: relative;
+  width: 50%;
+  /* border: salmon solid 1px; */
+  /* padding: 5px 5px; */
+  /* height: 60%; */
+  display: flex;
+}
+
+/* .education-wrapper .line {
+  position: relative;
+  width: 5px;
+  height: 100%;
+  background-color: #85d17b;
+} */
+.education-wrapper .education {
+  margin-left: 15px;
+  position: relative;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 10px;
+  /* border-left: #85d17b 2px solid; */
+}
+
+.education .education-details {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #e1e1e1;
+  border-radius: 5px;
+  padding: 2% 5%;
+  font-size: 10px;
+  text-align: center;
+}
+
+.education-details:hover {
+  background-color: #85d17b;
+  color: white;
+  font-size: 12px;
+}
+
+.education-details .heading {
+  text-decoration: none;
+}
+
+#work-education .icon {
+  font-size: 25px;
+  color: #323232;
+  margin-bottom: 5px;
+}
+
+#work-education .icon:hover {
+  color: #85d17b;
+  font-size: 35px;
 }
 
 #work-education .heading {

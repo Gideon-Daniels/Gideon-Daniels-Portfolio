@@ -26,12 +26,62 @@
 #projects .project-cards-container .project-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between; */
+  /* align-items: center; */
   width: 48%;
   height: 48%;
-  /* padding: 15px 15px; */
-  border-top: 2px solid #e1e1e1;
-  border-right: 2px solid #e1e1e1;
+  padding: 15px 15px;
+  border: 2px solid #e1e1e1;
   border-radius: 5px;
+  border-bottom: none;
+}
+
+.project-card .heading {
+  text-decoration: none;
+  font-size: "Ubuntu", sans-serif;
+}
+
+.project-card .card-image {
+  position: relative;
+  height: 80%;
+  border-radius: 5px;
+  margin: 5px;
+  /* border: #e1e1e1 solid 1px; */
+}
+
+.project-card .card-image img {
+  position: relative;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.project-card .buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.buttons .button {
+  width: 50%;
+  height: 25px;
+  color: #323232;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #e1e1e1;
+  margin: 2px 2px;
+  outline: none;
+}
+
+.project-card .buttons .button:hover {
+  background-color: #85d17b;
+}
+
+.project-card .buttons .button:hover a {
+  color: white;
+}
+
+.project-card:hover {
+  background-color: #85d17b;
 }

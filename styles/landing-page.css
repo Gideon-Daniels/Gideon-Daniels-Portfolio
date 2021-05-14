@@ -187,6 +187,10 @@
   font-size: 20px;
 }
 
+.info .buttons .button:hover .text {
+  color: #85d17b;
+}
+
 /* Right Section */
 #main-content-container .right-section {
   width: 50%;
@@ -212,4 +216,43 @@
   overflow-y: auto;
   opacity: 1;
   left: 0;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  color: white;
+}
+
+#footer i {
+  color: #50a3a2;
+}
+
+@media (max-width: 1860px) {
+  #main-landing-page {
+    padding: 2% 12%;
+  }
+}
+
+@media (max-width: 1665px) {
+  #main-landing-page {
+    padding: 1% 12%;
+  }
+}
+
+@media (max-width: 1500px) {
+  #main-landing-page {
+    padding: 0% 12%;
+  }
+
+  .bio-container {
+    flex-direction: column;
+  }
+  .bio-container .left-bio-container {
+    width: 100% !important;
+  }
+
+  .bio-container .right-bio-container {
+    width: 100% !important;
+  }
 }
