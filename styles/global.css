@@ -37,11 +37,6 @@ p {
   line-height: 25px;
 }
 
-.main-content-sidebar {
-  margin: 8px 0px;
-  height: 100%;
-  width: 100%;
-}
 
 button:hover {
   cursor: pointer;
