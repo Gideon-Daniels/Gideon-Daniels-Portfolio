@@ -21,24 +21,18 @@
 #contact-me .contact-form-navbar .navbar-details {
   display: flex;
   gap: 2px;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
   padding: 5px;
 }
 #contact-me .contact-form-navbar .navbar-details .details {
-  width: 50%;
-  height: 155px;
-  display: flex;
-  /* flex-wrap: wrap; */
-  gap: 5px;
-  align-items: center;
-  flex-direction: column;
+  width: 100%;
   text-align: center;
   background-color: #85d17b;
   padding: 5px 3px;
   border-radius: 5px;
   border: #e1e1e1 2px solid;
   margin-bottom: 25px;
+  /* overflow: hidden; */
 }
 
 .navbar-details .details:hover {

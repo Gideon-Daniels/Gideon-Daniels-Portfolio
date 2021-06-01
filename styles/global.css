@@ -28,7 +28,8 @@ a {
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
-  text-decoration: underline #85d17b;
+  border-radius: 5px;
+  background-color: #85d17b;
 }
 
 p {
