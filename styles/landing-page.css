@@ -105,15 +105,12 @@
 /* Left Section */
 #main-content-container .left-section {
   position: relative;
-  /* height: 100%; */
   width: 50%;
   background-color: white;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   z-index: 200;
-  /* padding: 5px; */
 }
 
 #main-content-container .left-section .image img {
@@ -125,7 +122,7 @@
 
 #main-content-container .left-section .info {
   position: relative;
-  height: 50%;
+  height: 100%;
   width: 100%;
   padding: 8px;
   display: flex;
@@ -162,10 +159,10 @@
 }
 .info .buttons {
   display: flex;
-  height: 25%;
-  gap: 1px;
+  gap: 5px;
   color: #50a3a2;
 }
+
 .info .buttons .button {
   width: 50%;
   height: auto;
@@ -228,8 +225,24 @@
   color: #50a3a2;
 }
 
-/* @media only screen and (max-width:1055){
-  .left-section .image{
-  
+@media only screen and (max-width: 1200px) {
+  #main-landing-page {
+    flex-direction: column;
   }
-} */
+
+  #sidebar-navbar-container {
+    height: 10%;
+    margin-bottom: 10px;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar-links {
+    flex-direction: row;
+  }
+  #main-content-container {
+    margin-left: 0%;
+  }
+}

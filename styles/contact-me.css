@@ -83,7 +83,6 @@
   border-radius: 15px;
   padding: 2%;
   color: white;
-  font-family: "Ubuntu", sans-serif;
   font-size: 18px;
 }
 
@@ -113,6 +112,5 @@
 .form .contact-groups::placeholder {
   padding: 5px;
   color: white;
-  font-family: "Ubuntu", sans-serif;
   font-size: 18px;
 }

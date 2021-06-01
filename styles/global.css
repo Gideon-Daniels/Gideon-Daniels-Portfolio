@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppings", sans-serif;
   font-size: 1rem;
   background: #50a3a2;
   background: -webkit-linear-gradient(top left, #50a3a2 0%, #78cc6d 100%);
@@ -36,7 +36,6 @@ p {
   letter-spacing: 2px;
   line-height: 25px;
 }
-
 
 button:hover {
   cursor: pointer;

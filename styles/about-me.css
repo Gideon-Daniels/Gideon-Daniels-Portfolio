@@ -1,8 +1,8 @@
 #about-me {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 .bio-container {
   height: 100%;
@@ -39,7 +39,6 @@
 }
 
 .right-bio-container .all-info .info {
-  
   border-bottom: 1px solid #e1e1e1;
   display: flex;
   justify-content: space-between;
@@ -52,24 +51,21 @@
   color: white;
 }
 
-
- 
-@media only screen and (max-width:1215px) {
-
+@media only screen and (max-width: 1347px) {
   .bio-container {
-  flex-direction: column;
-  gap: 2px;
+    flex-direction: column;
+    gap: 2px;
   }
 
   .bio-container .left-bio-container {
-  padding: 2px 15px;
-  border-radius: 3px;
-  border-top: #e1e1e1;
-   width: 100%;
-}
-.bio-container .right-bio-container {
-  width: 100%;
-}
+    padding: 2px 15px;
+    border-radius: 3px;
+    border-top: #e1e1e1;
+    width: 100%;
+  }
+  .bio-container .right-bio-container {
+    width: 100%;
+  }
 }
 
 /* Passion Container */
@@ -86,4 +82,3 @@
   line-height: 25px;
   padding: 5px 25px;
 }
-

@@ -1,13 +1,8 @@
 #work-education {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   height: 98%;
-  margin-bottom: 5px;
   margin-top: 5px;
-  padding: 15px 5%;
-  gap: 1px;
-  /* overflow: scroll; */
-  /* border: 1px solid salmon; */
 }
 /*--------------- work--------------- */
 #work-education .work-wrapper {
@@ -123,4 +118,6 @@
 
 #work-education .heading {
   margin: 10px 0px;
+}
+@media only screen and (max-width: 1215px) {
 }
