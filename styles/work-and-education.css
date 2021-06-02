@@ -1,17 +1,11 @@
 #work-education {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   height: 98%;
   margin-top: 5px;
 }
 /*--------------- work--------------- */
 #work-education .work-wrapper {
-  position: relative;
-  width: 50%;
-  height: 100%;
-  /* border: salmon solid 1px; */
-  /* padding: 5px 5px; */
-  display: flex;
 }
 /* 
 .work-wrapper .line {
@@ -27,10 +21,7 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
-  /* border-left: #85d17b 2px solid; */
-  /* height: 200px; */
 }
 
 .work .work-details {
@@ -57,12 +48,6 @@
 
 /* -------------------education-------------- */
 #work-education .education-wrapper {
-  position: relative;
-  width: 50%;
-  /* border: salmon solid 1px; */
-  /* padding: 5px 5px; */
-  /* height: 60%; */
-  display: flex;
 }
 
 /* .education-wrapper .line {
