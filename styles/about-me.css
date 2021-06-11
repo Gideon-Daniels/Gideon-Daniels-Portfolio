@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  height: 98%;
+  margin-top: 5px;
 }
 .bio-container {
   height: 100%;

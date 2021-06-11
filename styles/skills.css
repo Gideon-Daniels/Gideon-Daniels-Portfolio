@@ -1,8 +1,7 @@
 #skills {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  margin-bottom: 5px;
+  height: 98%;
   margin-top: 5px;
   padding: 15px 5%;
 }
