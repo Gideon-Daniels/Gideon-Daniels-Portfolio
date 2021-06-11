@@ -10,7 +10,8 @@
   text-decoration: none;
   font-size: 25px;
   border-left: #e1e1e1 2px solid;
-  background-color: #85d17b;
+  background: -webkit-linear-gradient(top left, #50a3a2 0%, #78cc6d 100%);
+  background: linear-gradient(to bottom right, #50a3a2 0%, #78cc6d 100%);
   color: white;
   border-radius: 5px;
   margin-bottom: 25px;
@@ -26,7 +27,8 @@
 #contact-me .contact-form-navbar .navbar-details .details {
   width: 100%;
   text-align: center;
-  background-color: #85d17b;
+  background: -webkit-linear-gradient(top left, #50a3a2 0%, #78cc6d 100%);
+  background: linear-gradient(to bottom right, #50a3a2 0%, #78cc6d 100%);
   padding: 5px 3px;
   border-radius: 5px;
   border: #e1e1e1 2px solid;
@@ -71,7 +73,8 @@
   width: 100%;
   margin-right: 10px;
   outline: none;
-  background-color: #85d17b;
+  background: -webkit-linear-gradient(top left, #50a3a2 0%, #78cc6d 100%);
+  background: linear-gradient(to bottom right, #50a3a2 0%, #78cc6d 100%);
   border: solid 2px white;
   border-radius: 15px;
   padding: 2%;
@@ -86,7 +89,8 @@
 }
 
 .buttons .button {
-  background-color: white;
+  background: -webkit-linear-gradient(top left, #50a3a2 0%, #78cc6d 100%);
+  background: linear-gradient(to bottom right, #50a3a2 0%, #78cc6d 100%);
   position: relative;
   height: 100%;
   width: 100%;
