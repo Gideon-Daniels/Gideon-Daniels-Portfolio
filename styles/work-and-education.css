@@ -6,8 +6,6 @@
   padding: 15px 5%;
 }
 /*--------------- work--------------- */
-#work-education .work-wrapper {
-}
 /* 
 .work-wrapper .line {
   position: relative;
@@ -19,17 +17,18 @@
 .work-wrapper .work {
   position: relative;
   margin-left: 11px;
-  /* padding: 10px; */
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
-
+#work-education .icon {
+  align-self: center;
+}
 .work .work-details {
-  width: 80%;
+  width: 100%;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   border: 2px solid #e1e1e1;
   border-radius: 5px;
@@ -46,6 +45,7 @@
 
 .work-details .heading {
   text-decoration: none;
+  align-self: center;
 }
 
 /* -------------------education-------------- */
@@ -59,18 +59,19 @@
   background-color: #85d17b;
 } */
 .education-wrapper .education {
-  margin-left: 15px;
-  position: relative;
+  /* margin-left: 15px; */
   display: flex;
   flex-direction: column;
 }
 
 .education .education-details {
-  width: 80%;
+  width: 100%;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   border: 2px solid #e1e1e1;
+  padding: 2% 5%;
   border-radius: 5px;
   font-size: 10px;
 }
@@ -98,6 +99,7 @@
 
 #work-education .heading {
   margin: 10px 0px;
+  text-align: center;
 }
 @media only screen and (max-width: 1215px) {
 }
