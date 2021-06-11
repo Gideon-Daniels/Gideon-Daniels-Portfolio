@@ -3,6 +3,7 @@
   flex-direction: column;
   height: 98%;
   margin-top: 5px;
+  padding: 15px 5%;
 }
 /*--------------- work--------------- */
 #work-education .work-wrapper {
@@ -18,7 +19,7 @@
 .work-wrapper .work {
   position: relative;
   margin-left: 11px;
-  padding: 10px;
+  /* padding: 10px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,13 +61,8 @@
 .education-wrapper .education {
   margin-left: 15px;
   position: relative;
-  padding: 2%;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
-  align-items: center;
-  padding: 10px;
-  /* border-left: #85d17b 2px solid; */
 }
 
 .education .education-details {
@@ -74,12 +70,9 @@
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   border: 2px solid #e1e1e1;
   border-radius: 5px;
-  padding: 2% 5%;
   font-size: 10px;
-  text-align: center;
 }
 
 .education-details:hover {

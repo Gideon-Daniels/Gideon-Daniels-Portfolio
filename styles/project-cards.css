@@ -34,6 +34,7 @@
   border: 2px solid #e1e1e1;
   border-radius: 5px;
   border-bottom: none;
+  color: #323232;
 }
 
 .project-card .heading {
@@ -67,11 +68,11 @@
   width: 50%;
   height: 25px;
   color: #323232;
-  background-color: white;
   border-radius: 5px;
   border: 1px solid #e1e1e1;
   margin: 2px 2px;
   outline: none;
+  color: #323232;
 }
 
 .project-card .buttons .button:hover {

@@ -9,7 +9,7 @@
 #contact-me .heading {
   text-decoration: none;
   font-size: 25px;
-  border-left: #e1e1e1 2px solid;
+  padding-left: 5px;
   background: -webkit-linear-gradient(top left, #50a3a2 0%, #78cc6d 100%);
   background: linear-gradient(to bottom right, #50a3a2 0%, #78cc6d 100%);
   color: white;

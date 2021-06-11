@@ -5,6 +5,10 @@
   gap: 20px;
   height: 98%;
   margin-top: 5px;
+  padding: 15px 5%;
+}
+#about-me .heading {
+  color: #323232;
 }
 .bio-container {
   height: 100%;
@@ -18,11 +22,13 @@
   border-top: 1px solid #e1e1e1;
   border-right: 1px solid #e1e1e1;
   width: 50%;
+  color: #323232;
 }
 
 .left-bio-container h2 {
   letter-spacing: 2px;
   margin-bottom: 5px;
+  color: #323232;
 }
 
 .bio-container .right-bio-container {
@@ -45,12 +51,13 @@
   display: flex;
   justify-content: space-between;
   padding: 7px;
+  color: #323232;
 }
 
 .right-bio-container .info .highlight {
   border-radius: 2px;
   background-color: #50a3a2;
-  color: white;
+  color: #323232;
 }
 
 @media only screen and (max-width: 1347px) {
@@ -73,14 +80,20 @@
 /* Passion Container */
 .passion-container {
   border-top: 1px solid #e1e1e1;
+  height: 100%;
+  width: 100%;
+  padding: 7px;
 }
 
 .passion-container .heading {
   margin-top: 10px;
+  text-align: center;
+  color: #323232;
 }
 
 .passion-container p {
   margin-top: 15px;
   line-height: 25px;
   padding: 5px 25px;
+  color: #323232;
 }
