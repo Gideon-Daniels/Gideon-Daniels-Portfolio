@@ -10,8 +10,7 @@
   text-decoration: none;
   font-size: 25px;
   padding-left: 5px;
-  background: -webkit-linear-gradient(top left, #50a3a2 0%, #78cc6d 100%);
-  background: linear-gradient(to bottom right, #50a3a2 0%, #78cc6d 100%);
+  background: white;
   color: #323232;
   border-radius: 5px;
   margin-bottom: 25px;
@@ -27,25 +26,28 @@
 #contact-me .contact-form-navbar .navbar-details .details {
   width: 100%;
   text-align: center;
-  background: -webkit-linear-gradient(top left, #50a3a2 0%, #78cc6d 100%);
-  background: linear-gradient(to bottom right, #50a3a2 0%, #78cc6d 100%);
+  background: white;
   padding: 5px 3px;
   border-radius: 5px;
-  border: #e1e1e1 2px solid;
+  border: #323232 2px solid;
   margin-bottom: 25px;
-  /* overflow: hidden; */
+  color: #323232;
+}
+.navbar-details .details:hover{
+  background: #323232;
 }
 
-.navbar-details .details:hover {
-  background-color: #85d17b;
-  color: #323232;
-  /* font-size: 13px; */
-}
+
 
 .navbar-details .details .icon {
   font-size: 35px;
   color: #323232;
 }
+#contact-me .contact-form-navbar .navbar-details .details:hover{
+  background-color:#323232;
+  color: #85d17b;
+}
+
 
 .navbar-details .details h3 {
   margin: 8px 0px;
@@ -73,13 +75,13 @@
   width: 100%;
   margin-right: 10px;
   outline: none;
-  background: -webkit-linear-gradient(top left, #50a3a2 0%, #78cc6d 100%);
-  background: linear-gradient(to bottom right, #50a3a2 0%, #78cc6d 100%);
-  border: solid 2px white;
+  background: white;
   border-radius: 15px;
   padding: 2%;
-  color: #323232;
+  color: #85d17b;
   font-size: 18px;
+  border: #323232 solid 2px;
+  background-color: #323232;
 }
 
 .buttons {
@@ -89,25 +91,22 @@
 }
 
 .buttons .button {
-  background: -webkit-linear-gradient(top left, #50a3a2 0%, #78cc6d 100%);
-  background: linear-gradient(to bottom right, #50a3a2 0%, #78cc6d 100%);
+  background: white;
   position: relative;
   height: 100%;
   width: 100%;
   font-size: 25px;
   border: none;
-  border-top: 1px solid #e1e1e1;
-  border-right: 1px solid #e1e1e1;
-  border-left: 1px solid #e1e1e1;
+  border: #323232 2px solid;
 }
 
 .form .buttons .button:hover {
-  background-color: #85d17b;
-  color: #323232;
+  background-color: #323232;
+  color:#85d17b;
 }
 
 .form .contact-groups::placeholder {
   padding: 5px;
-  color: #323232;
+  color: #85d17b;
   font-size: 18px;
 }

@@ -57,7 +57,7 @@
   background-color: #85d17b;
 } */
 .education-wrapper .education {
-  /* margin-left: 15px; */
+  margin-left: 11px;
   display: flex;
   flex-direction: column;
 }
