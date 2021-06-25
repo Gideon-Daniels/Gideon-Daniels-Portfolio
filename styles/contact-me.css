@@ -33,21 +33,22 @@
   margin-bottom: 25px;
   color: #323232;
 }
-.navbar-details .details:hover{
+.navbar-details .details:hover {
   background: #323232;
 }
-
-
 
 .navbar-details .details .icon {
   font-size: 35px;
   color: #323232;
 }
-#contact-me .contact-form-navbar .navbar-details .details:hover{
-  background-color:#323232;
+#contact-me .contact-form-navbar .navbar-details .details:hover .icon {
+  background-color: #323232;
   color: #85d17b;
 }
-
+#contact-me .contact-form-navbar .navbar-details .details:hover {
+  background-color: #323232;
+  color: #85d17b;
+}
 
 .navbar-details .details h3 {
   margin: 8px 0px;
@@ -102,7 +103,7 @@
 
 .form .buttons .button:hover {
   background-color: #323232;
-  color:#85d17b;
+  color: #85d17b;
 }
 
 .form .contact-groups::placeholder {
