@@ -6,43 +6,62 @@
   padding: 15px 5%;
 }
 /*--------------------- Soft Skills------------------------------ */
+#skills .heading {
+  background-color: #50a3a2;
+  padding: 5px;
+  margin-bottom: 5px;
+  color: #323232;
+  text-align: center;
+  border-radius: 5px;
+}
+
 #skills .soft-skills-container {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   gap: 2px;
-}
-#skills .heading {
-  margin-top: 10px;
-  margin-bottom: 25px;
-}
-
-#skills .soft-skills-container .skill-heading {
-  text-align: center;
-  text-transform: uppercase;
-  color: #323232;
+  margin-bottom: 5px;
 }
 
 #skills .soft-skills-container .soft-skill {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 48%;
+  width: 40%;
   height: 48%;
-  padding: 15px 15px;
-  border-top: 2px solid #e1e1e1;
-  border-right: 2px solid #e1e1e1;
+  border:#50a3a2 solid 2px;
   border-radius: 5px;
+  transition: all 0.3s linear;
+  margin-right: 5px;
 }
 
-#skills .soft-skills-container .soft-skill img {
-  padding-top: 25px;
+.soft-skill .skill-heading {
+  text-align: center;
+  text-transform: uppercase;
+  color: #323232;
+  background-color: #50a3a2;
+  /* font-size: 20px; */
+  transition: all 0.3s linear;
+}
+.soft-skill img {
+  padding: 25px;
   object-fit: cover;
+  opacity: 0.3;
+  transition: all 0.3s linear;
 }
 
 #skills .soft-skills-container .soft-skill:hover {
+ border: #85d17b solid 2px;
+}
+
+#skills .soft-skills-container .soft-skill:hover .skill-heading{
   background-color: #85d17b;
+}
+#skills .soft-skills-container .soft-skill:hover img {
+opacity: 1;
 }
 
 /* ---------------------------Technical Skills */
@@ -50,6 +69,8 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   gap: 2px;
 }
@@ -58,23 +79,37 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 48%;
+  width: 40%;
   height: 48%;
-  padding: 15px 15px;
-  border-top: 2px solid #e1e1e1;
-  border-right: 2px solid #e1e1e1;
+  border:#50a3a2 solid 2px;
   border-radius: 5px;
+  margin-right: 5px;
+  transition: all 0.3s linear;
 }
 
-#skills .technical-skills-container .technical-skill h3 {
+.technical-skill h3 {
   text-align: center;
+  text-transform: uppercase;
+  color: #323232;
+  background-color: #50a3a2;
+  /* font-size: 20px; */
+  transition: all 0.3s linear;
 }
 
-#skills .technical-skills-container .technical-skill img {
-  padding-top: 25px;
+ .technical-skill img {
+  padding: 25px;
   object-fit: cover;
+  opacity: 0.3;
+  transition: all 0.3s linear;
 }
 
 #skills .technical-skills-container .technical-skill:hover {
-  background-color: #85d17b;
-}
+  border: #85d17b solid 2px;
+ }
+ 
+ #skills .technical-skills-container .technical-skill:hover .skill-heading{
+   background-color: #85d17b;
+ }
+ #skills .technical-skills-container .technical-skill:hover img {
+ opacity: 1;
+ }
