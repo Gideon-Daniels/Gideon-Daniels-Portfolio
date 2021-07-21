@@ -15,12 +15,33 @@
 }
 
 
-#projects .projects-navbar-container .navbar-links {
+#projects .projects-navbar-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 5%;
+  height: 100%;
+  width: 100%;
+  margin: 20px 5px;
 }
+
+#projects .projects-navbar-container .project-filter{
+  height: 100%;
+  width: 100%;
+  margin-right: 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #50a3a2;
+  color: #323232;
+  font-size: 16px;
+  padding: 5px 5px;
+  transition: all 0.3s linear;
+}
+
+#projects .projects-navbar-container .project-filter:hover{
+  color: #85d17b;
+}
+
 
 #projects .project-cards-container {
   position: relative;
@@ -82,6 +103,11 @@
   opacity: 0.3;
   transition: all 0.3s linear;
 }
+.project-card .card-container .buttons .button a{
+  display: block;
+  width: 100%;
+}
+
 
 /* Hover */
 #projects .project-cards-container .project-card:hover .card-image {

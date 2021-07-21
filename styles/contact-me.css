@@ -24,18 +24,21 @@
   padding: 5px;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 #contact-me .contact-form-navbar .navbar-details .details {
-  width: 20%;
+  width: 45%;
   height: 100%;
-  text-align: center;
   background: #323232;
   padding: 5px 3px;
   border-radius: 5px;
   border: #323232 2px solid;
   margin-bottom: 25px;
   color: #323232;
-  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   opacity: 0.3;
   transition: all 0.5s linear;
 }

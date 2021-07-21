@@ -442,9 +442,10 @@
             <h2 class="heading">Project</h2>
             <!-- Navbar for projects -->
             <div class="projects-navbar-container">
-              <ul class="navbar-links">
-                <li class="navbar-link link-all"><a href="#">All</a></li>
-              </ul>
+              <button class="project-filter" onclick="fileterCards('All')">All</button>
+              <button class="project-filter" onclick="fileterCards('HTML/CSS')">HTML/CSS</button>
+              <button class="project-filter" onclick="fileterCards('Python')">Python</button>
+              <button class="project-filter" onclick="fileterCards('Javascript')">Javascript</button>
             </div>
             <!-- Projects-cards-container -->
             <div class="project-cards-container">
@@ -476,9 +477,9 @@
                         >Github
                       </a>
                     </button>
+                    <br>
                   </div>
-                </div>
-              
+                </div>           
               </div>
               <!-- Project Card 2 -->
               <div class="project-card card-2">
@@ -664,13 +665,6 @@
           <!--------------------------------------------------- End of Projects -------------------------------------------------->
         </div>
       </div>
-      <!-- Sidebar container -->
-      <!-- <div id="left-sidebar-container">
-          <div></div>
-          <div class="close-sidebar">
-            <button class="close-button">X</button>
-          </div>
-      </div> -->
       <!-- Footer -->
       <div id="footer">
         <p>
