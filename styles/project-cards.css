@@ -76,6 +76,7 @@
   width: 100%;
   border-radius: 5px;
 }
+
 .project-card .card-container {
  display: flex;
  flex-direction: column;
@@ -83,6 +84,20 @@
  align-items: center;
  gap:3px;
 }
+.card-details{
+  color: #85d17b;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 2px;
+  /* position:absolute;
+  bottom: 0;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.3 linear; */
+}
+/* .project-card .card-image:hover .card-details {
+transform: scaleY(1);
+} */
 
 .project-card .card-container .buttons{
   display: flex;

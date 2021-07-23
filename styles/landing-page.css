@@ -33,6 +33,7 @@
   width: 100%;
   border-radius: 10px;
   margin: 5px 0px;
+
 }
 
 /****************************************** BUTTONS IN SIDEBAR ***********************************************/
@@ -63,7 +64,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #323232;
+
   letter-spacing: 1px;
 }
 
@@ -125,12 +126,16 @@
 .info .name {
   font-size: 35px;
   text-align: center;
-  
+  font-size: 25px;
+ letter-spacing: 4px;
+ text-transform: uppercase;
 }
 /***********************************************SKILLS INSIDE INFO CONTAINER**************************/
 .info .subtitle-skills {
   text-align: center;
- 
+ font-size: 25px;
+ letter-spacing: 4px;
+ text-transform: uppercase;
 }
 /***********************************************SOCIAL LINKS INSIDE INFO CONTAINER**************************/
 .info .social .links {
@@ -176,6 +181,9 @@
   font-size: 20px;
   color: #323232;
   transition: all 0.3s linear;
+  letter-spacing: 4px;
+  text-overflow: clip;
+  text-transform: uppercase;
 }
 /*********************************HOVER****************************/
 
@@ -184,7 +192,6 @@
 }
 
 .info .buttons .button:hover{
- border: #85d17b solid 2px;
  opacity: 1;
 }
 

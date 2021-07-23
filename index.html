@@ -51,44 +51,44 @@
         <nav class="navbar">
           <ul class="navbar-links">
             <li class="navbar-link">
-              <button class="navbar-button" onclick="showTab('about-me')">
-                <!-- Attribute onclick used for java script -->
+               <!-- Attribute onclick used for java script -->
+              <a class="navbar-button" href="#about-me" onclick="showTab('about-me')">            
                 <span class="icon-link"
                   ><i class="fas fa-user-circle"></i
                 ></span>
                 <span class="nav-header">About Me</span>
-              </button>
+              </a>
             </li>
             <li class="navbar-link">
-              <button class="navbar-button" onclick="showTab('work-education')">
+              <a class="navbar-button" href="#work-education" onclick="showTab('work-education')">
                 <span class="icon-link"><i class="fas fa-university"></i></span>
                 <span class="nav-header">Resume</span>
-              </button>
+              </a>
             </li>
             <li class="navbar-link">
-              <button class="navbar-button" onclick="showTab('skills')">
+              <a href="#skills" class="navbar-button" onclick="showTab('skills')">
                 <span class="icon-link"><i class="fas fa-tools"></i></span>
                 <span class="nav-header">Skills</span>
-              </button>
+              </a>
             </li>
             <li class="navbar-link">
-              <button class="navbar-button" onclick="showTab('projects')">
+              <a class="navbar-button" href="#projects" onclick="showTab('projects')">
                 <span class="icon-link"><i class="fas fa-project-diagram"></i></span>
                 <span class="nav-header">Projects</span>
-              </button>
+              </a>
             </li>
             <li class="navbar-link">
-              <button class="navbar-button" onclick="showTab('testimonials')">
+              <a class="navbar-button" href="#testimonials" onclick="showTab('testimonials')">
                 <span class="icon-link"><i class="fas fa-users"></i></span>
                 <span class="nav-header">Testimonial</span>
-              </button>
+              </a>
             </li>
             <li class="navbar-link">
-              <button class="navbar-button" onclick="showTab('contact-me')">
+              <a class="navbar-button" href="#contact-me" onclick="showTab('contact-me')">
                 <span class="icon-link"><i class="fas fa-address-book"></i
                 ></span>
                 <span class="nav-header">Contact</span>
-              </button>
+              </a>
             </li>
           </ul>
         </nav>
@@ -125,15 +125,13 @@
             <div class="buttons">
               <!-- Download CV - Downloads CV File -->
               <button class="button">
-                <a href="#" class="link"
-                  ><span class="text">Download CV</span></a
-                >
+                <a href="./Gideon Daniels - CV - Update.pdf" class="link"  download>
+                  <span class="text">Download CV</span></a>
               </button>
               <!-- Contact Me Buttons - Opens Form -->
               <button class="button">
-                <a href="#contact-me" class="link"
-                  ><span class="text">Contact Me</span></a
-                >
+                <a href="#contact-me" onclick="showTab('contact-me')" class="link">
+                  <span class="text">Contact Me</span></a>
               </button>
             </div>
           </div>
@@ -442,142 +440,13 @@
             <h2 class="heading">Project</h2>
             <!-- Navbar for projects -->
             <div class="projects-navbar-container">
-              <button class="project-filter" onclick="fileterCards('All')">All</button>
-              <button class="project-filter" onclick="fileterCards('HTML/CSS')">HTML/CSS</button>
-              <button class="project-filter" onclick="fileterCards('Python')">Python</button>
-              <button class="project-filter" onclick="fileterCards('Javascript')">Javascript</button>
+              <button class="project-filter" onclick="filterCards('All')">All</button>
+              <button class="project-filter" onclick="filterCards('HTML/CSS')">HTML/CSS</button>
+              <button class="project-filter" onclick="filterCards('Python')">Python</button>
+              <button class="project-filter" onclick="filterCards('Javascript')">Javascript</button>
             </div>
             <!-- Projects-cards-container -->
             <div class="project-cards-container">
-
-              <!-- Project Card 1 -->
-              <div class="project-card card-1">
-                <div class="card-image">
-                  <img
-                    src="./images/Screenshot from 2021-05-04 12-00-59.png"
-                    alt="card-image-1"
-                  />
-                </div>
-                <div class="card-container">
-                  <h2 class="heading">Contact Form</h2>
-                  <div class="card-details">
-                    <!-- <p class="card-description">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Similique asperiores maxime officiis hic obcaecati expedita
-                      in ab dolorum incidunt perspiciatis mollitia neque quos
-                      animi, perferendis culpa magnam magni quae adipisci?
-                    </p> -->
-                  </div>
-                  <div class="buttons">
-                    <button class="button live">
-                      <a href="https://hopeful-yalow-dab42a.netlify.app/">Live</a>
-                    </button>
-                    <button class="button github">
-                      <a href="https://github.com/Gideon-Daniels/Contact_Form.git"
-                        >Github
-                      </a>
-                    </button>
-                    <br>
-                  </div>
-                </div>           
-              </div>
-              <!-- Project Card 2 -->
-              <div class="project-card card-2">
-                <div class="card-image">
-                  <img
-                    src="./images/Screenshot from 2021-05-04 11-59-14.png"
-                    alt="card-image-2"
-                  />
-                </div>
-                <div class="card-container">
-                  <h2 class="heading">Timeline</h2>
-                <div class="card-details"></div>
-                  <!-- <p class="card-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Similique asperiores maxime officiis hic obcaecati expedita
-                    in ab dolorum incidunt perspiciatis mollitia neque quos
-                    animi, perferendis culpa magnam magni quae adipisci?
-                  </p> -->
-                  <div class="buttons">
-                    <button class="button live">
-                      <a href="https://vibrant-spence-b6ee75.netlify.app/"
-                        >Live</a
-                      >
-                    </button>
-                    <button class="button github">
-                      <a href="https://github.com/Gideon-Daniels/Timeline.git"
-                        >Github</a
-                      >
-                    </button>
-                  </div>
-                </div>               
-                </div>
-                <!-- Project Card 3 -->
-              <div class="project-card card-3">
-                <div class="card-image">
-                  <img
-                    src="./images/Screenshot from 2021-05-14 10-57-09.png"
-                    alt="card-image-3"
-                  />
-                </div>
-                <div class="card-container">
-                   <h2 class="heading">Project Cards</h2>
-                  <div class="card-details">
-                    <!-- <p class="card-description">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Similique asperiores maxime officiis hic obcaecati expedita
-                      in ab dolorum incidunt perspiciatis mollitia neque quos
-                      animi, perferendis culpa magnam magni quae adipisci?
-                    </p> -->
-                  </div>
-                  <div class="buttons">
-                    <button class="button live">
-                      <a href="https://optimistic-kare-819acc.netlify.app/"
-                        >Live</a
-                      >
-                    </button>
-                    <button class="button github">
-                      <a
-                        href="https://github.com/Gideon-Daniels/Project-Cards.git"
-                        >Github</a
-                      >
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project Card 4 -->
-              <div class="project-card card-4">
-                
-                <div class="card-image">
-                  <img
-                    src="./images/Screenshot from 2021-05-04 11-55-48.png"
-                    alt="card-image-4"
-                  />
-                </div>
-                <div class="card-container">
-                  <h2 class="heading">Contact Form</h2>
-                  <div class="card-details">
-                    <!-- <p class="card-description">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Similique asperiores maxime officiis hic obcaecati expedita
-                      in ab dolorum incidunt perspiciatis mollitia neque quos
-                      animi, perferendis culpa magnam magni quae adipisci?
-                    </p> -->
-                  </div>
-                  <div class="buttons">
-                    <button class="button live">
-                      <a href="https://dreamy-kirch-045081.netlify.app/">Live</a>
-                    </button>
-                    <button class="button github">
-                      <a
-                        href="https://github.com/Gideon-Daniels/Testimonial-Slide.git"
-                        >Github</a
-                      >
-                    </button>
-                  </div>
-                </div>      
-              </div>
             </div>
               </div>             
              <!-- Contact Form -->
@@ -702,4 +571,3 @@
     <!-- -----------------------------button on click script------------------------------- -->
     <script src="./scripts/index.js"></script>
   </body>
-</html>
