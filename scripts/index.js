@@ -29,7 +29,7 @@ let projects = [
     imgAlt: "Timeline",
     title:  "Timeline",
     techStack: "HTML/CSS",
-    description: "A basic contact form that allows the user to contact me for any querries .",
+    description: "This time describes my most memorable times .It is one of many projects I have had fun with and still improving on.",
     githubURL: "https://vibrant-spence-b6ee75.netlify.app/",
     liveProjectURL: "https://github.com/Gideon-Daniels/Timeline.git"
   },
@@ -38,7 +38,7 @@ let projects = [
     imgAlt: "Project Cards",
     title:  "Project Cards",
     techStack: "HTML/CSS",
-    description: "A basic contact form that allows the user to contact me for any querries .",
+    description: "A basic project cards project with that entails my early projects that I started doing on my journey to become a website developer .",
     githubURL: "https://github.com/Gideon-Daniels/Project-Cards.git",
     liveProjectURL: "https://optimistic-kare-819acc.netlify.app/"
   },
@@ -47,18 +47,54 @@ let projects = [
     imgAlt: "Testimonials",
     title:  "Testimonials",
     techStack: "HTML/CSS",
-    description: "A basic contact form that allows the user to contact me for any querries .",
+    description: "My first testimonial slider with introduction of owl carousel. My peers and lecturers describes what kind of person I am and what it is like to work with me. ",
     githubURL: "https://github.com/Gideon-Daniels/Testimonial-Slide.git",
     liveProjectURL: "https://dreamy-kirch-045081.netlify.app/"
   },
   {
-    imgURL: "../images/Screenshot from 2021-05-04 12-00-59.png",
-    imgAlt: "Contact Form",
-    title:  "Contact Form",
+    imgURL: "/images/lottery-app-image-one-min.png",
+    imgAlt: "Lotter App",
+    title:  "Lotter App",
     techStack: "Python",
-    description: "A basic contact form that allows the user to contact me for any querries .",
-    githubURL: "https://hopeful-yalow-dab42a.netlify.app/",
-    liveProjectURL: "https://github.com/Gideon-Daniels/Contact_Form.git"
+    description: "A lotter app that allows you to register and participate in lotter draws .When you become successful in your attempt to guess the winning numbers , you are prompt to give your banking details and convert your earnings.",
+    githubURL: "https://github.com/Gideon-Daniels/Lottery-Challenge-EOMP.git",
+    liveProjectURL: ""
+  },
+  {
+    imgURL: "/images/weather-app-min.png",
+    imgAlt: "Weather App",
+    title:  "Weather App",
+    techStack: "Python",
+    description: "A basic weather app. It fetches data from a weather-app-api and based on the city input it then returns the cities weather conditions.",
+    githubURL: "https://github.com/Gideon-Daniels/Weather-App.git",
+    liveProjectURL: ""
+  },
+  {
+    imgURL: "/images/Lifechoices-database-image-one-min.png",
+    imgAlt: "python database",
+    title:  "Lifechoices Database",
+    techStack: "Python",
+    description: "A database app build in python using tkinter and mysql database. ",
+    githubURL: "https://github.com/Gideon-Daniels/MySQL_Python_EOMP.git",
+    liveProjectURL: ""
+  },
+  {
+    imgURL: "/images/calculator-min.png",
+    imgAlt: "Calculator",
+    title:  "Basic Calculator",
+    techStack: "Javascript",
+    description: "A basic calculator for doing basic operations like adding, subtracting, dividing and multiplying. ",
+    githubURL: "https://github.com/Gideon-Daniels/javascript-simple_calculator.git",
+    liveProjectURL: "https://amazing-nightingale-479fec.netlify.app/"
+  },
+  {
+    imgURL: "/images/pokemon-api-min.png",
+    imgAlt: "Pokemon-api",
+    title:  "Pokemon API",
+    techStack: "Javascript",
+    description: "Data is being fetched from the pokemon api. It is then being used to create this awesome pokemon api project. ",
+    githubURL: "https://github.com/Gideon-Daniels/JS-Pokedex.git",
+    liveProjectURL: "https://practical-hopper-9e04d2.netlify.app/"
   },
 ]
 
@@ -103,7 +139,7 @@ renderCards();
 // 4.Display cards when they are selected and hides the rest
 function filterCards(category){
   let cards = document.getElementsByClassName("project-card");
-  
+
   if (category === "All") {
     for (card of cards) {
       card.style.display = "block";
@@ -119,7 +155,7 @@ function filterCards(category){
   let selectedCards = document.querySelectorAll(`[techStack='${category}']`);
   console.log(selectedCards)
   for (card of selectedCards){
-    card.style.display = "block" ;
+    card.style.display = "flex" ;
   }
 }
 

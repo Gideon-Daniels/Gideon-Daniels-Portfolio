@@ -9,10 +9,22 @@ body {
   font-family: "Poppings", sans-serif;
   /* font-size: 1rem; */
   color: #50a3a2;
+  /* background-color: #50a3a2; */
   background: #50a3a2;
-  background: -webkit-linear-gradient(top left, #50a3a2 0%, #78cc6d 100%);
-  background: linear-gradient(to bottom right, #50a3a2 0%, #78cc6d 100%);
+  background: -webkit-linear-gradient(top left, #50a3a2 0%, #323232 100%);
+  background: linear-gradient(to bottom right, #50a3a2 0%, #323232 100%);
 }
+
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #85d17b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:#50a3a2;/*Gives background color to the scrollbar*/
+  border-radius: 2px;
+  outline: #50a3a2 2px solid;
+  }
 
 .heading {
   text-transform: uppercase;
@@ -37,3 +49,4 @@ button:hover {
   cursor: pointer;
 
 }
+
