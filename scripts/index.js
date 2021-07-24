@@ -85,12 +85,13 @@ function createdCard(card){
                 </div>           
   </div>
   `;
-  return createdCard
+  return createdCard;
 }
 
 // 3. Loops through all cards and displays it on screen
 function renderCards(){
   let projectContainer = document.querySelector(".project-cards-container");
+  
   for(project of projects){
     let card = createdCard(project);
     projectContainer.innerHTML += card;
@@ -102,17 +103,24 @@ renderCards();
 // 4.Display cards when they are selected and hides the rest
 function filterCards(category){
   let cards = document.getElementsByClassName("project-card");
-
-  for(card in cards){
-    console.log(card);
-    // card.style.display = "none";
+  
+  if (category === "All") {
+    for (card of cards) {
+      card.style.display = "block";
+    }
+    return;
   }
 
-  // let selectedCards = document.querySelectorAll(`[techStack='${category}']`);
+  for(card of cards){
+    console.log(card);
+    card.style.display = "none";
+  }
 
-  // for (card of selectedCards){
-  //   card.style.display = "none"
-  // }
+  let selectedCards = document.querySelectorAll(`[techStack='${category}']`);
+  console.log(selectedCards)
+  for (card of selectedCards){
+    card.style.display = "block" ;
+  }
 }
 
 
