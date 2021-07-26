@@ -58,7 +58,7 @@ let projects = [
     techStack: "Python",
     description: "A lotter app that allows you to register and participate in lotter draws .When you become successful in your attempt to guess the winning numbers , you are prompt to give your banking details and convert your earnings.",
     githubURL: "https://github.com/Gideon-Daniels/Lottery-Challenge-EOMP.git",
-    liveProjectURL: "https://replit.com/@GideonDaniels/Lottery-Challenge-EOMP-2#main.py"
+    liveProjectURL: "https://replit.com/@GideonDaniels/Lottery-Challenge-EOMP-2#login.py"
   },
   {
     imgURL: "/images/weather-app-min.png",
