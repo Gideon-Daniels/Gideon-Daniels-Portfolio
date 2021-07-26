@@ -58,7 +58,7 @@ let projects = [
     techStack: "Python",
     description: "A lotter app that allows you to register and participate in lotter draws .When you become successful in your attempt to guess the winning numbers , you are prompt to give your banking details and convert your earnings.",
     githubURL: "https://github.com/Gideon-Daniels/Lottery-Challenge-EOMP.git",
-    liveProjectURL: ""
+    liveProjectURL: "https://replit.com/@GideonDaniels/Lottery-Challenge-EOMP-2#main.py"
   },
   {
     imgURL: "/images/weather-app-min.png",
@@ -67,7 +67,7 @@ let projects = [
     techStack: "Python",
     description: "A basic weather app. It fetches data from a weather-app-api and based on the city input it then returns the cities weather conditions.",
     githubURL: "https://github.com/Gideon-Daniels/Weather-App.git",
-    liveProjectURL: ""
+    liveProjectURL: "https://replit.com/@GideonDaniels/Ticket-Sales"
   },
   {
     imgURL: "/images/Lifechoices-database-image-one-min.png",
@@ -76,7 +76,7 @@ let projects = [
     techStack: "Python",
     description: "A database app build in python using tkinter and mysql database. ",
     githubURL: "https://github.com/Gideon-Daniels/MySQL_Python_EOMP.git",
-    liveProjectURL: ""
+    liveProjectURL: "https://replit.com/@GideonDaniels/MySQLPythonEOMP-2"
   },
   {
     imgURL: "/images/calculator-min.png",
