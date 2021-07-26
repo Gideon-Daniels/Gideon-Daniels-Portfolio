@@ -112,7 +112,7 @@ function createdCard(card){
                   </div>
                   <div class="buttons">
                     <button class="button live">
-                      <a href="${card.liveProjectURL}">Live</a>
+                      <a href="${card.liveProjectURL}" target="_blank">Live</a>
                     </button>
                     <button class="button github">
                       <a href="${card.githubURL}">Github</a>
