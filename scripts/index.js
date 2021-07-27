@@ -69,15 +69,7 @@ let projects = [
     githubURL: "https://github.com/Gideon-Daniels/Weather-App.git",
     liveProjectURL: "https://replit.com/@GideonDaniels/Ticket-Sales"
   },
-  {
-    imgURL: "/images/Lifechoices-database-image-one-min.png",
-    imgAlt: "python database",
-    title:  "Lifechoices Database",
-    techStack: "Python",
-    description: "A database app build in python using tkinter and mysql database. ",
-    githubURL: "https://github.com/Gideon-Daniels/MySQL_Python_EOMP.git",
-    liveProjectURL: "https://replit.com/@GideonDaniels/MySQLPythonEOMP-2"
-  },
+  
   {
     imgURL: "/images/calculator-min.png",
     imgAlt: "Calculator",
@@ -115,7 +107,7 @@ function createdCard(card){
                       <a href="${card.liveProjectURL}" target="_blank">Live</a>
                     </button>
                     <button class="button github">
-                      <a href="${card.githubURL}">Github</a>
+                      <a href="${card.githubURL}" target="_blank">Github</a>
                     </button>
                   </div>
                 </div>           
