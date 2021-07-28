@@ -346,4 +346,13 @@ body{
   }
   
 }
+@media only screen and (max-width: 410px) {
+  .info .buttons .button .text {
+    font-size: 8px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+  }
+
+
+}
 /*******************************************SCREEN SIZE 1200PX**************************************/
