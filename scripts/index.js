@@ -67,7 +67,7 @@ let projects = [
     techStack: "Python",
     description: "A basic weather app. It fetches data from a weather-app-api and based on the city input it then returns the cities weather conditions.",
     githubURL: "https://github.com/Gideon-Daniels/Weather-App.git",
-    liveProjectURL: "https://replit.com/@GideonDaniels/Ticket-Sales"
+    liveProjectURL: "https://replit.com/@GideonDaniels/Weather-App#main.py"
   },
   
   {
