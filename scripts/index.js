@@ -21,8 +21,8 @@ let projects = [
     title:  "Contact Form",
     techStack: "HTML/CSS",
     description: "A basic contact form that allows the user to contact me for any querries .",
-    githubURL: "https://hopeful-yalow-dab42a.netlify.app/",
-    liveProjectURL: "https://github.com/Gideon-Daniels/Contact_Form.git"
+    githubURL: "https://github.com/Gideon-Daniels/Contact_Form.git",
+    liveProjectURL: "https://hopeful-yalow-dab42a.netlify.app/",
   },
   {
     imgURL: "/images/Screenshot from 2021-05-04 11-59-14.png",
@@ -30,8 +30,8 @@ let projects = [
     title:  "Timeline",
     techStack: "HTML/CSS",
     description: "This time describes my most memorable times .It is one of many projects I have had fun with and still improving on.",
-    githubURL: "https://vibrant-spence-b6ee75.netlify.app/",
-    liveProjectURL: "https://github.com/Gideon-Daniels/Timeline.git"
+    liveProjectURL: "https://vibrant-spence-b6ee75.netlify.app/",
+    githubURL: "https://github.com/Gideon-Daniels/Timeline.git"
   },
   {
     imgURL: "/images/Screenshot from 2021-05-14 10-57-09.png",

@@ -174,9 +174,15 @@
   border-radius: 5px;
 }
 
+.info .buttons .button a{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .info .buttons .button .text {
   position: relative;
-  height: 100%;
   width: 100%;
   font-size: 20px;
   color: #323232;
@@ -346,11 +352,10 @@ body{
   }
   
 }
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 430px) {
   .info .buttons .button .text {
-    font-size: 8px;
+    font-size: 13px;
     font-weight: bolder;
-    margin-bottom: 5px;
   }
 
 
