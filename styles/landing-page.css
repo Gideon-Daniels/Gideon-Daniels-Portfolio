@@ -54,7 +54,7 @@
   transition: all 0.3s linear;
 }
 /*****************NAVBAR HOVER***********************************/
-.navbar-button:hover {
+.navbar-button:hover{
   color: #85d17b;
   background-color: #50a3a2;
   border: #323232 solid 2px;
@@ -64,7 +64,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   letter-spacing: 1px;
 }
 
@@ -231,6 +230,7 @@
 #footer {
   position: absolute;
   bottom: 0;
+  left: 45%;
   color: white;
 }
 #footer i {
@@ -345,6 +345,7 @@ body{
   #footer{
     position: relative;
     bottom: 0;
+    left: 0;
     background-color: #323232;
     color: #50a3a2;
     display: flex;
