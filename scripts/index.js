@@ -10,6 +10,7 @@ function showTab(tabName) {
 }
 
 
+
 // Project cards
 
 // 1. CREATES AN ARRAY OF OBJECTS
@@ -61,7 +62,7 @@ let projects = [
   //   liveProjectURL: "https://replit.com/@GideonDaniels/Lottery-Challenge-EOMP-2#login.py"
   // },
   {
-    imgURL: "/images/weather-app-min.png",
+    imgURL: "/images/weather-app.png",
     imgAlt: "Weather App",
     title:  "Weather App",
     techStack: "Python",
@@ -71,7 +72,7 @@ let projects = [
   },
   
   {
-    imgURL: "/images/calculator-min.png",
+    imgURL: "/images/calculator.png",
     imgAlt: "Calculator",
     title:  "Basic Calculator",
     techStack: "Javascript",
@@ -80,7 +81,7 @@ let projects = [
     liveProjectURL: "https://amazing-nightingale-479fec.netlify.app/"
   },
   {
-    imgURL: "/images/pokemon-api-min.png",
+    imgURL: "/images/pokemon-api.png",
     imgAlt: "Pokemon-api",
     title:  "Pokemon API",
     techStack: "Javascript",
