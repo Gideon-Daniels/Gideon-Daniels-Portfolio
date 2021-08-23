@@ -16,6 +16,12 @@
   margin-bottom: 5px;
   padding: 5px 5px 5px;
   border-radius: 5px;
+ transition: all 0.5s linear;
+}
+
+#about-me:hover .heading {
+  box-shadow: 0px 3px 0px 0px #85d17b;
+  color: #85d17b;
 }
 
 
@@ -35,6 +41,11 @@
   text-align: center;
   border-radius: 2px;
   width: 100%;
+  transition: color 0.5s linear;
+}
+
+.left-bio-container:hover h2{
+  color: #85d17b;
 }
 
 .left-bio-container p{
