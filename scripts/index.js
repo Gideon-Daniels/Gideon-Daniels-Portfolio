@@ -30,7 +30,7 @@ let projects = [
     imgAlt: "Timeline",
     title:  "Timeline",
     techStack: "HTML/CSS",
-    description: "This time describes my most memorable times .It is one of many projects I have had fun with and still improving on.",
+    description: "This timeline describes my most memorable times .It is one of many projects I have had fun with and still improving on.",
     liveProjectURL: "https://vibrant-spence-b6ee75.netlify.app/",
     githubURL: "https://github.com/Gideon-Daniels/Timeline.git"
   },
