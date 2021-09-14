@@ -184,12 +184,11 @@
 .info .buttons .button .text {
   position: relative;
   width: 100%;
-  font-size: 20px;
+  font-size: 18px;
   color: #323232;
   transition: all 0.3s linear;
-  letter-spacing: 4px;
-  text-overflow: clip;
   text-transform: uppercase;
+  text-align: center;
 }
 /*********************************HOVER****************************/
 
@@ -337,12 +336,11 @@ body{
   #main-content-container .left-section{
     height:100vh;
   }
-  #main-content-container .left-section .image{
-    height: 200%;
-  }
+
   #testimonials{
     height: 100vh !important;
   }
+
   #footer{
     position: relative;
     bottom: 0;
