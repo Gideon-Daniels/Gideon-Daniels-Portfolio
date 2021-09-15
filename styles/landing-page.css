@@ -7,17 +7,21 @@
   height: 100vh;
   width: 100%;
   padding: 5% 12%;
+
+  
 }
 /***************************** SIDEBAR CONTAINER ******************************************************/
 #sidebar-navbar-container {
   height: 100%;
   border-radius: 5px;
+  
 }
 
 /********************************* NAVBAR ******************************************************/
 .navbar {
   height: 100%;
   border-radius: 5px;
+  
 }
 
 .navbar-links {
@@ -26,6 +30,7 @@
   align-items: center;
   height: 100%;
   border-radius: 5px;
+  
 }
 
 .navbar-links .navbar-link {
@@ -33,7 +38,7 @@
   width: 100%;
   border-radius: 10px;
   margin: 5px 0px;
-
+  box-shadow: 0px 0px 2px 2px  #323232;
 }
 
 /****************************************** BUTTONS IN SIDEBAR ***********************************************/
@@ -56,8 +61,8 @@
 /*****************NAVBAR HOVER***********************************/
 .navbar-button:hover{
   color: #85d17b;
-  background-color: #50a3a2;
-  border: #323232 solid 2px;
+  /* background-color: #50a3a2; */
+  /* border: #323232 solid 2px; */
 }
 /* *****************************************LINKS INSIDE BUTTONS****************************************/
 .navbar-links .navbar-link a {
@@ -129,9 +134,11 @@
   font-size: 25px;
  letter-spacing: 4px;
  text-transform: uppercase;
+ text-shadow: 1px 1px 1px #85d17b;
 }
 .txt{
   font-size: 18px;
+  text-shadow: 1px 1px 1px #85d17b;
 }
 .txt-type > .txt{
   border-right: 0.2rem solid #50a3a2; 
@@ -142,6 +149,7 @@
  font-size: 25px;
  letter-spacing: 4px;
  text-transform: uppercase;
+ text-shadow: 1px 1px 1px #85d17b;
 }
 /***********************************************SOCIAL LINKS INSIDE INFO CONTAINER**************************/
 .info .social .links {
