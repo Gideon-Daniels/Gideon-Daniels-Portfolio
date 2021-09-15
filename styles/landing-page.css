@@ -130,6 +130,12 @@
  letter-spacing: 4px;
  text-transform: uppercase;
 }
+.txt{
+  font-size: 18px;
+}
+.txt-type > .txt{
+  border-right: 0.2rem solid #50a3a2; 
+}
 /***********************************************SKILLS INSIDE INFO CONTAINER**************************/
 .info .subtitle-skills {
   text-align: center;
