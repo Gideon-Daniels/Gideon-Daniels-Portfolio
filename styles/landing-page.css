@@ -38,7 +38,7 @@
   width: 100%;
   border-radius: 10px;
   margin: 5px 0px;
-  box-shadow: 0px 0px 2px 2px  #323232;
+  /* box-shadow: 0px 0px 2px 2px  #323232; */
 }
 
 /****************************************** BUTTONS IN SIDEBAR ***********************************************/
@@ -134,11 +134,12 @@
   font-size: 25px;
  letter-spacing: 4px;
  text-transform: uppercase;
- text-shadow: 1px 1px 1px #85d17b;
+ font-weight: 300;
+ 
 }
 .txt{
-  font-size: 18px;
-  text-shadow: 1px 1px 1px #85d17b;
+  font-size:20px;
+  font-weight: 300;
 }
 .txt-type > .txt{
   border-right: 0.2rem solid #50a3a2; 
@@ -149,7 +150,6 @@
  font-size: 25px;
  letter-spacing: 4px;
  text-transform: uppercase;
- text-shadow: 1px 1px 1px #85d17b;
 }
 /***********************************************SOCIAL LINKS INSIDE INFO CONTAINER**************************/
 .info .social .links {
@@ -251,8 +251,6 @@
   color: #50a3a2;
 }
 /**********************************************MOBILE RESPONSIVENESS*****************************/
-/*TODO: Complete Mobile responsivenes for landing section */
-/* TODO: Set Navigation Bar visible for all sizes */
 /*******************************************SCREEN SIZE 1200PX**************************************/
 @media only screen and (max-width: 1200px) {
   #main-landing-page {
