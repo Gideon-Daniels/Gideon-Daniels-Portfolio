@@ -17,7 +17,7 @@ function showTab(tabName) {
 
 let projects = [
   {
-    imgURL: "/images/Screenshot from 2021-05-04 12-00-59.png",
+    imgURL: "/images/contat form pic.PNG",
     imgAlt: "Contact Form",
     title:  "Contact Form",
     techStack: "HTML/CSS",
