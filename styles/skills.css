@@ -85,6 +85,7 @@ opacity: 1;
   border-radius: 5px;
   margin-right: 5px;
   transition: all 0.3s linear;
+  margin-bottom: 5px;
 }
 
 .technical-skill h3 {
@@ -93,13 +94,16 @@ opacity: 1;
   color: #323232;
   background-color: #50a3a2;
   /* font-size: 20px; */
+  word-break: break-all;
   transition: all 0.3s linear;
 }
 
- .technical-skill img {
+ .technical-skill i {
   padding: 25px;
+  font-size: 85px;
   object-fit: cover;
   opacity: 0.3;
+  align-self: center;
   transition: all 0.3s linear;
 }
 
@@ -110,6 +114,10 @@ opacity: 1;
  #skills .technical-skills-container .technical-skill:hover .skill-heading{
    background-color: #85d17b;
  }
- #skills .technical-skills-container .technical-skill:hover img {
+ #skills .technical-skills-container .technical-skill:hover i {
+  color: #85d17b;
+  text-shadow: 0px 0px 10px #85d17b;
+              /* 0px 0px 10px #50a3a2,
+              0px 0px 10px #50a3a2; */
  opacity: 1;
  }

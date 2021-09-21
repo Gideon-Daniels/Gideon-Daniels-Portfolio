@@ -170,6 +170,7 @@
 /**************************** HOVER ***********************************/
 .info .social .links .link a:hover {
   color: #85d17b;
+  text-shadow: 0px 0px 40px #85d17b;
 }
 /***********************************************BUTTONS INSIDE INFO CONTAINER**************************/
 .info .buttons {
