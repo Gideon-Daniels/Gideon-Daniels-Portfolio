@@ -141,6 +141,7 @@
 
 .project-card .buttons .button:hover a {
   text-shadow: 0px 0px 20px #85d17b;
+  
   color: #85d17b;
   opacity: 1;
 }
