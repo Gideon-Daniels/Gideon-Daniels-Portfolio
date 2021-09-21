@@ -30,7 +30,7 @@
   width: 45%;
   height: 100%;
   background: #323232;
-  padding: 5px 3px;
+  padding: 5px 5px;
   border-radius: 5px;
   border: #323232 2px solid;
   margin-bottom: 25px;
@@ -40,7 +40,7 @@
   justify-content: center;
   align-items: center;
   opacity: 0.3;
-  word-break: break-word;
+  word-break: break-all;
   transition: all 0.5s linear;
 }
 
@@ -55,6 +55,8 @@
   color: #85d17b;
 }
 #contact-me .contact-form-navbar .navbar-details .details:hover {
+  text-shadow: 0px 0px 20px #85d17b;
+  box-shadow: 0px 0px 20px #85d17b;
   background-color: #323232;
   color: #85d17b;
   opacity: 1;
@@ -123,8 +125,9 @@
 opacity: 1;
 }
 .form .buttons .button:hover {
+  text-shadow: 0px 0px 20px #85d17b;
+  box-shadow: 0px 0px 20px #50a3a2;
   color: #85d17b;
-  border:2px solid #85d17b;
   opacity: 1;
 }
 

@@ -5,6 +5,7 @@
   margin-bottom: 5px;
   margin-top: 5px;
   padding: 15px 5%;
+  
 }
 #projects .heading{
   text-align: center;
@@ -40,6 +41,8 @@
 
 #projects .projects-navbar-container .project-filter:hover{
   color: #85d17b;
+  text-shadow: 0px 0px 20px #85d17b;
+  box-shadow: 0px 0px 20px #50a3a2;
 }
 
 
@@ -49,6 +52,7 @@
   flex-wrap: wrap;
   height: 100%;
   gap: 2px;
+
 }
 
 #projects .project-cards-container .project-card {
@@ -59,7 +63,7 @@
   color: #323232;
   margin-bottom: 5px;
   border-radius: 5px;
-  
+ 
 }
 
 .project-cards-container .project-card .card-image {
@@ -132,9 +136,11 @@
  opacity: 1;
  border-color: #85d17b;
  color: #85d17b;
+ box-shadow: 0px 0px 20px #50a3a2;
 }
 
 .project-card .buttons .button:hover a {
+  text-shadow: 0px 0px 20px #85d17b;
   color: #85d17b;
   opacity: 1;
 }
