@@ -13,21 +13,22 @@
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
-  padding: 5% 17%;
   width: 100%;
 }
 
 .testimonial .tesitimonial-image {
   height: 50%;
+ 
 }
 
 .tesitimonial-image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 10px;
-
+ 
 }
+
+
 
 .testimonial .testimonial-details .heading {
   text-decoration: none;
