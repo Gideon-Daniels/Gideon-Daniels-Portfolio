@@ -85,7 +85,7 @@ let projects = [
     imgAlt: "Pokemon-api",
     title:  "Pokemon API",
     techStack: "Javascript",
-    description: "Data is being fetched from the pokemon api. It is then being used to create this awesome pokemon api project. ",
+    description: "Data is being fetched from the pokemon API. It is then being used to create this awesome pokemon api project. ",
     githubURL: "https://github.com/Gideon-Daniels/JS-Pokedex.git",
     liveProjectURL: "https://practical-hopper-9e04d2.netlify.app/"
   },

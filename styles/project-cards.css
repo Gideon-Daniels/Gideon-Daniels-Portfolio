@@ -50,7 +50,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  height: 100%;
+  /* height: 100%; */
   gap: 2px;
 
 }
@@ -58,20 +58,34 @@
 #projects .project-cards-container .project-card {
   display: flex;
   flex-direction: column;
-  padding: 15px 15px;
-  border: 2px solid #50a3a2;
   color: #323232;
-  margin-bottom: 5px;
-  border-radius: 5px;
- 
+  /* margin-bottom: 5px; */
+  border-radius: 8px;
+  width: 100%;
+  transform: scale(0.8);
+  transition: all 0.2s linear;
+ position: relative;
+
+}
+#projects .project-cards-container .project-card:hover .card-container{
+  top: 0;
+  opacity: 1;
+}
+
+#projects .project-cards-container .project-card:hover img{
+  opacity: 0.2;
+  
+}
+
+#projects .project-cards-container .project-card:hover{
+  border: #85d17b solid 1px;
+  transform: scale(1);
 }
 
 .project-cards-container .project-card .card-image {
   width: 100%;
+  height: 100%;
   border-radius: 5px;
-  margin: 5px;
-  padding: 5px;
-  opacity: 0.3;
   transition: all 0.3s linear;
 }
 
@@ -89,6 +103,13 @@
  justify-content: center;
  align-items: center;
  gap:3px;
+ padding: 0px 20px;
+ position: absolute;
+ top: 0;
+ left:0;
+ opacity: 0;
+ height: 100%;
+ transition: all 0.5s linear;
 }
 
 
@@ -98,27 +119,27 @@
   letter-spacing: 2px;
   line-height: 2px;
  transition: all 0.5s linear;
+
 }
 
 
 .project-card .card-container .buttons{
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  height: 100%;
+  
   transition: all 0.3s linear;
 }
 
 
 
 .project-card .card-container .buttons .button {
-  width: 50%;
-  height: 100%;
+  /* width: 50%; */
+  /* height: 100%; */
   background-color: #50a3a2;
   border-radius: 5px;
   outline: none;
   margin-right: 5px;
-  opacity: 0.3;
+  opacity: 1;
   transition: all 0.3s linear;
 }
 .project-card .card-container .buttons .button a{
