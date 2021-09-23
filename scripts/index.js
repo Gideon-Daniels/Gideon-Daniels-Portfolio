@@ -35,7 +35,7 @@ let projects = [
     githubURL: "https://github.com/Gideon-Daniels/Timeline.git"
   },
   {
-    imgURL: "/images/Screenshot from 2021-05-14 10-57-09.png",
+    imgURL: "/images/Project Cards.PNG",
     imgAlt: "Project Cards",
     title:  "Project Cards",
     techStack: "HTML/CSS",
