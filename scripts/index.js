@@ -44,7 +44,7 @@ let projects = [
     liveProjectURL: "https://optimistic-kare-819acc.netlify.app/"
   },
   {
-    imgURL: "/images/Screenshot from 2021-05-04 11-55-48.png",
+    imgURL: "/images/testimonial.PNG",
     imgAlt: "Testimonials",
     title:  "Testimonials",
     techStack: "HTML/CSS",
