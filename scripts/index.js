@@ -89,6 +89,15 @@ let projects = [
     githubURL: "https://github.com/Gideon-Daniels/JS-Pokedex.git",
     liveProjectURL: "https://practical-hopper-9e04d2.netlify.app/"
   },
+  {
+    imgURL: "/images/social-media-platform.PNG",
+    imgAlt: "Social-Media-Platform",
+    title:  "Social Media Platform",
+    techStack: "Fullstack",
+    description: "This is my final capstone project . This is a social media platform , the user can create an account and add a post.This web app was build with python, flask, sqlite, javascript,css and html. ",
+    githubURL: "https://github.com/Gideon-Daniels/Social-Media-Platform-Frontend",
+    liveProjectURL: "https://social-media-platform.netlify.app/"
+  },
 ]
 
 // 2. Creates the card based on the properties set from (1) (factory function)
@@ -121,7 +130,7 @@ function createdCard(card){
 function renderCards(){
   let projectContainer = document.querySelector(".project-cards-container");
   
-  for(project of projects){
+  for(project of projects.reverse()){
     let card = createdCard(project);
     projectContainer.innerHTML += card;
   }
