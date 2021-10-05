@@ -50,7 +50,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  /* height: 100%; */
+
   gap: 2px;
   
 }
@@ -70,7 +70,6 @@
 
 #projects .project-cards-container .project-card:hover img{
   opacity: 0.2;
- 
 }
 
 #projects .project-cards-container .project-card:hover{
@@ -79,9 +78,9 @@
 }
 
 .project-cards-container .project-card .card-image {
-  /* width: 100%;
-  height: 100%; */
   border-radius: 5px;
+  height: 200px;
+
   transition: all 0.3s linear;
 }
 
@@ -93,37 +92,46 @@
   border-radius: 5px;
 }
 
-.project-card .card-container {
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- gap:2px;
- padding: 0px 20px;
- transition: all 0.5s linear;
-}
-
-
-.card-details{
-  color: #85d17b;
-  text-align: center;
-  letter-spacing: 2px;
-  line-height: 2px;
+.project-card .card-details{
+  position: absolute;
+  top: 0;
+  left: -100%;
+  opacity: 0;
   transition: all 0.5s linear;
 }
 
+.project-card:hover .card-details{
+  opacity: 1;
+  left: 0;
+}
 
-.project-card .card-container .buttons{
+.project-card .card-details p{
+  color: #50a3a2;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.project-card .buttons{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 30px;
+  left: -100%;
+  opacity: 0;
+  
   transition: all 0.3s linear;
+}
+
+.project-card:hover .buttons{
+  opacity: 1;
+  left: 0;
 }
 
 
 
-.project-card .card-container .buttons .button {
+.project-card  .buttons .button {
   background-color: #50a3a2;
   border-radius: 5px;
   outline: none;
@@ -131,7 +139,7 @@
   opacity: 1;
   transition: all 0.3s linear;
 }
-.project-card .card-container .buttons .button a{
+.project-card .buttons .button a{
   display: block;
   width: 100%;
 }
@@ -142,7 +150,7 @@
   opacity: 1;
 }
 
-.project-card .card-container .buttons .button:hover {
+.project-card  .buttons .button:hover {
  opacity: 1;
  border-color: #85d17b;
  color: #85d17b;
