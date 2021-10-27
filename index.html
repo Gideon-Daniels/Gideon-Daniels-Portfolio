@@ -43,7 +43,6 @@
     />
   </head>
   <body>
-   
     <!-- Landing Page / Main Page -->
     <div id="main-landing-page">
       <!-- sidebar and navbar container -->
@@ -247,7 +246,7 @@
             
           </div>
           <!-- ---------------------------------END OF ABOUT ME SECTION------------------------------------- -->
-          
+
           <!-- ------------------------------------Skills Section --------------------------------------------------->
           <div id="skills" class="main-content-sidebar">
             <!-- Soft Skills -->
@@ -400,7 +399,19 @@
             </div>
           </div>
           <!-- -------------------------------End Of Work and Education Section ----------------------------------------->
-
+          <div id="projects" class="main-content-sidebar">
+            <h2 class="heading">Project</h2>
+            <!-- Navbar for projects -->
+            <div class="projects-navbar-container">
+              <button class="project-filter" onclick="filterCards('All')">All</button>
+              <button class="project-filter" onclick="filterCards('HTML/CSS')">HTML/CSS</button>
+              <button class="project-filter" onclick="filterCards('Python')">Python</button>
+              <button class="project-filter" onclick="filterCards('Javascript')">Javascript</button>
+              <button class="project-filter" onclick="filterCards('Fullstack')">Fullstack</button>
+            </div>
+            <!-- Projects-cards-container -->
+            <div class="project-cards-container"></div>
+          </div>             
           <!-- ---------------------------------------Testimonials -------------------------------------------------------->
           <div id="testimonials" class="main-content-sidebar">
             <div class="owl-carousel">
@@ -419,8 +430,8 @@
                     He is an honest worker, very neat, hardworking and reliable.
                     He is quick to help in a situation.
                   </p>
-                </div> -->
-              </div>
+                </div>
+              </div> -->
               <div class="testimonial testimonial-2">
                 <div class="testimonial-image">
                   <img
@@ -504,23 +515,10 @@
               </div>
           </div>
           <!--------------------------------------End of Testimonials ----------------------------------------------------------->
-
-          <!------------------------------------------ Projects ----------------------------------------------------->
-          <div id="projects" class="main-content-sidebar">
-            <h2 class="heading">Project</h2>
-            <!-- Navbar for projects -->
-            <div class="projects-navbar-container">
-              <button class="project-filter" onclick="filterCards('All')">All</button>
-              <button class="project-filter" onclick="filterCards('HTML/CSS')">HTML/CSS</button>
-              <button class="project-filter" onclick="filterCards('Python')">Python</button>
-              <button class="project-filter" onclick="filterCards('Javascript')">Javascript</button>
-              <button class="project-filter" onclick="filterCards('Fullstack')">Fullstack</button>
-            </div>
-            <!-- Projects-cards-container -->
-            <div class="project-cards-container"></div>
-          </div>             
+        </div>
+           
            <!-- Contact Form -->
-          <div id="contact-me" class="main-content-sidebar">
+           <div id="contact-me" class="main-content-sidebar">
             <h2 class="heading">Contact Me</h2>
             <!-- Contact-Navigation Bar -->
             <div class="contact-form-navbar">
@@ -598,19 +596,20 @@
               </div>
             </form>
           </div>
-          <!-- End of Contact Form -->         
-          <!--------------------------------------------------- End of Projects -------------------------------------------------->
-        </div>
+
+          <!-- <div class="footer">
+
+            <p>
+              Made with <span><i class="fas fa-fire"></i></span> By Gideon Daniels
+            </p>
+          </div> -->
       <!-- button when clicked goes to the top of the screen -->
       <!-- <a href="#main">A</a> -->
-      <!-- Footer -->
-      <div id="footer">
-        <p>
-          Made with <span><i class="fas fa-fire"></i></span> By Gideon Daniels
-        </p>
-      </div>
       <!-- END Of Footer -->
     </div>
+    
+ 
+
     <!-- -------------------------END----------------------------- -->
     <!-- Script tags under here -->
     <!-- owl carousel scripts -->
