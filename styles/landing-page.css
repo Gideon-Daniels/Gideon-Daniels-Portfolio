@@ -7,21 +7,17 @@
   height: 100vh;
   width: 100%;
   padding: 5% 12%;
-
-  
 }
 /***************************** SIDEBAR CONTAINER ******************************************************/
 #sidebar-navbar-container {
   height: 100%;
   border-radius: 5px;
-  
 }
 
 /********************************* NAVBAR ******************************************************/
 .navbar {
   height: 100%;
   border-radius: 5px;
-  
 }
 
 .navbar-links {
@@ -30,7 +26,6 @@
   align-items: center;
   height: 100%;
   border-radius: 5px;
-  
 }
 
 .navbar-links .navbar-link {
@@ -59,12 +54,10 @@
   transition: all 0.3s linear;
 }
 /*****************NAVBAR HOVER***********************************/
-.navbar-button:hover{
+.navbar-button:hover {
   color: #85d17b;
   /* box-shadow: 0px 0px 20px #85d17b; */
-  text-shadow: 0px 0px 40px #85d17b,
-               0px 0px 20px #85d17b,
-               0px 0px 20px #85d17b;
+  text-shadow: 0px 0px 40px #85d17b, 0px 0px 20px #85d17b, 0px 0px 20px #85d17b;
   /* background-color: #50a3a2; */
   /* border: #323232 solid 2px; */
 }
@@ -106,7 +99,6 @@
   z-index: 200;
   border-radius: 10px;
   border-radius: 5px;
-
 }
 /***********************************************IMAGE INSIDE LEFT SECTION**************************/
 #main-content-container .left-section .image {
@@ -136,30 +128,47 @@
   font-size: 35px;
   text-align: center;
   font-size: 25px;
- letter-spacing: 4px;
- text-transform: uppercase;
- font-weight: 300;
- 
-}
-.txt{
-  font-size:20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
   font-weight: 300;
+  transition: all 0.2s linear;
 }
-.txt-type > .txt{
-  border-right: 0.2rem solid #50a3a2; 
+.txt {
+  font-size: 20px;
+  font-weight: 300;
+  transition: all 0.2s linear;
+}
+.info .name:hover {
+  color: #85d17b;
+  text-shadow: 0px 0px 40px #85d17b, 0px 0px 20px #85d17b, 0px 0px 20px #85d17b;
+}
+.txt-type:hover{
+  color: #85d17b;
+  text-shadow: 0px 0px 40px #85d17b, 0px 0px 20px #85d17b, 0px 0px 20px #85d17b;
+}
+.txt-type > .txt {
+  border-right: 0.2rem solid #50a3a2;
 }
 /***********************************************SKILLS INSIDE INFO CONTAINER**************************/
 .info .subtitle-skills {
   text-align: center;
- font-size: 25px;
- letter-spacing: 4px;
- text-transform: uppercase;
+  font-size: 25px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
+.subtitle-skills .tag{
+   transition: all 0.2s linear;
+}
+.subtitle-skills .tag:hover{
+  color: #85d17b;
+  text-shadow: 0px 0px 40px #85d17b, 0px 0px 20px #85d17b, 0px 0px 20px #85d17b;
+
+}
+
 /***********************************************SOCIAL LINKS INSIDE INFO CONTAINER**************************/
 .info .social .links {
   display: flex;
   justify-content: center;
-  
 }
 .info .social .links .link {
   padding: 5px;
@@ -183,17 +192,17 @@
   color: #50a3a2;
 }
 
-.info .buttons .button{
+.info .buttons .button {
   width: 50%;
   height: 100%;
-  background:#50a3a2;
+  background: #50a3a2;
   outline: none;
   border: none;
   transition: all 0.3s linear;
   border-radius: 5px;
 }
 
-.info .buttons .button a{
+.info .buttons .button a {
   height: 100%;
   display: flex;
   align-items: center;
@@ -213,11 +222,10 @@
 
 .info .buttons .button:hover .text {
   color: #85d17b;
-  text-shadow: 0px 0px 20px #85d17b,
-               0px 0px 20px #85d17b;
+  text-shadow: 0px 0px 20px #85d17b, 0px 0px 20px #85d17b;
 }
 
-.info .buttons .button:hover{
+.info .buttons .button:hover {
   box-shadow: 0px 0px 20px #50a3a2;
   opacity: 1;
 }
@@ -237,7 +245,7 @@
   opacity: 0;
   overflow: hidden;
   transition: all 0.4s linear;
- background: #323232;
+  background: #323232;
   height: 100%;
   width: 100%;
 }
@@ -253,7 +261,7 @@
   position: absolute;
   bottom: 0;
   left: 45%;
-  color: white;
+  color: #85d17b
 }
 #footer i {
   color: #50a3a2;
@@ -275,7 +283,7 @@
     /* position:sticky; */
   }
 
-  #sidebar-navbar-container .nav-header{
+  #sidebar-navbar-container .nav-header {
     display: none;
   }
 
@@ -322,55 +330,52 @@
 }
 /*******************************************SCREEN SIZE 650PX**************************************/
 @media only screen and (max-width: 800px) {
-body{
-  width: 100%;
-}
-#main-landing-page {
-  overflow-y: scroll;
-  scroll-behavior: smooth;
- height: 100%;
- width: 100%;
- padding: 0;
-}
+  body {
+    width: 100%;
+  }
+  #main-landing-page {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
   #sidebar-navbar-container {
     padding: 5px 10px;
-    position:fixed;
+    position: fixed;
     top: 0;
     height: 6vh;
     background-color: #323232;
     z-index: 1000;
-    
   }
 
   .main-content-sidebar {
     position: relative;
-    left:0;
+    left: 0;
     top: 0;
     opacity: 1;
     transition: all 0.4s linear;
     background: #323232;
     height: 94vh;
-    width: 100%;  
+    width: 100%;
   }
 
-  #main-content-container .left-section{
-    height:100vh;
+  #main-content-container .left-section {
+    height: 100vh;
   }
 
-  #testimonials{
+  #testimonials {
     height: 100vh !important;
   }
 
-  #footer{
+  #footer {
     position: relative;
     bottom: 0;
     left: 0;
-    background-color: #323232;
     color: #50a3a2;
     display: flex;
     justify-content: center;
   }
-  
 }
 @media only screen and (max-width: 430px) {
   .info .buttons .button .text {
@@ -378,5 +383,3 @@ body{
     font-weight: bolder;
   }
 }
-
-
