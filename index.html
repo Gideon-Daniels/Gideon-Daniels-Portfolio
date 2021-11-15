@@ -1,412 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Gideon Daniels Portfolio</title>
-<!-- CSS Primary Links -->
-<link rel="stylesheet" href="./styles/global.css" />
-<link rel="stylesheet" href="./styles/landing-page.css" />
-<link rel="stylesheet" href="./styles/navigation-bar.css" />
-<link rel="stylesheet" href="./styles/sidebar.css" />
-<link rel="stylesheet" href="./styles/about-me.css" />
-<link rel="stylesheet" href="./styles/skills.css" />
-<link rel="stylesheet" href="./styles/work-and-education.css" />
-<link rel="stylesheet" href="./styles/testimonials.css" />
-<link rel="stylesheet" href="./styles/project-cards.css" />
-<link rel="stylesheet" href="./styles/contact-me.css" />
-<!-- Secondary Links -->
-<!-- Font Awesome -->
-<script
-src="https://kit.fontawesome.com/a549f23a3b.js"
-crossorigin="anonymous"
-></script>
-<!-- ----------------------Owl Carousel Slider -->
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-crossorigin="anonymous"
-/>
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-crossorigin="anonymous"
-/>
-<!-- Font -->
-<link rel="preconnect" href="https://fonts.gstatic.com" />
-<link
-href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-rel="stylesheet"
-/>
-</head>
-<body>
-<!-- Landing Page / Main Page -->
-<div id="main-landing-page">
-<!-- sidebar and navbar container -->
-<div id="sidebar-navbar-container">
-<!-- Navigation Bar -->
-<nav class="navbar">
-<ul class="navbar-links">
-<li class="navbar-link">
-<!-- Attribute onclick used for java script -->
-<a class="navbar-button" href="#about-me" onclick="showTab('about-me')"> 
-<span class="icon-link"
-><i class="fas fa-user-circle"></i
-></span>
-<span class="nav-header">About Me</span>
-</a>
-</li>
-<li class="navbar-link">
-<a class="navbar-button" href="#work-education" onclick="showTab('work-education')">
-<span class="icon-link"><i class="fas fa-university"></i></span>
-<span class="nav-header">Resume</span>
-</a>
-</li>
-<li class="navbar-link">
-<a href="#skills" class="navbar-button" onclick="showTab('skills')">
-<span class="icon-link"><i class="fas fa-tools"></i></span>
-<span class="nav-header">Skills</span>
-</a>
-</li>
-<li class="navbar-link">
-<a class="navbar-button" href="#projects" onclick="showTab('projects')">
-<span class="icon-link"><i class="fas fa-project-diagram"></i></span>
-<span class="nav-header">Projects</span>
-</a>
-</li>
-<li class="navbar-link">
-<a class="navbar-button" href="#testimonials" onclick="showTab('testimonials')">
-<span class="icon-link"><i class="fas fa-users"></i></span>
-<span class="nav-header">Testimonial</span>
-</a>
-</li>
-<li class="navbar-link">
-<a class="navbar-button" href="#contact-me" onclick="showTab('contact-me')">
-<span class="icon-link"><i class="fas fa-address-book"></i
-></span>
-<span class="nav-header">Contact</span>
-</a>
-</li>
-</ul>
-</nav>
-</div>
-<!-- content container -->
-<div id="main-content-container">
-<!-- Left section [image, name, skills, social links,download cv and contact me] -->
-<div id="main" class="left-section">
-<!-- image -->
-<div class="image">
-<img src="./images/C8 Apr21 Gideon Daniels (2).jpg" alt="cover" />
-</div>
-<div class="info">
-<div><h3 class="name">Gideon Daniels</h3></div>
-<!-- Skils -->
-<div class="subtitle-skills">
-<h3 class="tag">Aspiring</h3>
-<h3 class="txt-type" data-words='["Web Developer", "Software Developer"]' data-wait="3000"></h3>
-</div>
-<!-- social links -->
-<div class="social">
-<ul class="links">
-<li class="link">
-<a href="https://github.com/Gideon-Daniels" target="_blank"><i class="fab fa-github"></i></a>
-</li>
-<li class="link">
-<a href="https://web.facebook.com/gideondragoonix/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-</li>
-<li class="link">
-<a href="https://www.linkedin.com/in/gideon-daniels" target="_blank"><i class="fab fa-linkedin"></i></a>
-</li>
-<li class="link">
-<a href="https://codepen.io/gideon-daniels" target="_blank"><i class="fab fa-codepen"></i></a>
-</li>
-<!-- <li class="link">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gideon Daniels Portfolio</title>
+    <!-- CSS Primary Links -->
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/landing-page.css" />
+    <link rel="stylesheet" href="./styles/navigation-bar.css" />
+    <link rel="stylesheet" href="./styles/sidebar.css" />
+    <link rel="stylesheet" href="./styles/about-me.css" />
+    <link rel="stylesheet" href="./styles/skills.css" />
+    <link rel="stylesheet" href="./styles/work-and-education.css" />
+    <link rel="stylesheet" href="./styles/testimonials.css" />
+    <link rel="stylesheet" href="./styles/project-cards.css" />
+    <link rel="stylesheet" href="./styles/contact-me.css" />
+    <!-- Secondary Links -->
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/a549f23a3b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ----------------------Owl Carousel Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Landing Page / Main Page -->
+    <div id="main-landing-page">
+      <!-- sidebar and navbar container -->
+      <div id="sidebar-navbar-container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+          <ul class="navbar-links">
+            <li class="navbar-link">
+              <!-- Attribute onclick used for java script -->
+              <a
+                class="navbar-button"
+                href="#about-me"
+                onclick="showTab('about-me')"
+              >
+                <span class="icon-link"
+                  ><i class="fas fa-user-circle"></i
+                ></span>
+                <span class="nav-header">About Me</span>
+              </a>
+            </li>
+            <li class="navbar-link">
+              <a
+                class="navbar-button"
+                href="#work-education"
+                onclick="showTab('work-education')"
+              >
+                <span class="icon-link"><i class="fas fa-university"></i></span>
+                <span class="nav-header">Resume</span>
+              </a>
+            </li>
+            <li class="navbar-link">
+              <a
+                href="#skills"
+                class="navbar-button"
+                onclick="showTab('skills')"
+              >
+                <span class="icon-link"><i class="fas fa-tools"></i></span>
+                <span class="nav-header">Skills</span>
+              </a>
+            </li>
+            <li class="navbar-link">
+              <a
+                class="navbar-button"
+                href="#projects"
+                onclick="showTab('projects')"
+              >
+                <span class="icon-link"
+                  ><i class="fas fa-project-diagram"></i
+                ></span>
+                <span class="nav-header">Projects</span>
+              </a>
+            </li>
+            <li class="navbar-link">
+              <a
+                class="navbar-button"
+                href="#testimonials"
+                onclick="showTab('testimonials')"
+              >
+                <span class="icon-link"><i class="fas fa-users"></i></span>
+                <span class="nav-header">Testimonial</span>
+              </a>
+            </li>
+            <li class="navbar-link">
+              <a
+                class="navbar-button"
+                href="#contact-me"
+                onclick="showTab('contact-me')"
+              >
+                <span class="icon-link"
+                  ><i class="fas fa-address-book"></i
+                ></span>
+                <span class="nav-header">Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- content container -->
+      <div id="main-content-container">
+        <!-- Left section [image, name, skills, social links,download cv and contact me] -->
+        <div id="main" class="left-section">
+          <!-- image -->
+          <div class="image">
+            <img src="./images/C8 Apr21 Gideon Daniels (2).jpg" alt="cover" />
+          </div>
+          <div class="info">
+            <div><h3 class="name">Gideon Daniels</h3></div>
+            <!-- Skils -->
+            <div class="subtitle-skills">
+              <h3 class="tag">Aspiring</h3>
+              <h3
+                class="txt-type"
+                data-words='["Web Developer", "Software Developer"]'
+                data-wait="3000"
+              ></h3>
+            </div>
+            <!-- social links -->
+            <div class="social">
+              <ul class="links">
+                <li class="link">
+                  <a href="https://github.com/Gideon-Daniels" target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+                <li class="link">
+                  <a
+                    href="https://web.facebook.com/gideondragoonix/"
+                    target="_blank"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="link">
+                  <a
+                    href="https://www.linkedin.com/in/gideon-daniels"
+                    target="_blank"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </li>
+                <li class="link">
+                  <a href="https://codepen.io/gideon-daniels" target="_blank"
+                    ><i class="fab fa-codepen"></i
+                  ></a>
+                </li>
+                <!-- <li class="link">
 <a href="https://twitter.com/GideonDragoonix" target="_blank"><i class="fab fa-twitter"></i></a>
 </li> -->
-</ul>
-</div>
-<!-- buttons -->
-<div class="buttons">
-<!-- Download CV - Downloads CV File -->
-<button class="button">
-<a href="./Gideon Daniels - CV.pdf" class="link" download>
-<span class="text">Download CV</span></a>
-</button>
-<!-- Contact Me Buttons - Opens Form -->
-<button class="button">
-<a href="#contact-me" onclick="showTab('contact-me')" class="link">
-<span class="text">Contact Me</span></a>
-</button>
-</div>
-</div>
-</div>
-<!-- Rigth section [Displaying content-About Section, Work and Education, Skills, Projects, Testimonial, Contact Me] -->
-<div class="right-section">
-<!-----------------------------------------About Me Section ---------------------------------------------->
-<div id="about-me" class="main-content-sidebar active">
-<h2 class="heading">About Me</h2>
-<div class="left-bio-container">
-<h2>Hello I am Gideon</h2>
-<p>
-I am a <span class="highlight">quiet</span>, <span class="highlight">honest</span> and <span class="highlight">kind</span> individual. I <span class="highlight">adapt</span> easily to
-situations and environments that I am not used to. I am an
-<span class="highlight">out-of-the-box thinker</span> and like <span class="highlight">solving problems</span> in my head.
-</p>
-</div>
-<h2 class="heading">Personal Details</h2>
-<div class="right-bio-container"> 
-<ul class="all-info">
-<li class="info">
-<span class="description">Full Name</span>
-<span class="detail">Gideon Ashwin Daniels</span>
-</li>
-<li class="info">
-<span class="description">Date Of Birth</span
-><span class="detail">07-09-1996</span>
-</li>
-<li class="info">
-<span class="description">Languages</span
-><span class="detail">Afrikaans & English</span>
-</li>
-<li class="info">
-<span class="description">Criminal Record</span
-><span class="detail">No</span>
-</li>
-<li class="info">
-<span class="description">Drivers License</span
-><span class="detail">Yes</span>
-</li>
-<li class="info">
-<span class="description">City</span
-><span class="detail">Cape Town</span>
-</li>
-<li class="info">
-<span class="description">Country & Province</span
-><span class="detail">South Africa , Western Cape</span>
-</li>
-</ul>
-</div>
-<div class="passion">
-<div class="passion-container">
-<h2 class="heading">Passion</h2>
-<p>
-My <span class="highlight">passion for the tech industry</span> came from the moment I laid
-eyes on video games and when my parents asked no one else but
-me to fix the TV stations. I loved <span class="highlight">solving problems</span> that
-require you to go deep into the settings of the software. It's
-a good feeling <span class="highlight">discovering</span> something that no one else has
-thought about yet and that's why I feel so passionate about
-the tech industry. It's a platform where you can <span class="highlight">create
-whatever your mind desires within the limits of your
-imagination</span>. 
-</p> 
-</div>
-</div>
-<!-- Finish Passion Board -->
-<h2 class="heading">Passion Board</h2>
-<p class="passion-details">Reading fiction books, <span class="highlight">myths and lore</span> are my favourites.
-Watching <span class="highlight">documentaries</span> about certain changes within the world. 
-Playing <span class="highlight">games</span> and <span class="highlight">watching anime</span> . 
-I like <span class="highlight">observing</span> and <span class="highlight">talking</span> to different types of people: I love the <span class="highlight">psychology</span> about how people behave and interact with each other. 
-I like playing <span class="highlight">soccer</span> <span class="highlight">chess</span> <span class="highlight">table tennis</span> </p>
-<ul class="passion-board">
-<li class="passion">
-<span class="description">Technology<i class="fas fa-laptop icon"></i></span
->
-</li>
+              </ul>
+            </div>
+            <!-- buttons -->
+            <div class="buttons">
+              <!-- Download CV - Downloads CV File -->
+              <button class="button">
+                <a href="./Gideon Daniels - CV.pdf" class="link" download>
+                  <span class="text">Download CV</span></a
+                >
+              </button>
+              <!-- Contact Me Buttons - Opens Form -->
+              <button class="button">
+                <a
+                  href="#contact-me"
+                  onclick="showTab('contact-me')"
+                  class="link"
+                >
+                  <span class="text">Contact Me</span></a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Rigth section [Displaying content-About Section, Work and Education, Skills, Projects, Testimonial, Contact Me] -->
+        <div class="right-section">
+          <!-----------------------------------------About Me Section ---------------------------------------------->
+          <div id="about-me" class="main-content-sidebar active">
+            <h2 class="heading">About Me</h2>
+            <div class="left-bio-container">
+              <h2>Hello I am Gideon</h2>
+              <p>
+                I am a <span class="highlight">quiet</span>,
+                <span class="highlight">honest</span> and
+                <span class="highlight">kind</span> individual. I
+                <span class="highlight">adapt</span> easily to situations and
+                environments that I am not used to. I am an
+                <span class="highlight">out-of-the-box thinker</span> and like
+                <span class="highlight">solving problems</span> in my head.
+              </p>
+            </div>
+            <h2 class="heading">Personal Details</h2>
+            <div class="right-bio-container">
+              <ul class="all-info">
+                <li class="info">
+                  <span class="description">Full Name</span>
+                  <span class="detail">Gideon Ashwin Daniels</span>
+                </li>
+                <li class="info">
+                  <span class="description">Date Of Birth</span
+                  ><span class="detail">07-09-1996</span>
+                </li>
+                <li class="info">
+                  <span class="description">Languages</span
+                  ><span class="detail">Afrikaans & English</span>
+                </li>
+                <li class="info">
+                  <span class="description">Criminal Record</span
+                  ><span class="detail">No</span>
+                </li>
+                <li class="info">
+                  <span class="description">Drivers License</span
+                  ><span class="detail">Yes</span>
+                </li>
+                <li class="info">
+                  <span class="description">City</span
+                  ><span class="detail">Cape Town</span>
+                </li>
+                <li class="info">
+                  <span class="description">Country & Province</span
+                  ><span class="detail">South Africa , Western Cape</span>
+                </li>
+              </ul>
+            </div>
+            <div class="passion">
+              <div class="passion-container">
+                <h2 class="heading">Passion</h2>
+                <p>
+                  My
+                  <span class="highlight">passion for the tech industry</span>
+                  came from the moment I laid eyes on video games and when my
+                  parents asked no one else but me to fix the TV stations. I
+                  loved <span class="highlight">solving problems</span> that
+                  require you to go deep into the settings of the software. It's
+                  a good feeling
+                  <span class="highlight">discovering</span> something that no
+                  one else has thought about yet and that's why I feel so
+                  passionate about the tech industry. It's a platform where you
+                  can
+                  <span class="highlight"
+                    >create whatever your mind desires within the limits of your
+                    imagination</span
+                  >.
+                </p>
+              </div>
+            </div>
+            <!-- Finish Passion Board -->
+            <h2 class="heading">Passion Board</h2>
+            <p class="passion-details">
+              Reading fiction books,
+              <span class="highlight">myths and lore</span> are my favourites.
+              Watching <span class="highlight">documentaries</span> about
+              certain changes within the world. Playing
+              <span class="highlight">games</span> and
+              <span class="highlight">watching anime</span> . I like
+              <span class="highlight">observing</span> and
+              <span class="highlight">talking</span> to different types of
+              people: I love the <span class="highlight">psychology</span> about
+              how people behave and interact with each other. I like playing
+              <span class="highlight">soccer</span>
+              <span class="highlight">chess</span>
+              <span class="highlight">table tennis</span>
+            </p>
+            <ul class="passion-board">
+              <li class="passion">
+                <span class="description"
+                  >Technology<i class="fas fa-laptop icon"></i
+                ></span>
+              </li>
 
-<li class="passion">
-<span class="description">Sports<i class="fas fa-futbol icon"></i></span>
-</li>
+              <li class="passion">
+                <span class="description"
+                  >Sports<i class="fas fa-futbol icon"></i
+                ></span>
+              </li>
 
-<li class="passion">
-<span class="description">books<i class="fas fa-book-reader icon"></i></span
->
-</li>
+              <li class="passion">
+                <span class="description"
+                  >books<i class="fas fa-book-reader icon"></i
+                ></span>
+              </li>
 
-<li class="passion">
-<span class="description">Games<i class="fas fa-gamepad icon"></i></span
->
-</li>
+              <li class="passion">
+                <span class="description"
+                  >Games<i class="fas fa-gamepad icon"></i
+                ></span>
+              </li>
 
-<li class="passion">
-<span class="description">Anime<i class="fab fa-accusoft icon"></i></span
->
-</li>
+              <li class="passion">
+                <span class="description"
+                  >Anime<i class="fab fa-accusoft icon"></i
+                ></span>
+              </li>
 
-<li class="passion">
-<span class="description">Psycology<i class="fas fa-brain icon"></i></span>
-</li>
-</ul>
-</div>
-<!-- ---------------------------------END OF ABOUT ME SECTION------------------------------------- -->
+              <li class="passion">
+                <span class="description"
+                  >Psycology<i class="fas fa-brain icon"></i
+                ></span>
+              </li>
+            </ul>
+          </div>
+          <!-- ---------------------------------END OF ABOUT ME SECTION------------------------------------- -->
 
-<!-- ------------------------------------Skills Section --------------------------------------------------->
-<div id="skills" class="main-content-sidebar">
-<!-- Soft Skills -->
-<h2 class="heading">Soft Skills</h2>
-<div class="soft-skills-container">
-<div class="soft-skill">
-<h3 class="skill-heading">Problem Solver</h3>
-<img src="./images/clipart2585365.png" alt="Problem Solver" />
-</div>
-<div class="soft-skill">
-<h3 class="skill-heading">Attention To Detail</h3>
-<img
-src="./images/PinClipart.com_toiletries-clipart_5512623.png"
-alt="Attention To Detail"
-/>
-</div>
-<div class="soft-skill">
-<h3 class="skill-heading">otb-thinker</h3>
-<img
-src="./images/PinClipart.com_spirit-clipart_756702.png"
-alt="Out-of-the-box thinker"
-/>
-</div>
-<div class="soft-skill">
-<h3 class="skill-heading">Teamwork</h3>
-<img src="./images/pngaaa.com-2489844.png" alt="Teamwork" />
-</div>
-</div>
-<!-- Technical Skills -->
-<h2 class="heading">Technical Skills</h2>
-<div class="technical-skills-container">
-<div class="technical-skill">
-<h3 class="skill-heading">MySQL</h3>
-<i class="fas fa-database"></i>
-</div>
-<div class="technical-skill">
-<h3 class="skill-heading">Flask</h3>
-<i class="fas fa-flask"></i>
-</div>
+          <!-- ------------------------------------Skills Section --------------------------------------------------->
+          <div id="skills" class="main-content-sidebar">
+            <!-- Soft Skills -->
+            <h2 class="heading">Soft Skills</h2>
+            <div class="soft-skills-container">
+              <div class="soft-skill">
+                <h3 class="skill-heading">Problem Solver</h3>
+                <img src="./images/clipart2585365.png" alt="Problem Solver" />
+              </div>
+              <div class="soft-skill">
+                <h3 class="skill-heading">Attention To Detail</h3>
+                <img
+                  src="./images/PinClipart.com_toiletries-clipart_5512623.png"
+                  alt="Attention To Detail"
+                />
+              </div>
+              <div class="soft-skill">
+                <h3 class="skill-heading">otb-thinker</h3>
+                <img
+                  src="./images/PinClipart.com_spirit-clipart_756702.png"
+                  alt="Out-of-the-box thinker"
+                />
+              </div>
+              <div class="soft-skill">
+                <h3 class="skill-heading">Teamwork</h3>
+                <img src="./images/pngaaa.com-2489844.png" alt="Teamwork" />
+              </div>
+            </div>
+            <!-- Technical Skills -->
+            <h2 class="heading">Technical Skills</h2>
+            <div class="technical-skills-container">
+              <div class="technical-skill">
+                <h3 class="skill-heading">MySQL</h3>
+                <i class="fas fa-database"></i>
+              </div>
+              <div class="technical-skill">
+                <h3 class="skill-heading">Flask</h3>
+                <i class="fas fa-flask"></i>
+              </div>
 
-<div class="technical-skill">
-<h3 class="skill-heading">Python</h3>
-<i class="fab fa-python"></i>
+              <div class="technical-skill">
+                <h3 class="skill-heading">Python</h3>
+                <i class="fab fa-python"></i>
+              </div>
+              <div class="technical-skill">
+                <h3 class="skill-heading">JavaScript</h3>
+                <i class="fab fa-js-square"></i>
+              </div>
+              <div class="technical-skill">
+                <h3 class="skill-heading">HTML5</h3>
+                <i class="fab fa-html5"></i>
+              </div>
 
-</div>
-<div class="technical-skill">
-<h3 class="skill-heading">JavaScript</h3>
-<i class="fab fa-js-square"></i>
+              <div class="technical-skill">
+                <h3 class="skill-heading">CSS3</h3>
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="technical-skill">
+                <h3 class="skill-heading">Java Basics</h3>
+                <i class="fab fa-java"></i>
+              </div>
+              <div class="technical-skill">
+                <h3 class="skill-heading">MS Word Basics</h3>
+                <i class="fas fa-file-word"></i>
+              </div>
+              <div class="technical-skill">
+                <h3 class="skill-heading">MS Excel Basics</h3>
+                <i class="fas fa-file-excel"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ----------------------------------------End OF Skills Section ------------------------------------->
 
-</div>
-<div class="technical-skill">
-<h3 class="skill-heading">HTML5</h3>
-<i class="fab fa-html5"></i>
-
-</div>
-
-<div class="technical-skill">
-<h3 class="skill-heading">CSS3</h3>
-<i class="fab fa-css3-alt"></i>
-</div>
-<div class="technical-skill">
-<h3 class="skill-heading">Java Basics</h3>
-<i class="fab fa-java"></i>
-</div>
-<div class="technical-skill">
-<h3 class="skill-heading">MS Word Basics</h3>
-<i class="fas fa-file-word"></i>
-</div>
-<div class="technical-skill">
-<h3 class="skill-heading">MS Excel Basics</h3>
-<i class="fas fa-file-excel"></i>
-</div>
-</div>
-</div>
-<!-- ----------------------------------------End OF Skills Section ------------------------------------->
-
-<!-- ------------------------------------Work and Education Section---------------------------------- -->
-<div id="work-education" class="main-content-sidebar">
-<div class="education-wrapper">
-<div class="education">
-<span class="icon"><i class="fas fa-university"></i></span>
-<h2 class="heading">Education</h2>
-<div class="education-details">
-<h1 class="heading">Electrical Engineering N5</h1>
-<h2 class="heading">Northlink College</h2>
-<h3 class="duration">2015 - 2018</h3> 
-</div>
-<div class="education-details">
-<h1 class="heading">Matric</h1>
-<h2 class="heading">Ravensmead High School</h2>
-<h3 class="duration">2010-2014</h3> 
-</div>
-</div>
-</div>
-<div class="work-wrapper">
-<div class="work">
-<span class="icon"><i class="fas fa-briefcase"></i></span>
-<h2 class="heading">Work</h2>
-<div class="work-details">
-<h1 class="heading">Student Intern</h1>
-<h2 class="heading">LifeChoices Academy</h2>
-<h3 class="duration"><p>2021-currently</p></h3>
-<p class="role">Learning to become a full stack developer . Learning HTML, CSS3, JavaScript , Python , Life skills and more.</p> 
-</div>
-<div class="work-details">
-<h1 class="heading">Volunteer</h1>
-<h2 class="heading">YMCA</h2>
-<h3 class="duration"><p>2015-2021</p></h3>
-<p class="role">Volunteering in youth programs. I help by mentoring children, organising events and doing medial task </p> 
-</div>
-<div class="work-details">
-<h1 class="heading">Assitant Cashier</h1>
-<h2 class="heading">Ster Kinekor</h2>
-<h3 class="duration"><p>February 2016 - August 2016</p></h3> 
-<p class="role">
-I was working as a asssitant Cashier.I worked in the ticket
-sales department, food and beverages and catering department.
-</p>
-</div>
-<div class="work-details">
-<h1 class="heading">Assitant</h1>
-<h2 class="heading">Pest Control</h2>
-<h3 class="duration">
-<span>2015 December</span>
-</h3> 
-<p class="role">
-I was working as an asssitant . I helped cleaned building and
-fumigate buildings and machinery.
-</p>
-</div>
-<div class="work-details">
-<h1 class="heading">Assitant</h1>
-<h2 class="heading">Jured Installations</h2>
-<h3 class="duration">
-<span>2014 December</span>
-</h3> 
-<p class="role">
-I was working as an asssitant . I fetched equipment, cut
-metals, cleaned stations and helped with heavy lifting.
-</p>
-</div>
-</div>
-</div>
-</div>
-<!-- -------------------------------End Of Work and Education Section ----------------------------------------->
-<div id="projects" class="main-content-sidebar">
-<h2 class="heading">Project</h2>
-<!-- Navbar for projects -->
-<div class="projects-navbar-container">
-<button class="project-filter" onclick="filterCards('All')">All</button>
-<button class="project-filter" onclick="filterCards('HTML/CSS')">HTML/CSS</button>
-<button class="project-filter" onclick="filterCards('Python')">Python</button>
-<button class="project-filter" onclick="filterCards('Javascript')">Javascript</button>
-<button class="project-filter" onclick="filterCards('Fullstack')">Fullstack</button>
-</div>
-<!-- Projects-cards-container -->
-<div class="project-cards-container"></div>
-</div> 
-<!-- ---------------------------------------Testimonials -------------------------------------------------------->
-<div id="testimonials" class="main-content-sidebar">
-<div class="owl-carousel">
-<!-- Testimonial-->
-<!-- <div class="testimonial testimonial-1">
+          <!-- ------------------------------------Work and Education Section---------------------------------- -->
+          <div id="work-education" class="main-content-sidebar">
+            <div class="education-wrapper">
+              <div class="education">
+                <span class="icon"><i class="fas fa-university"></i></span>
+                <h2 class="heading">Education</h2>
+                <div class="education-details">
+                  <h1 class="heading">Electrical Engineering N5</h1>
+                  <h2 class="heading">Northlink College</h2>
+                  <h3 class="duration">2015 - 2018</h3>
+                </div>
+                <div class="education-details">
+                  <h1 class="heading">Matric</h1>
+                  <h2 class="heading">Ravensmead High School</h2>
+                  <h3 class="duration">2010-2014</h3>
+                </div>
+              </div>
+            </div>
+            <div class="work-wrapper">
+              <div class="work">
+                <span class="icon"><i class="fas fa-briefcase"></i></span>
+                <h2 class="heading">Work</h2>
+                <div class="work-details">
+                  <h1 class="heading">Student Intern</h1>
+                  <h2 class="heading">LifeChoices Academy</h2>
+                  <h3 class="duration"><p>2021-currently</p></h3>
+                  <p class="role">
+                    Learning to become a full stack developer . Learning HTML,
+                    CSS3, JavaScript , Python , Life skills and more.
+                  </p>
+                </div>
+                <div class="work-details">
+                  <h1 class="heading">Volunteer</h1>
+                  <h2 class="heading">YMCA</h2>
+                  <h3 class="duration"><p>2015-2021</p></h3>
+                  <p class="role">
+                    Volunteering in youth programs. I help by mentoring
+                    children, organising events and doing medial task
+                  </p>
+                </div>
+                <div class="work-details">
+                  <h1 class="heading">Assitant Cashier</h1>
+                  <h2 class="heading">Ster Kinekor</h2>
+                  <h3 class="duration"><p>February 2016 - August 2016</p></h3>
+                  <p class="role">
+                    I was working as a assitant Cashier.I worked in the ticket
+                    sales department, food and beverages and catering
+                    department.
+                  </p>
+                </div>
+                <div class="work-details">
+                  <h1 class="heading">Assitant</h1>
+                  <h2 class="heading">Pest Control</h2>
+                  <h3 class="duration">
+                    <span>2015 December</span>
+                  </h3>
+                  <p class="role">
+                    I was working as an assitant . I helped cleaned building and
+                    fumigate buildings and machinery.
+                  </p>
+                </div>
+                <div class="work-details">
+                  <h1 class="heading">Assitant</h1>
+                  <h2 class="heading">Jured Installations</h2>
+                  <h3 class="duration">
+                    <span>2014 December</span>
+                  </h3>
+                  <p class="role">
+                    I was working as an assitant . I fetched equipment, cut
+                    metals, cleaned stations and helped with heavy lifting.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- -------------------------------End Of Work and Education Section ----------------------------------------->
+          <div id="projects" class="main-content-sidebar">
+            <h2 class="heading">Project</h2>
+            <!-- Navbar for projects -->
+            <div class="projects-navbar-container">
+              <button class="project-filter" onclick="filterCards('All')">
+                All
+              </button>
+              <button class="project-filter" onclick="filterCards('HTML/CSS')">
+                HTML/CSS
+              </button>
+              <button class="project-filter" onclick="filterCards('Python')">
+                Python
+              </button>
+              <button
+                class="project-filter"
+                onclick="filterCards('Javascript')"
+              >
+                Javascript
+              </button>
+              <button class="project-filter" onclick="filterCards('Fullstack')">
+                Fullstack
+              </button>
+            </div>
+            <!-- Projects-cards-container -->
+            <div class="project-cards-container"></div>
+          </div>
+          <!-- ---------------------------------------Testimonials -------------------------------------------------------->
+          <div id="testimonials" class="main-content-sidebar">
+            <div class="owl-carousel">
+              <!-- Testimonial-->
+              <!-- <div class="testimonial testimonial-1">
 <div class="testimonial-image">
 <img
 src="./images/C8 Apr21 Ayyoob Slamdien (2).JPG"
@@ -422,210 +516,209 @@ He is quick to help in a situation.
 </p>
 </div>
 </div> -->
-<div class="testimonial testimonial-2">
-<div class="testimonial-image">
-<img
-src="./images/C8 Apr21 Retsepile Koloko (2).JPG"
-alt="img-1"
-/>
-</div>
-<div class="testimonial-details">
-<h2 class="heading">Retshepile Koloko</h2>
-<h3 class="testimonial-role">Colleague</h3>
-<p class="testimonial-description">
-He s a very helpful colleague always willing to help others.
-He is a kind guy and very generous.
-</p>
-</div>
-</div>
-<div class="testimonial testimonial-3">
-<div class="testimonial-image">
-<img
-src="./images/C8 Apr21 Thandokazi Nkohla (1).JPG"
-alt="img-1"
-/>
-</div>
-<div class="testimonial-details">
-<h2 class="heading">Thandokazi</h2>
-<h3 class="testimonial-role">Colleague</h3>
-<p class="testimonial-description">
-He has a pleasent personality, always willing to help. He
-works great alone and with a team.
-</p>
-</div>
-</div>
-<div class="testimonial testimonial-4">
-<div class="testimonial-image">
-<img
-src="./images/C8 Apr21 Aaliyah Jardien (4).JPG"
-alt="img-1"
-/>
-</div>
-<div class="testimonial-details">
-<h2 class="heading">Aaliyah</h2>
-<h3 class="testimonial-role">Colleague</h3>
-<p class="testimonial-description">
-Gideon is a great team player, someone you can count on.He
-has great working ethics & goes out of his way to get the
-job done,someone to look up to.
-</p>
-</div>
-</div>
-<div class="testimonial testimonial-5">
-<div class="testimonial-image">
-<img src="./images/Godwin.png" alt="img-1" />
-</div>
-<div class="testimonial-details">
-<h2 class="heading">Godwin</h2>
-<h3 class="testimonial-role">
-Head of Curriculum and Learning
-</h3>
-<p class="testimonial-description">
-From my collaboration with him in class, I can conclude that
-Gideon has a strong passion in coding. Apart from being a
-fast learner, his analysis is always accurate and original .
-</p>
-</div>
-</div>
-<div class="testimonial testimonial-6">
-<div class="testimonial-image">
-<img src="./images/thapelo-tsotetsi.jpg" alt="img-1" />
-</div>
-<div class="testimonial-details">
-<h2 class="heading">Thapelo</h2>
-<h3 class="testimonial-role">Lecturer</h3>
-<p class="testimonial-description">
-Gideon is a great student. He has a
-wondeful way of solving critical thinking problems. He
-always break-down a problem into smaller pieces. He has
-great intellectual and communication skills. He works well
-within a team of different characters.
-</p>
-</div>
-</div>
-</div>
-<!--------------------------------------End of Testimonials ----------------------------------------------------------->
-</div>
-<!-- Contact Form -->
-<div id="contact-me" class="main-content-sidebar">
-<h2 class="heading">Contact Me</h2>
-<!-- Contact-Navigation Bar -->
-<div class="contact-form-navbar">
-<ul class="navbar-details">
-<li class="details call-me">
-<span class="icon"><i class="fas fa-phone-alt"></i></span>
-<h3>Call Me</h3>
-<span>0726078261</span>
-</li>
-<li class="details Home">
-<span class="icon"
-><i class="fas fa-map-marker-alt"></i
-></span>
-<h3>Home</h3>
-<span>Ravensmead, Western Cape</span>
-</li>
-<li class="details email">
-<span class="icon"><i class="far fa-envelope"></i></span>
-<h3>Email</h3>
-<span>gideondaniels.dragoonix@gmail.com</span>
-</li>
-<li class="details whatsapp">
-<span class="icon"><i class="fab fa-whatsapp"></i></span>
-<h3>WhatsApp</h3>
-<span>0726078261</span>
-</li>
-</ul>
-</div>
-<form
-class="form"
-action="https://formspree.io/f/mbjqlpgn"
-method="POST"
->
-<div class="name-email">
-<!-- <label for="name">Name</label> -->
-<input
-type="text"
-class="contact-groups"
-name="name"
-id="email"
-placeholder="Name"
-required
-/>
-<!-- <label for="email">Email</label> -->
-<input
-type="email"
-class="contact-groups"
-name="email"
-id="email"
-placeholder="Email"
-required
-/>
-</div>
-<!-- <label for="subject"></label> -->
-<input
-type="text"
-class="contact-groups"
-name="subject"
-id="subject"
-placeholder="Subject"
-required
-/>
-<!-- <label for="textarea"></label> -->
-<textarea
-name="textarea"
-id="textarea"
-cols="30"
-rows="10"
-class="contact-groups"
-placeholder="Your Message"
-required
-></textarea> 
-<div class="buttons">
-<button class="button" type="submit">Submit</button>
-</div>
-</form>
-</div>
+              <div class="testimonial testimonial-2">
+                <div class="testimonial-image">
+                  <img
+                    src="./images/C8 Apr21 Retsepile Koloko (2).JPG"
+                    alt="img-1"
+                  />
+                </div>
+                <div class="testimonial-details">
+                  <h2 class="heading">Retshepile Koloko</h2>
+                  <h3 class="testimonial-role">Colleague</h3>
+                  <p class="testimonial-description">
+                    He s a very helpful colleague always willing to help others.
+                    He is a kind guy and very generous.
+                  </p>
+                </div>
+              </div>
+              <div class="testimonial testimonial-3">
+                <div class="testimonial-image">
+                  <img
+                    src="./images/C8 Apr21 Thandokazi Nkohla (1).JPG"
+                    alt="img-1"
+                  />
+                </div>
+                <div class="testimonial-details">
+                  <h2 class="heading">Thandokazi</h2>
+                  <h3 class="testimonial-role">Colleague</h3>
+                  <p class="testimonial-description">
+                    He has a pleasent personality, always willing to help. He
+                    works great alone and with a team.
+                  </p>
+                </div>
+              </div>
+              <div class="testimonial testimonial-4">
+                <div class="testimonial-image">
+                  <img
+                    src="./images/C8 Apr21 Aaliyah Jardien (4).JPG"
+                    alt="img-1"
+                  />
+                </div>
+                <div class="testimonial-details">
+                  <h2 class="heading">Aaliyah</h2>
+                  <h3 class="testimonial-role">Colleague</h3>
+                  <p class="testimonial-description">
+                    Gideon is a great team player, someone you can count on.He
+                    has great working ethics & goes out of his way to get the
+                    job done,someone to look up to.
+                  </p>
+                </div>
+              </div>
+              <div class="testimonial testimonial-5">
+                <div class="testimonial-image">
+                  <img src="./images/Godwin.png" alt="img-1" />
+                </div>
+                <div class="testimonial-details">
+                  <h2 class="heading">Godwin</h2>
+                  <h3 class="testimonial-role">
+                    Head of Curriculum and Learning
+                  </h3>
+                  <p class="testimonial-description">
+                    From my collaboration with him in class, I can conclude that
+                    Gideon has a strong passion in coding. Apart from being a
+                    fast learner, his analysis is always accurate and original .
+                  </p>
+                </div>
+              </div>
+              <div class="testimonial testimonial-6">
+                <div class="testimonial-image">
+                  <img src="./images/thapelo-tsotetsi.jpg" alt="img-1" />
+                </div>
+                <div class="testimonial-details">
+                  <h2 class="heading">Thapelo</h2>
+                  <h3 class="testimonial-role">Lecturer</h3>
+                  <p class="testimonial-description">
+                    Gideon is a great student. He has a wondeful way of solving
+                    critical thinking problems. He always break-down a problem
+                    into smaller pieces. He has great intellectual and
+                    communication skills. He works well within a team of
+                    different characters.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--------------------------------------End of Testimonials ----------------------------------------------------------->
+          </div>
+          <!-- Contact Form -->
+          <div id="contact-me" class="main-content-sidebar">
+            <h2 class="heading">Contact Me</h2>
+            <!-- Contact-Navigation Bar -->
+            <div class="contact-form-navbar">
+              <ul class="navbar-details">
+                <li class="details call-me">
+                  <span class="icon"><i class="fas fa-phone-alt"></i></span>
+                  <h3>Call Me</h3>
+                  <span>0726078261</span>
+                </li>
+                <li class="details Home">
+                  <span class="icon"
+                    ><i class="fas fa-map-marker-alt"></i
+                  ></span>
+                  <h3>Home</h3>
+                  <span>Ravensmead, Western Cape</span>
+                </li>
+                <li class="details email">
+                  <span class="icon"><i class="far fa-envelope"></i></span>
+                  <h3>Email</h3>
+                  <span>gideondaniels.dragoonix@gmail.com</span>
+                </li>
+                <li class="details whatsapp">
+                  <span class="icon"><i class="fab fa-whatsapp"></i></span>
+                  <h3>WhatsApp</h3>
+                  <span>0726078261</span>
+                </li>
+              </ul>
+            </div>
+            <form
+              class="form"
+              action="https://formspree.io/f/mbjqlpgn"
+              method="POST"
+            >
+              <div class="name-email">
+                <!-- <label for="name">Name</label> -->
+                <input
+                  type="text"
+                  class="contact-groups"
+                  name="name"
+                  id="email"
+                  placeholder="Name"
+                  required
+                />
+                <!-- <label for="email">Email</label> -->
+                <input
+                  type="email"
+                  class="contact-groups"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <!-- <label for="subject"></label> -->
+              <input
+                type="text"
+                class="contact-groups"
+                name="subject"
+                id="subject"
+                placeholder="Subject"
+                required
+              />
+              <!-- <label for="textarea"></label> -->
+              <textarea
+                name="textarea"
+                id="textarea"
+                cols="30"
+                rows="10"
+                class="contact-groups"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <div class="buttons">
+                <button class="button" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <p>
+          Made with <span><i class="fas fa-fire"></i></span> By Gideon Daniels
+        </p>
+      </div>
+      <!-- button when clicked goes to the top of the screen -->
+      <!-- <a href="#main">A</a> -->
+      <!-- END Of Footer -->
+    </div>
 
-</div>
-</div>
-<div id="footer">
+    <!-- -------------------------END----------------------------- -->
+    <!-- Script tags under here -->
+    <!-- owl carousel scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          margin: 10,
+          loop: true,
+          dots: false,
+          autoplay: true,
+        });
+      });
+    </script>
+    <!-- owl carousel end -->
 
-<p>
-Made with <span><i class="fas fa-fire"></i></span> By Gideon Daniels
-</p>
-</div>
-<!-- button when clicked goes to the top of the screen -->
-<!-- <a href="#main">A</a> -->
-<!-- END Of Footer -->
-</div>
-
-<!-- -------------------------END----------------------------- -->
-<!-- Script tags under here -->
-<!-- owl carousel scripts -->
-<script
-src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-crossorigin="anonymous"
-></script>
-<script
-src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-crossorigin="anonymous"
-></script>
-<script>
-$(document).ready(function () {
-$(".owl-carousel").owlCarousel({
-items: 1,
-margin: 10,
-loop: true,
-dots: false,
-autoplay: true,
-});
-});
-</script>
-<!-- owl carousel end -->
-
-<!-- -----------------------------button on click script------------------------------- -->
-<script src="./scripts/index.js"></script>
-<script src="./scripts/typewriter.js"> </script>
-</body>
+    <!-- -----------------------------button on click script------------------------------- -->
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/typewriter.js"></script>
+  </body>
+</html>
