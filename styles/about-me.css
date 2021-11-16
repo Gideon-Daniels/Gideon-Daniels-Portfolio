@@ -120,7 +120,7 @@ p:hover .highlight{
  align-items: center;
 }
 
-.info .description:hover {
+.all-info:hover .description{
   opacity: 0;
 }
 
