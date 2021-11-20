@@ -45,14 +45,13 @@
   box-shadow: 0px 0px 20px #50a3a2;
 }
 
-
 #projects .project-cards-container {
   position: relative;
   display: flex;
   flex-wrap: wrap;
 
   gap: 2px;
-  
+
 }
 
 #projects .project-cards-container .project-card {
