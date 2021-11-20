@@ -137,12 +137,12 @@ function filterCards(category){
     }
     return;
   }
-// hide cards
+// hide card
   for(card of cards){
     console.log(card);
     card.style.display = "none";
   }
-
+// display selected cards
   let selectedCards = document.querySelectorAll(`[techStack='${category}']`);
   console.log(selectedCards)
   for (card of selectedCards){
