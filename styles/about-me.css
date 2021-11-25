@@ -154,7 +154,7 @@ p:hover .highlight {
 }
 
 .passion-container:hover p .highlight {
-  color: #50a3a2;
+  color: var(--secondary-font-color);
 }
 
 .passion-board {
