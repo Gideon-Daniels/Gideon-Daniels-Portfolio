@@ -400,7 +400,6 @@
     position: fixed;
     top: 0;
     height: 6vh;
-    background-color: #323232;
     z-index: 1000;
   }
 
@@ -410,9 +409,9 @@
     top: 0;
     opacity: 1;
     transition: all 0.4s linear;
-    background: var(--primary-font-color);
     height: 94vh;
     width: 100%;
+    color: var(--secondary-font-color);
   }
 
   #main-content-container .left-section {
