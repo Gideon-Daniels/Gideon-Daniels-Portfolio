@@ -29,15 +29,16 @@ body {
 
 .filter-theme {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
+  top: 50px;
+  right: 50px;
   padding: 10px;
-  width: 100%;
-  /* background: black; */
-  z-index: 1;
+  height: 100%;
+  z-index: 1000;
 }
 
 .filter-theme span {
@@ -46,26 +47,24 @@ body {
   border-radius: 50%;
 }
 .first-theme {
-  background-color:  #78cc6d;
+  background-color: #78cc6d;
 }
 .second-theme {
-  background-color:  #50a3a2;
+  background-color: #50a3a2;
 }
 .third-theme {
-  background-color: rgba(45, 45, 45, 0.2);
+  background-color: rgba(255, 255, 255, 0.18);
 }
 
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: var(--highlighted-font-color);
+  background-color: var(--primary-font-color);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(
-    --secondary-font-color
-  ); /*Gives background color to the scrollbar*/
+  background-color: var( --secondary-font-color); 
   border-radius: 2px;
-  outline: var(--highlighted-font-color) 2px solid;
+  outline: var() 2px solid;
 }
 
 .heading {

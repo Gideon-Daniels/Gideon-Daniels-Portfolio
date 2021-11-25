@@ -60,7 +60,7 @@
 .soft-skill img {
   padding: 25px;
   object-fit: cover;
-  opacity: 0.3;
+  opacity: 0.5;
   transition: all 0.3s linear;
 }
 
@@ -111,6 +111,7 @@
   font-size: 85px;
   object-fit: cover;
   align-self: center;
+  color: var(--primary-font-color);
   opacity: 0.3;
   transition: all 0.5s ease-in;
 }
@@ -121,7 +122,7 @@
 #skills .technical-skills-container .technical-skill:hover i {
   animation: glow 2.5s 0.3s linear alternate infinite;
   animation: grow 2.5s 0.3s linear alternate infinite;
-  color: var(--primary-font-color);
+  color: var(--secondary-font-color);
   opacity: 1;
 }
 

@@ -20,11 +20,11 @@ function themeChange(theme) {
     borderMainContentSidebar = "1px solid rgba(255, 255, 255, 0.18)";
   } else if (theme == "third-theme") {
     backgroundGradient =
-      "white";
-    containerBackground = "rgba(45, 45, 45, 0.2)";
-    primaryFontColor = "#323232";
-    secondaryFontColor = "#50a3a2";
-    highlightedFontColor = "#7dcc6d";
+       "rgba(45, 45, 45, 0.2)";
+    containerBackground = "rgba(255, 255, 255, 0.3)";
+    primaryFontColor = "black";
+    secondaryFontColor = "white";
+    highlightedFontColor = "black";
     borderMainContentSidebar = "1px solid rgba(255, 255, 255, 0.18)";
   }
   property.setProperty("--background-gradient", backgroundGradient);
