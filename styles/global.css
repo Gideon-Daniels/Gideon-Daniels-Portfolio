@@ -1,3 +1,16 @@
+/* color theme */
+:root {
+  --primary-font-color: #323232;
+  --secondary-font-color: #50a3a2;
+  --highlighted-font-color: #78cc6d;
+  --container-background: rgba(255, 255, 255, 0.2);
+  --background-gradient: linear-gradient(
+    to bottom right,
+    #50a3a2 0%,
+    #78cc6d 100%
+  );
+}
+
 * {
   margin: 0%;
   padding: 0%;
@@ -8,23 +21,52 @@
 
 body {
   font-family: "Poppings", sans-serif;
-  
-  color: #50a3a2;
-  background: #50a3a2;
-  background: -webkit-linear-gradient(top left, #50a3a2 0%, #323232 100%);
-  background: linear-gradient(to bottom right, #50a3a2 0%, #323232 100%);
+
+  color: var(--primary-font-color);
+  background: var(--background-gradient);
+  position: relative;
 }
 
-::-webkit-scrollbar{
+.filter-theme {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  width: 100%;
+  /* background: black; */
+  z-index: 1;
+}
+
+.filter-theme span {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.first-theme {
+  background-color:  #78cc6d;
+}
+.second-theme {
+  background-color:  #50a3a2;
+}
+.third-theme {
+  background-color: rgba(45, 45, 45, 0.2);
+}
+
+::-webkit-scrollbar {
   width: 10px;
-  background-color: #85d17b;
+  background-color: var(--highlighted-font-color);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color:#50a3a2;/*Gives background color to the scrollbar*/
+  background-color: var(
+    --secondary-font-color
+  ); /*Gives background color to the scrollbar*/
   border-radius: 2px;
-  outline: #50a3a2 2px solid;
-  }
+  outline: var(--highlighted-font-color) 2px solid;
+}
 
 .heading {
   text-transform: uppercase;
@@ -36,7 +78,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #323232;
+  color: var(--primary-font-color);
 }
 
 p {
@@ -47,6 +89,4 @@ p {
 
 button:hover {
   cursor: pointer;
-
 }
-

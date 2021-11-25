@@ -1,3 +1,15 @@
+:root {
+  --primary-font-color: #323232;
+  --secondary-font-color: #50a3a2;
+  --highlighted-font-color: #78cc6d;
+  --container-background: rgba(255, 255, 255, 0.2);
+  --background-gradient: linear-gradient(
+    to bottom right,
+    #50a3a2 0%,
+    #78cc6d 100%
+  );
+  --border-main-content-sidebar: 1px solid rgba(255, 255, 255, 0.18);
+}
 #about-me {
   display: flex;
   flex-direction: column;
@@ -6,37 +18,28 @@
   height: 98%;
   margin-top: 5px;
   padding: 15px 5%;
-  
 }
 #about-me .heading {
-  color: #323232;
-  background: #50a3a2;
+  color: var(--primary-font-color);
+  border-bottom: var(--primary-font-color) solid 2px;
   width: 100%;
   text-align: center;
   margin-bottom: 5px;
   padding: 5px 5px 5px;
-  border-radius: 5px;
- transition: all 0.5s linear;
 }
-
-#about-me:hover .heading {
-  box-shadow: 0px 3px 0px 0px #85d17b;
-  color: #85d17b;
-}
-
 
 .left-bio-container {
   border-radius: 5px;
-  border:#50a3a2 solid 2px ;
+  border: var(--primary-font-color) solid 2px;
   width: 100%;
-  color: #85d17b
+  color: #323232;
 }
 
 .left-bio-container h2 {
   letter-spacing: 2px;
   margin-bottom: 5px;
-  color: #323232;
-  background-color: #50a3a2;
+  color: var(--secondary-font-color);
+  background-color: var(--primary-font-color);
   padding: 5px 5px 5px;
   text-align: center;
   border-radius: 2px;
@@ -44,28 +47,30 @@
   transition: color 0.5s linear;
 }
 
-.left-bio-container:hover h2{
-  color: #85d17b;
+.left-bio-container:hover h2 {
+  color: var(--secondary-font-color);
 }
 
-.left-bio-container p{
+.left-bio-container p {
   padding: 20px;
   text-align: left;
 }
 
-p .highlight{
+p .highlight {
   transition: all 0.5s linear;
 }
 
-p:hover .highlight{
-  color: #50a3a2;
+p:hover .highlight {
+  padding: 2px;
+  background: var(--primary-font-color);
+  color: var(--secondary-font-color);
+  border-radius: 10px;
 }
 
- .right-bio-container {
+.right-bio-container {
   width: 100%;
   height: 100%;
 }
-
 
 .right-bio-container .all-info {
   height: 100%;
@@ -77,12 +82,12 @@ p:hover .highlight{
   justify-content: center;
 }
 
-.right-bio-container .all-info .info { 
+.right-bio-container .all-info .info {
   width: 30%;
   height: 75px;
-  color: #323232;
+  color: var(--primary-font-color);
   text-align: center;
-  background-color: #50a3a2;
+  background-color: var(--primary-font-color);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -94,66 +99,65 @@ p:hover .highlight{
 
 .right-bio-container .info .description {
   border-radius: 2px;
-  background-color: #50a3a2;
-  color: #323232;
+  background-color: var(--primary-font-color);
+  color: var(--secondary-font-color);
   height: 100%;
   width: 100%;
   padding: 5px;
   border-radius: 5px;
   position: absolute;
   display: flex;
- justify-content: center;
- align-items: center;
- transition: all 0.7s 0.1s linear;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s 0.1s linear;
 }
 
 .right-bio-container .info .detail {
- background-color: #323232;
- color: #85d17b;
- height: 100%;
- width: 100%;
- border-radius: 5px;
- border: #50a3a2 solid 2px;
- padding: 5px;
- display: flex;
- justify-content: center;
- align-items: center;
+  background-color: var(--secondary-font-color);
+  color: var(--primary-font-color);
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.all-info:hover .description{
+.all-info:hover .description {
   opacity: 0;
 }
 
 /* Passion Container */
 .passion-container {
-  border: 1px solid #50a3a2;
+  border: 1px solid var(--primary-font-color);
   height: 100%;
   width: 100%;
   border-radius: 5px;
 }
 
 .passion-container .heading {
+  background-color: var(--primary-font-color);
   text-align: center;
-  color: #323232;
- 
+  color: var(--secondary-font-color) !important;
 }
 
 .passion-container p {
   margin-top: 15px;
   line-height: 25px;
   padding: 20px;
-  color: #85d17b;
+  color: var(--primary-font-color);
 }
 
-.passion-container p .highlight{
+.passion-container p .highlight {
   transition: all 0.5s linear;
 }
 
-.passion-container:hover p .highlight{
+.passion-container:hover p .highlight {
   color: #50a3a2;
 }
 
-.passion-board{
+.passion-board {
   width: 100%;
   height: 100%;
   display: flex;
@@ -163,57 +167,54 @@ p:hover .highlight{
 }
 
 .passion-details {
-  background-color: #323232;
-  color: #85d17b;
+  color: var(--primary-font-color);
   padding: 10px 20px;
-  border: #50a3a2 solid 1px;
+  border: var(--primary-font-color) solid 1px;
   border-radius: 5px;
 }
 
-.passion-details .highlight{
+.passion-details .highlight {
   transition: all 0.5s linear;
 }
 /* hover over passion board details */
-.passion-details:hover .highlight{
-  color: #50a3a2;
-  
+.passion-details:hover .highlight {
+  color: var(--secondary-font-color);
 }
 /* Passion Board */
-.passion-board{
+.passion-board {
   display: flex;
   gap: 10px;
 }
 
-.passion-board .passion{
+.passion-board .passion {
   /* background-color: #50a3a2; */
   flex-basis: 40%;
   height: 50px;
   position: relative;
 }
 
-.passion .description{
+.passion .description {
   position: absolute;
-  background-color: #50a3a2;
+  background-color: var(--primary-font-color);
   width: 100%;
   height: 100%;
-  color: #323232;
+  color: var(--secondary-font-color);
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
   gap: 5px;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   padding: 5px 5px;
   border-radius: 5px;
   transition: color 0.3s ease-in;
 }
 
-.passion .icon{
+.passion .icon {
   font-size: 20px;
   margin-top: 5px;
 }
 
-.passion .description:hover{
- color: #85d17b;
+.passion .description:hover {
+  color: var(--highlighted-font-color);
 }
-

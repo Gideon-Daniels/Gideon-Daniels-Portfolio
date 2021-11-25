@@ -1,3 +1,15 @@
+:root {
+  --primary-font-color: #323232;
+  --secondary-font-color: #50a3a2;
+  --highlighted-font-color: #78cc6d;
+  --container-background: rgba(255, 255, 255, 0.2);
+  --background-gradient: linear-gradient(
+    to bottom right,
+    #50a3a2 0%,
+    #78cc6d 100%
+  );
+  --border-main-content-sidebar: 1px solid rgba(255, 255, 255, 0.18);
+}
 #testimonials {
   height: 98%;
   margin-top: 5px;
@@ -6,6 +18,7 @@
   justify-content: center;
   align-items: center;
 }
+
 
 #testimonials .testimonial {
   display: flex;
@@ -18,41 +31,68 @@
 
 .testimonial .testimonial-image {
   height: 50%;
- 
+
+  position: relative;
+  box-shadow: 0px 0px 25px var(--primary-font-color);
 }
 
 .testimonial-image img {
-  height: 100%;
-  width: 100%;
+  height: 200px;
+  width: 200px;
   object-fit: cover;
- 
 }
-
-
 
 .testimonial .testimonial-details .heading {
   text-decoration: none;
   letter-spacing: 2px;
   margin: 5px 0px;
-  background-color: #85d17b;
-  color: #323232;
+  background-color: var(--primary-font-color);
+  color: var(--secondary-font-color);
   border-radius: 5px;
 }
 .testimonial .testimonial-details .testimonial-role {
   text-decoration: none;
   font-size: 20px;
-  background-color: #50a3a2;
-  color:#323232;
+  background-color: var(--primary-font-color);
+  color: var(--secondary-font-color);
   border-radius: 5px;
 }
 
 .testimonial .testimonial-details .testimonial-description {
+  text-align: start;
+  margin-top: 5px;
   /* font-size: 14px; */
-  color: #85d17b;
+  color: var(--primary-font-color);
   transition: all 0.3s linear;
+  padding: 15px;
+  position: relative;
+  transition: all 0.5s linear;
 }
+.testimonial .testimonial-details .testimonial-description:hover {
+  background-color: var(--primary-font-color);
+  color: var(--secondary-font-color);
+}
+.testimonial .testimonial-details .testimonial-description::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 48px;
+  border-left: solid 5px var(--primary-font-color);
+}
+.testimonial .testimonial-details .testimonial-description::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  height: 100%;
+  /* width: 48px; */
+  border-left: solid 5px var(--primary-font-color);
+}
+
 /* Hover */
 .testimonial .testimonial-details .testimonial-description:hover {
   border-radius: 5px;
-  color: #50a3a2;
+  color: var(--secondary-font-color);
 }

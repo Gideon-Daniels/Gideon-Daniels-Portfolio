@@ -1,3 +1,15 @@
+:root {
+  --primary-font-color: #323232;
+  --secondary-font-color: #50a3a2;
+  --highlighted-font-color: #78cc6d;
+  --container-background: rgba(255, 255, 255, 0.2);
+  --background-gradient: linear-gradient(
+    to bottom right,
+    #50a3a2 0%,
+    #78cc6d 100%
+  );
+  --border-main-content-sidebar: 1px solid rgba(255, 255, 255, 0.18);
+}
 #work-education {
   display: flex;
   flex-direction: column;
@@ -7,10 +19,12 @@
 }
 #work-education .icon {
   font-size: 25px;
-  color: #50a3a2;
+  color: var(--secondary-font-color);
   margin: 10px 0px;
   text-align: center;
   transition: all 0.3s linear;
+  background-color: var(--primary-font-color);
+  border-radius: 5px;
 }
 #work-education .heading {
   margin-bottom: 5px;
@@ -18,12 +32,10 @@
 }
 
 #work-education .icon:hover {
-  color: #85d17b;
-  font-size: 35px;
+  color: var(--highlighted-font-color);
 }
 
 /*--------------- work--------------- */
-
 
 .work-wrapper .work {
   position: relative;
@@ -37,54 +49,40 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  color: #85d17b;
+  color: var(--primary-font-color);
   margin-bottom: 10px;
-  border: 2px solid #50a3a2;
+  border: 2px solid var(--primary-font-color);
   border-radius: 5px;
   font-size: 10px;
   text-align: center;
-  
 }
 
 .work-details .heading {
   text-decoration: none;
   align-self: center;
-  background-color: #50a3a2;
-  color: #323232;
+  background-color: var(--primary-font-color);
+  color: var(--secondary-font-color);
   width: 100%;
   padding: 5px;
   transition: all 0.3s linear;
 }
-.work-details .duration{
+.work-details .duration {
   font-size: 18px;
   width: 100%;
- padding: 5px;
- transition: all 0.3s linear;
+  padding: 5px;
+  transition: all 0.3s linear;
 }
 
-.work-details .role{
+.work-details .role {
   font-size: 14px;
   padding: 5px;
   transition: all 0.3s linear;
 }
 /* work hover */
-.work-details:hover{
-  border: #85d17b solid 2px;
-}
-
 .work-details:hover .heading {
-  background-color: #85d17b;
+  color: var(--highlighted-font-color);
 }
-.work-details:hover .duration{
-  color: #50a3a2;
-}
-
-.work-details:hover .role{
-  color: #50a3a2;
-}
-
 /* -------------------education-------------- */
-
 
 .education-wrapper .education {
   margin-left: 11px;
@@ -98,48 +96,37 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid #50a3a2;
+  border: 2px solid var(--primary-font-color);
   border-radius: 5px;
   font-size: 10px;
-  color: #85d17b;
+  color: var(--primary-font-color);
 }
-.education-details .heading{
- text-decoration: none;
- align-self: center;
- background-color: #50a3a2;
- color: #323232;
- width: 100%;
- padding: 5px;
- transition: all 0.3s linear;
+.education-details .heading {
+  text-decoration: none;
+  align-self: center;
+  background-color: var(--primary-font-color);
+  color: var(--secondary-font-color);
+  width: 100%;
+  padding: 5px;
+  transition: all 0.3s linear;
 }
-.education-details .duration{
- font-size: 18px;
- width: 100%;
- padding: 5px;
- text-align: center;
- transition: all 0.3s linear;
+.education-details .duration {
+  font-size: 18px;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  transition: all 0.3s linear;
 }
-.education-details .qualification{
+.education-details .qualification {
   font-size: 14px;
   padding: 5px;
   transition: all 0.3s linear;
 }
 /* education hover */
-.education-details:hover{
-  border: #85d17b solid 2px;
-}
 
 .education-details:hover .heading {
-  background-color: #85d17b;
+  color: var(--highlighted-font-color);
 }
-.education-details:hover .duration{
-  color: #50a3a2;
-}
-
-.education-details:hover .qualification{
-  color: #50a3a2;
-}
-
 
 @media only screen and (max-width: 1215px) {
 }

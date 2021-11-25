@@ -41,9 +41,19 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- animate css library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <!-- Landing Page / Main Page -->
+    <div class="filter-theme">
+      <span class="first-theme" onclick="themeChange('first-theme')"></span>
+      <span class="second-theme" onclick="themeChange('second-theme')"></span>
+      <span class="third-theme" onclick="themeChange('third-theme')"></span>
+    </div>
     <div id="main-landing-page">
       <!-- sidebar and navbar container -->
       <div id="sidebar-navbar-container">
@@ -55,7 +65,7 @@
               <a
                 class="navbar-button"
                 href="#about-me"
-                onclick="showTab('about-me')"
+                onclick="showTab('about-me',)"
               >
                 <span class="icon-link"
                   ><i class="fas fa-user-circle"></i
@@ -77,7 +87,7 @@
               <a
                 href="#skills"
                 class="navbar-button"
-                onclick="showTab('skills')"
+                onclick="showTab('skills',)"
               >
                 <span class="icon-link"><i class="fas fa-tools"></i></span>
                 <span class="nav-header">Skills</span>
@@ -87,7 +97,7 @@
               <a
                 class="navbar-button"
                 href="#projects"
-                onclick="showTab('projects')"
+                onclick="showTab('projects',)"
               >
                 <span class="icon-link"
                   ><i class="fas fa-project-diagram"></i
@@ -126,7 +136,10 @@
         <div id="main" class="left-section">
           <!-- image -->
           <div class="image">
-            <img src="./images/C8 Apr21 Gideon Daniels (2).jpg" alt="cover" />
+            <img
+              src="./images/C8_Apr21_Gideon_Daniels__2_-removebg-preview.png"
+              alt="cover"
+            />
           </div>
           <div class="info">
             <div><h3 class="name">Gideon Daniels</h3></div>
@@ -500,7 +513,7 @@
           </div>
           <!-- -------------------------------End Of Work and Education Section ----------------------------------------->
           <div id="projects" class="main-content-sidebar">
-            <h2 class="heading">Project</h2>
+            <h2 class="heading">Projects</h2>
             <!-- Navbar for projects -->
             <div class="projects-navbar-container">
               <button class="project-filter" onclick="filterCards('All')">
@@ -695,6 +708,7 @@ He is quick to help in a situation.
               />
               <!-- <label for="textarea"></label> -->
               <textarea
+                style="resize: none"
                 name="textarea"
                 id="textarea"
                 cols="30"
@@ -737,7 +751,6 @@ He is quick to help in a situation.
       $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
           items: 1,
-          margin: 10,
           loop: true,
           dots: false,
           autoplay: true,
@@ -750,6 +763,6 @@ He is quick to help in a situation.
     <script src="./scripts/index.js"></script>
     <script src="./scripts/typewriter.js"></script>
     <script src="./scripts/project-cards.js"></script>
-
+    <script src="./scripts/colorChange.js"></script>
   </body>
 </html>

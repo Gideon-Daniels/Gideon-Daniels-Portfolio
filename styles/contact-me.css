@@ -1,3 +1,15 @@
+:root {
+  --primary-font-color: #323232;
+  --secondary-font-color: #50a3a2;
+  --highlighted-font-color: #78cc6d;
+  --container-background: rgba(255, 255, 255, 0.2);
+  --background-gradient: linear-gradient(
+    to bottom right,
+    #50a3a2 0%,
+    #78cc6d 100%
+  );
+  --border-main-content-sidebar: 1px solid rgba(255, 255, 255, 0.18);
+}
 #contact-me {
   display: flex;
   height: 98%;
@@ -10,8 +22,8 @@
   text-decoration: none;
   font-size: 25px;
   padding: 5px;
-  background: #50a3a2;
-  color: #323232;
+  background: var(--primary-font-color);
+  color: var(--secondary-font-color);
   border-radius: 5px;
   margin-bottom: 25px;
   text-align: center;
@@ -32,9 +44,9 @@
   background: #323232;
   padding: 5px 5px;
   border-radius: 5px;
-  border: #323232 2px solid;
+  border: var(--primary-font-color) 2px solid;
   margin-bottom: 25px;
-  color: #323232;
+  color: var(--secondary-font-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,21 +56,20 @@
   transition: all 0.5s linear;
 }
 
-
 .navbar-details .details .icon {
   font-size: 35px;
-  color: #50a3a2;
+  color: var(--secondary-font-color);
   transition: all 0.3s linear;
 }
 #contact-me .contact-form-navbar .navbar-details .details:hover .icon {
-  background-color: #323232;
-  color: #85d17b;
+  background-color: var(--primary-font-color);
+  color: var(--secondary-font-color);
 }
 #contact-me .contact-form-navbar .navbar-details .details:hover {
-  text-shadow: 0px 0px 20px #85d17b;
-  box-shadow: 0px 0px 20px #85d17b;
-  background-color: #323232;
-  color: #85d17b;
+  text-shadow: 0px 0px 20px var(--secondary-font-color);
+  box-shadow: 0px 0px 20px var(--secondary-font-color);
+  background-color: var(--primary-font-color);
+  color: var(--secondary-font-color);
   opacity: 1;
 }
 
@@ -87,13 +98,13 @@
   width: 100%;
   margin-right: 10px;
   outline: none;
-  background: #50a3a2;
+  border: none;
+  background: var(--primary-font-color);
   border-radius: 15px;
   padding: 2%;
-  color: #323232;
+  color: var(--secondary-font-color);
   font-size: 18px;
-  border: #323232 solid 2px;
-
+  /* border: var(--secondary-font-color) solid 2px; */
 }
 
 .buttons {
@@ -103,32 +114,30 @@
 }
 
 .buttons .button {
-  background: #50a3a2;
+  background: var(--primary-font-color);
   position: relative;
   height: 100%;
   width: 100%;
   border-radius: 5px;
   font-size: 25px;
   border: none;
-  color: #323232;
+  color: var(--secondary-font-color);
   opacity: 0.3;
   transition: all 0.3s linear;
 }
 .form .contact-groups::placeholder {
   padding: 5px;
-  color: #323232;
+  color: var(--secondary-font-color);
   font-size: 18px;
 }
 
 /* hover */
-.form:hover{
-opacity: 1;
-}
-.form .buttons .button:hover {
-  text-shadow: 0px 0px 20px #85d17b;
-  box-shadow: 0px 0px 20px #50a3a2;
-  color: #85d17b;
+.form:hover {
   opacity: 1;
 }
-
-
+.form .buttons .button:hover {
+  text-shadow: 0px 0px 20px var(--secondary-font-color);
+  box-shadow: 0px 0px 20px var(--secondary-font-color);
+  color: var(--secondary-font-color);
+  opacity: 1;
+}

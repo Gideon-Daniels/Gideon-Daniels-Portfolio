@@ -1,3 +1,15 @@
+:root {
+  --primary-font-color: #323232;
+  --secondary-font-color: #50a3a2;
+  --highlighted-font-color: #78cc6d;
+  --container-background: rgba(255, 255, 255, 0.2);
+  --background-gradient: linear-gradient(
+    to bottom right,
+    #50a3a2 0%,
+    #78cc6d 100%
+  );
+  --border-main-content-sidebar: 1px solid rgba(255, 255, 255, 0.18);
+}
 #projects {
   display: flex;
   flex-direction: column;
@@ -5,60 +17,55 @@
   margin-bottom: 5px;
   margin-top: 5px;
   padding: 15px 5%;
-  
 }
-#projects .heading{
+#projects .heading {
   text-align: center;
-  background-color: #50a3a2;
-  color: #323232;
+  background-color: var(--background-gradient);
+  color: var(--primary-font-color);
   width: 100%;
   border-radius: 5px;
+  background-color: var(--primary-font-color);
+  color: var(--secondary-font-color);
 }
-
 
 #projects .projects-navbar-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* height: 100%; */
   width: 100%;
   margin: 20px 5px;
 }
 
-#projects .projects-navbar-container .project-filter{
-  /* height: 100%; */
+#projects .projects-navbar-container .project-filter {
   width: 100%;
   margin-right: 5px;
   border: none;
   outline: none;
   border-radius: 5px;
-  background-color: #50a3a2;
-  color: #323232;
+  background-color: var(--primary-font-color);
+  color: var(--secondary-font-color);
   font-size: 16px;
   padding: 5px 5px;
   transition: all 0.3s linear;
 }
 
-#projects .projects-navbar-container .project-filter:hover{
+#projects .projects-navbar-container .project-filter:hover {
   color: #85d17b;
-  text-shadow: 0px 0px 20px #85d17b;
-  box-shadow: 0px 0px 20px #50a3a2;
+  text-shadow: 0px 0px 20px var(--highlighted-font-color);
+  box-shadow: 0px 0px 20px var(--secondary-font-color);
 }
 
 #projects .project-cards-container {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-
   gap: 2px;
-
 }
 
 #projects .project-cards-container .project-card {
   display: flex;
   flex-direction: column;
-  color: #323232;
-  /* margin-bottom: 5px; */
+  color: var(--primary-font-color);
   border-radius: 8px;
   width: 100%;
   transform: scale(0.8);
@@ -67,12 +74,12 @@
   gap: 5px;
 }
 
-#projects .project-cards-container .project-card:hover img{
+#projects .project-cards-container .project-card:hover img {
   opacity: 0.2;
 }
 
-#projects .project-cards-container .project-card:hover{
-  border: #50a3a2 solid 1px;
+#projects .project-cards-container .project-card:hover {
+  border: var(--primary-font-color) solid 1px;
   transform: scale(1);
 }
 
@@ -91,7 +98,7 @@
   border-radius: 5px;
 }
 
-.project-card .card-details{
+.project-card .card-details {
   position: absolute;
   top: 0;
   left: -100%;
@@ -99,18 +106,18 @@
   transition: all 0.5s linear;
 }
 
-.project-card:hover .card-details{
+.project-card:hover .card-details {
   opacity: 1;
   left: 0;
 }
 
-.project-card .card-details p{
-  color: #50a3a2;
+.project-card .card-details p {
+  color: var(--primary-font-color);
   padding: 5px;
-  font-size: 12px;
+  /* font-size: 12px; */
 }
 
-.project-card .buttons{
+.project-card .buttons {
   display: flex;
   justify-content: center;
   gap: 5px;
@@ -120,46 +127,42 @@
   height: 30px;
   left: -100%;
   opacity: 0;
-  
+
   transition: all 0.3s linear;
 }
 
-.project-card:hover .buttons{
+.project-card:hover .buttons {
   opacity: 1;
   left: 0;
 }
 
-.project-card  .buttons .button {
-  background-color: #50a3a2;
-  
+.project-card .buttons .button {
+  background-color: var(--primary-font-color);
+ 
   outline: none;
   opacity: 1;
   transition: all 0.3s linear;
 }
-.project-card .buttons .button a{
+.project-card .buttons .button a {
+  color: var(--secondary-font-color);
   display: block;
   width: 100%;
 }
-
 
 /* Hover */
 #projects .project-cards-container .project-card:hover .card-image {
   opacity: 1;
 }
 
-.project-card  .buttons .button:hover {
- opacity: 1;
- border-color: #85d17b;
- color: #85d17b;
- box-shadow: 0px 0px 20px #50a3a2;
+.project-card .buttons .button:hover {
+  opacity: 1;
+  color: var(--highlighted-font-color);
+  box-shadow: 0px 0px 20px var(--secondary-font-color);
 }
 
 .project-card .buttons .button:hover a {
-  text-shadow: 0px 0px 20px #85d17b;
-  
-  color: #85d17b;
+  text-shadow: 0px 0px 20px var(--highlighted-font-color);
+
+  color: var(--highlighted-font-color);
   opacity: 1;
 }
-  
-
-
