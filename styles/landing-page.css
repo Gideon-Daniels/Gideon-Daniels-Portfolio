@@ -283,6 +283,7 @@
   width: 50%;
   height: 100%;
   position: relative;
+  z-index: 1;
 }
 
 /***********************************************CODE IN RELATIONSHIP WITH JS**************************/
