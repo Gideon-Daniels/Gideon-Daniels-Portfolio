@@ -35,7 +35,7 @@ body {
   gap: 20px;
   position: fixed;
   top: 50px;
-  right: 50px;
+  right: 5px;
   padding: 10px;
   height: 100%;
   z-index: 1000;
