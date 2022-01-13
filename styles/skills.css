@@ -86,9 +86,8 @@
 #skills .technical-skills-container .technical-skill {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   width: 40%;
-  height: 48%;
   border: var(--primary-font-color) solid 2px;
   border-radius: 5px;
   margin-right: 5px;
