@@ -64,6 +64,12 @@
   /* box-shadow: 0px 0px 2px 2px  #323232; */
 }
 
+.navbar-link .navbar-button.active {
+  border-radius: 10px;
+  color: var(--secondary-font-color);
+  background-color: var(--primary-font-color);
+}
+
 /****************************************** BUTTONS IN SIDEBAR ***********************************************/
 .navbar-button {
   display: flex;
@@ -183,15 +189,24 @@
   font-weight: 300;
   transition: all 0.2s linear;
 }
+.txt-type {
+  transition: all 0.2s linear;
+}
 .info .name:hover {
   color: var(--secondary-font-color);
   font-weight: bold;
   transform: scale(1.2);
+  border-radius: 10px;
+  width: 92%;
+  background-color: var(--primary-font-color);
 }
 .txt-type:hover {
   color: var(--secondary-font-color);
   font-weight: bold;
   transform: scale(1.2);
+  border-radius: 10px;
+  width: 92%;
+  background-color: var(--primary-font-color);
 }
 .txt-type > .txt {
   border-right: 0.2rem solid var(--primary-font-color);
@@ -210,6 +225,9 @@
 .subtitle-skills .tag:hover {
   color: var(--secondary-font-color);
   transform: scale(1.2);
+  border-radius: 10px;
+  width: 92%;
+  background-color: var(--primary-font-color);
 }
 
 /***********************************************SOCIAL LINKS INSIDE INFO CONTAINER**************************/
@@ -219,7 +237,7 @@
   gap: 10px;
 }
 .info .social .links .link {
-  padding: 5px;
+  padding: 15px;
   font-size: 25px;
 }
 
@@ -229,8 +247,11 @@
 }
 /**************************** HOVER ***********************************/
 .info .social .links .link a:hover {
+  border-radius: 50%;
+  padding: 10px;
+  background-color: var(--primary-font-color);
   color: var(--secondary-font-color);
-  font-size: 35px;
+  font-size: 30px;
 }
 /***********************************************BUTTONS INSIDE INFO CONTAINER**************************/
 .info .buttons {

@@ -54,9 +54,9 @@
       <span class="second-theme" onclick="themeChange('second-theme')"></span>
       <span class="third-theme" onclick="themeChange('third-theme')"></span>
     </div>
-    <div id="main-landing-page">
+    <main id="main-landing-page">
       <!-- sidebar and navbar container -->
-      <div id="sidebar-navbar-container">
+      <header id="sidebar-navbar-container">
         <!-- Navigation Bar -->
         <nav class="navbar">
           <ul class="navbar-links">
@@ -129,11 +129,11 @@
             </li>
           </ul>
         </nav>
-      </div>
+      </header>
       <!-- content container -->
-      <div id="main-content-container">
+      <main id="main-content-container">
         <!-- Left section [image, name, skills, social links,download cv and contact me] -->
-        <div id="main" class="left-section">
+        <section id="main" class="left-section">
           <!-- image -->
           <div class="image">
             <img
@@ -180,8 +180,10 @@
                   ></a>
                 </li>
                 <li class="link">
-<a href="https://twitter.com/GideonDragoonix" target="_blank"><i class="fab fa-twitter"></i></a>
-</li>
+                  <a href="https://twitter.com/GideonDragoonix" target="_blank"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
               </ul>
             </div>
             <!-- buttons -->
@@ -204,133 +206,26 @@
               </button>
             </div>
           </div>
-        </div>
+        </section>
         <!-- Rigth section [Displaying content-About Section, Work and Education, Skills, Projects, Testimonial, Contact Me] -->
-        <div class="right-section">
+        <section class="right-section">
           <!-----------------------------------------About Me Section ---------------------------------------------->
           <div id="about-me" class="main-content-sidebar active">
-            <h2 class="heading">About Me</h2>
-            <div class="left-bio-container">
-              <h2>Hello I am Gideon</h2>
-              <p>
-                I am a <span class="highlight">quiet</span>,
-                <span class="highlight">honest</span> and
-                <span class="highlight">kind</span> individual. I
-                <span class="highlight">adapt</span> easily to situations and
-                environments that I am not used to. I am an
-                <span class="highlight">out-of-the-box thinker</span> and like
-                <span class="highlight">solving problems</span> in my head.
-              </p>
-            </div>
-            <h2 class="heading">Personal Details</h2>
-            <div class="right-bio-container">
-              <ul class="all-info">
-                <li class="info">
-                  <span class="description">Full Name</span>
-                  <span class="detail">Gideon Ashwin Daniels</span>
+            <nav class="about-navbar">
+              <ul class="about-links">
+                <li class="link" onclick="displayIntro()">Intro</li>
+                <li class="link" onclick="displayPersonalDetails()">
+                  Personal Details
                 </li>
-                <li class="info">
-                  <span class="description">Date Of Birth</span
-                  ><span class="detail">07-09-1996</span>
-                </li>
-                <li class="info">
-                  <span class="description">Languages</span
-                  ><span class="detail">Afrikaans & English</span>
-                </li>
-                <li class="info">
-                  <span class="description">Criminal Record</span
-                  ><span class="detail">No</span>
-                </li>
-                <li class="info">
-                  <span class="description">Drivers License</span
-                  ><span class="detail">Yes</span>
-                </li>
-                <li class="info">
-                  <span class="description">City</span
-                  ><span class="detail">Cape Town</span>
-                </li>
-                <li class="info">
-                  <span class="description">Country & Province</span
-                  ><span class="detail">South Africa , Western Cape</span>
+                <li class="link" onclick="displayPassion()">Passion</li>
+                <li class="link" onclick="passionBoard()">
+                  Passion Board
                 </li>
               </ul>
-            </div>
-            <div class="passion">
-              <div class="passion-container">
-                <h2 class="heading">Passion</h2>
-                <p>
-                  My
-                  <span class="highlight">passion for the tech industry</span>
-                  came from the moment I laid eyes on video games and when my
-                  parents asked no one else but me to fix the TV stations. I
-                  loved <span class="highlight">solving problems</span> that
-                  require you to go deep into the settings of the software. It's
-                  a good feeling
-                  <span class="highlight">discovering</span> something that no
-                  one else has thought about yet and that's why I feel so
-                  passionate about the tech industry. It's a platform where you
-                  can
-                  <span class="highlight"
-                    >create whatever your mind desires within the limits of your
-                    imagination</span
-                  >.
-                </p>
-              </div>
-            </div>
-            <!-- Finish Passion Board -->
-            <h2 class="heading">Passion Board</h2>
-            <p class="passion-details">
-              Reading fiction books,
-              <span class="highlight">myths and lore</span> are my favourites.
-              Watching <span class="highlight">documentaries</span> about
-              certain changes within the world. Playing
-              <span class="highlight">games</span> and
-              <span class="highlight">watching anime</span> . I like
-              <span class="highlight">observing</span> and
-              <span class="highlight">talking</span> to different types of
-              people: I love the <span class="highlight">psychology</span> about
-              how people behave and interact with each other. I like playing
-              <span class="highlight">soccer</span>
-              <span class="highlight">chess</span>
-              <span class="highlight">table tennis</span>
-            </p>
-            <ul class="passion-board">
-              <li class="passion">
-                <span class="description"
-                  >Technology<i class="fas fa-laptop icon"></i
-                ></span>
-              </li>
+            </nav>
 
-              <li class="passion">
-                <span class="description"
-                  >Sports<i class="fas fa-futbol icon"></i
-                ></span>
-              </li>
-
-              <li class="passion">
-                <span class="description"
-                  >books<i class="fas fa-book-reader icon"></i
-                ></span>
-              </li>
-
-              <li class="passion">
-                <span class="description"
-                  >Games<i class="fas fa-gamepad icon"></i
-                ></span>
-              </li>
-
-              <li class="passion">
-                <span class="description"
-                  >Anime<i class="fab fa-accusoft icon"></i
-                ></span>
-              </li>
-
-              <li class="passion">
-                <span class="description"
-                  >Psycology<i class="fas fa-brain icon"></i
-                ></span>
-              </li>
-            </ul>
+            <main class="content">
+            </main>
           </div>
           <!-- ---------------------------------END OF ABOUT ME SECTION------------------------------------- -->
 
@@ -519,26 +414,26 @@
           <div id="projects" class="main-content-sidebar">
             <h2 class="heading">Projects</h2>
             <!-- Navbar for projects -->
-            <div class="projects-navbar-container">
-              <button class="project-filter" onclick="filterCards('All')">
+            <ul class="projects-navbar-container">
+              <li class="project-filter" onclick="filterCards('All')">
                 All
-              </button>
-              <button class="project-filter" onclick="filterCards('HTML/CSS')">
+              </li>
+              <li class="project-filter" onclick="filterCards('HTML/CSS')">
                 HTML/CSS
-              </button>
-              <button class="project-filter" onclick="filterCards('Python')">
+              </li>
+              <li class="project-filter" onclick="filterCards('Python')">
                 Python
-              </button>
-              <button
+              </li>
+              <li
                 class="project-filter"
                 onclick="filterCards('Javascript')"
               >
                 Javascript
-              </button>
-              <button class="project-filter" onclick="filterCards('Fullstack')">
+              </li>
+              <li class="project-filter" onclick="filterCards('Fullstack')">
                 Fullstack
-              </button>
-            </div>
+              </li>
+            </ul>
             <!-- Projects-cards-container -->
             <div class="project-cards-container"></div>
           </div>
@@ -726,17 +621,17 @@ He is quick to help in a situation.
               </div>
             </form>
           </div>
-        </div>
-      </div>
-      <div id="footer">
+        </section>
+      </main>
+      <footer id="footer">
         <p>
           Made with <span><i class="fas fa-fire"></i></span> By Gideon Daniels
         </p>
-      </div>
+      </footer>
       <!-- button when clicked goes to the top of the screen -->
       <!-- <a href="#main">A</a> -->
       <!-- END Of Footer -->
-    </div>
+    </main>
 
     <!-- -------------------------END----------------------------- -->
     <!-- Script tags under here -->
@@ -768,5 +663,6 @@ He is quick to help in a situation.
     <script src="./scripts/typewriter.js"></script>
     <script src="./scripts/project-cards.js"></script>
     <script src="./scripts/colorChange.js"></script>
+    <script src="./scripts/aboutMe.js"></script>
   </body>
 </html>

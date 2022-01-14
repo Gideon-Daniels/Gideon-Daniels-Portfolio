@@ -1,13 +1,12 @@
 function themeChange(theme) {
   let property = document.documentElement.style;
-
   let color = "";
   if (theme == "first-theme") {
     backgroundGradient =
       "linear-gradient(to bottom right, #50a3a2 0%, #78cc6d 100%)";
     containerBackground = "rgba(255, 255, 255, 0.2)";
     primaryFontColor = "#323232";
-    secondaryFontColor = "#50a3a2";
+    secondaryFontColor = "#78cc6d";
     highlightedFontColor = "#78cc6d";
     borderMainContentSidebar = "1px solid rgba(255, 255, 255, 0.18)";
   } else if (theme == "second-theme") {
@@ -19,8 +18,7 @@ function themeChange(theme) {
     highlightedFontColor = "#7dcc6d";
     borderMainContentSidebar = "1px solid rgba(255, 255, 255, 0.18)";
   } else if (theme == "third-theme") {
-    backgroundGradient =
-       "rgba(45, 45, 45, 0.2)";
+    backgroundGradient = "rgba(45, 45, 45, 0.2)";
     containerBackground = "rgba(255, 255, 255, 0.3)";
     primaryFontColor = "black";
     secondaryFontColor = "white";
