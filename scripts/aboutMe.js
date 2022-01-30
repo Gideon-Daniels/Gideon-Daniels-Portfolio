@@ -10,7 +10,7 @@ function displayIntro() {
       I am a <span class="highlight">quiet</span>,
       <span class="highlight">honest</span> and
       <span class="highlight">kind</span> individual. I
-      <span class="highlight">adapt</span> easily to situations and
+      <span class="highlight">adaptz</span> easily to situations and
       environments that I am not used to. I am an
       <span class="highlight">out-of-the-box thinker</span> and like
       <span class="highlight">solving problems</span> in my head.

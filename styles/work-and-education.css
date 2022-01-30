@@ -16,117 +16,89 @@
   height: 98%;
   margin-top: 5px;
   padding: 15px 5%;
+  gap: 20px;
 }
-#work-education .icon {
-  font-size: 25px;
-  color: var(--secondary-font-color);
-  margin: 10px 0px;
-  text-align: center;
-  transition: all 0.3s linear;
-  background-color: var(--primary-font-color);
-  border-radius: 5px;
-}
+
 #work-education .heading {
+  font-size: 30px;
+  margin-top: 5px;
+  border-bottom: solid 3px var(--primary-font-color);
   margin-bottom: 5px;
   text-align: center;
 }
+.resume-card-container {
+  padding: 0px 20px 0 20px;
+  border-left: 5px solid var(--primary-font-color);
+  border-right: 5px solid var(--primary-font-color);
 
-#work-education .icon:hover {
-  color: var(--highlighted-font-color);
-}
-
-/*--------------- work--------------- */
-
-.work-wrapper .work {
-  position: relative;
-  margin-left: 11px;
-  display: flex;
-  flex-direction: column;
-}
-.work .work-details {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  color: var(--primary-font-color);
-  margin-bottom: 10px;
-  border: 2px solid var(--primary-font-color);
-  border-radius: 5px;
-  font-size: 10px;
-  text-align: center;
+  gap: 10px;
+  transition: all 0.5s ease-in-out;
 }
 
-.work-details .heading {
-  text-decoration: none;
-  align-self: center;
+.resume-card {
   background-color: var(--primary-font-color);
   color: var(--secondary-font-color);
-  width: 100%;
-  padding: 5px;
-  transition: all 0.3s linear;
-}
-.work-details .duration {
-  font-size: 18px;
-  width: 100%;
-  padding: 5px;
-  transition: all 0.3s linear;
-}
-
-.work-details .role {
-  font-size: 14px;
-  padding: 5px;
-  transition: all 0.3s linear;
-}
-/* work hover */
-.work-details:hover .heading {
-  color: var(--highlighted-font-color);
-}
-/* -------------------education-------------- */
-
-.education-wrapper .education {
-  margin-left: 11px;
+  padding: 5px 10px;
+  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+  transform-style: preserve-3d;
+  font-size: 16px;
+  height: 200px;
 }
-
-.education .education-details {
-  width: 100%;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid var(--primary-font-color);
-  border-radius: 5px;
-  font-size: 10px;
+.resume-card:hover {
+  transform: rotateY(180deg);
+  background-color: var(--secondary-font-color);
   color: var(--primary-font-color);
 }
-.education-details .heading {
-  text-decoration: none;
-  align-self: center;
-  background-color: var(--primary-font-color);
-  color: var(--secondary-font-color);
-  width: 100%;
-  padding: 5px;
-  transition: all 0.3s linear;
+
+.resume-card:hover .front {
+  opacity: 0;
+  
 }
-.education-details .duration {
-  font-size: 18px;
-  width: 100%;
-  padding: 5px;
+
+.resume-card:hover .back {
+  opacity: 1;
+ 
+}
+
+.resume-card .back {
+  position: absolute;
+  transform: rotateY(180deg);
+  opacity: 0;
+  transition: all 1s ease-in-out;
   text-align: center;
-  transition: all 0.3s linear;
+  padding: 10px 10px;
 }
-.education-details .qualification {
-  font-size: 14px;
-  padding: 5px;
-  transition: all 0.3s linear;
+.resume-card .front {
+  transition: all 0.5s ease-in-out;
+  text-align: center;
 }
-/* education hover */
-
-.education-details:hover .heading {
-  color: var(--highlighted-font-color);
+.resume-card::before {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: var(--secondary-font-color);
+  border: 3px solid var(--primary-font-color);
+  position: absolute;
+  top: 50%;
+  left: -30px;
 }
-
-@media only screen and (max-width: 1215px) {
+.resume-card::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent var(--primary-font-color) transparent transparent;
+  border-width: 10px;
+  position: absolute;
+  top: 50%;
+  left: -19px;
 }
