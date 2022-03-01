@@ -104,7 +104,6 @@ resume.map((history) => {
 });
 
 function resumeCard(card) {
-  console.log("hello");
   let createdCard = `
   <div class="resume-card-container">
   <div class="resume-card">
@@ -146,4 +145,4 @@ function displayResume(type) {
   }
 }
 
-displayResume('Work');
+displayResume("Work");
