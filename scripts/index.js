@@ -15,7 +15,7 @@ MainNav.forEach((element) => {
   element.addEventListener("click", function () {
     MainNav.forEach((nav) => nav.classList.remove("active"));
     this.classList.add("active");
-
+    
   });
 });
 // all other navs

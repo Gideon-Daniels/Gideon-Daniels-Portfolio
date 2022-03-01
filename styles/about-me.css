@@ -14,7 +14,7 @@
   padding: 10px;
 }
 
-.about-navbar .about-links {
+.content-navbar .content-links {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -22,11 +22,11 @@
   padding: 10px;
 }
 
-.about-links .link {
+.content-links .link {
   width: 100%;
 }
 
-.about-links .link {
+.content-links .link {
   text-align: center;
   width: 100%;
   padding: 10px;
@@ -40,12 +40,12 @@
   font-size: 12px;
 }
 
-.about-links .link:hover {
+.content-links .link:hover {
   color: var(--secondary-font-color);
   background-color: var(--primary-font-color);
 }
 
-.about-links .link.active {
+.content-links .link.active {
   border-radius: 10px;
   color: var(--secondary-font-color);
   background-color: var(--primary-font-color);

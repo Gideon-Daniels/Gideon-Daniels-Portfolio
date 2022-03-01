@@ -62,6 +62,7 @@ function displayPersonalDetails() {
     container.innerHTML += card;
   }
 }
+
 function displayPassion() {
   content.innerHTML = "";
   content.innerHTML += `  
