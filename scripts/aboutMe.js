@@ -39,12 +39,12 @@ function createdDetailsCard(card) {
   let createdCard = `
   <div class="card-container">
     <div class="card">
-      <figure class="front">
+      <div class="front">
         <h2>${card.title}</h2>
-      </figure>
-      <figure class="back">
+      </div>
+      <div class="back">
         <h2 class="description">${card.description}</h2>
-      </figure>
+      </div>
     </div>
   </div>
   `;
