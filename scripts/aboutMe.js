@@ -1,5 +1,4 @@
 let content = document.querySelector(".content");
-displayIntro();
 function displayIntro() {
   content.innerHTML = "";
   content.innerHTML = `
@@ -18,6 +17,8 @@ function displayIntro() {
   </section>
     `;
 }
+displayIntro();
+
 //
 
 let details = [
