@@ -38,6 +38,7 @@
   border: solid var(--primary-font-color) 2px;
   cursor: pointer;
   font-size: 12px;
+  transition: all 0.3s linear;
 }
 
 .content-links .link:hover {
