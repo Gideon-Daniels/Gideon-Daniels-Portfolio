@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./styles/testimonials.css" />
     <link rel="stylesheet" href="./styles/project-cards.css" />
     <link rel="stylesheet" href="./styles/contact-me.css" />
+    <link rel="stylesheet" href="./styles/animation.css" />
     <!-- Secondary Links -->
     <!-- Font Awesome -->
     <script
@@ -53,6 +54,20 @@
       <span class="first-theme" onclick="themeChange('first-theme')"></span>
       <span class="second-theme" onclick="themeChange('second-theme')"></span>
       <span class="third-theme" onclick="themeChange('third-theme')"></span>
+    </div>
+    <div class="wrapper">
+      <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
     <main id="main-landing-page">
       <!-- sidebar and navbar container -->
@@ -568,7 +583,7 @@ He is quick to help in a situation.
         $(".owl-carousel").owlCarousel({
           items: 1,
           loop: true,
-          dots: false,
+          bubbles: false,
           autoplay: true,
         });
       });
