@@ -69,15 +69,6 @@ const resume = [
     started: "December 2015",
     ended: "January 2016",
     description:
-      "I was working as a assistant Cashier.I worked in the ticket sales department, food and beverages and catering department.",
-  },
-  {
-    type: "work",
-    name: "Pest Control",
-    title: "Assistant",
-    started: "December 2015",
-    ended: "January 2016",
-    description:
       "I was working as an assistant . I helped cleaned building and fumigate buildings and machinery.",
   },
   {

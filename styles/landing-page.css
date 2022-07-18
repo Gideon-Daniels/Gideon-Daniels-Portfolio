@@ -317,6 +317,7 @@
   left: -100%;
   top: 0;
   opacity: 0;
+  display: ngone;
   overflow: hidden;
   transition: all 0.4s linear;
   background: var(--container-background);
@@ -331,6 +332,7 @@
   opacity: 1;
   left: 0;
   z-index: 1;
+  display: block;
 }
 /***********************************************FOOTER SECTION**************************/
 /* TODO : Create an animation that displays a moving footer horizontally */
