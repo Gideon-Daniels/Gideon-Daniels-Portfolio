@@ -27,6 +27,7 @@ class TypeWriter {
     let typeSpeed = 300;
     if (this.isDeleting) {
       typeSpeed /= 2;
+      
     }
     // if word is complete
     if (!this.isDeleting && this.txt === fullTxt) {
