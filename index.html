@@ -1,62 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Gideon Daniels Portfolio</title>
     <!-- CSS Primary Links -->
-    <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/landing-page.css" />
-    <link rel="stylesheet" href="./styles/navigation-bar.css" />
-    <link rel="stylesheet" href="./styles/sidebar.css" />
-    <link rel="stylesheet" href="./styles/about-me.css" />
-    <link rel="stylesheet" href="./styles/skills.css" />
-    <link rel="stylesheet" href="./styles/work-and-education.css" />
-    <link rel="stylesheet" href="./styles/testimonials.css" />
-    <link rel="stylesheet" href="./styles/project-cards.css" />
-    <link rel="stylesheet" href="./styles/contact-me.css" />
-    <link rel="stylesheet" href="./styles/animation.css" />
+    <link rel="stylesheet" href="./styles/global.css"/>
+    <link rel="stylesheet" href="./styles/landing-page.css"/>
+    <link rel="stylesheet" href="./styles/navigation-bar.css"/>
+    <link rel="stylesheet" href="./styles/sidebar.css"/>
+    <link rel="stylesheet" href="./styles/about-me.css"/>
+    <link rel="stylesheet" href="./styles/skills.css"/>
+    <link rel="stylesheet" href="./styles/work-and-education.css"/>
+    <link rel="stylesheet" href="./styles/testimonials.css"/>
+    <link rel="stylesheet" href="./styles/project-cards.css"/>
+    <link rel="stylesheet" href="./styles/contact-me.css"/>
+    <link rel="stylesheet" href="./styles/animation.css"/>
     <!-- Secondary Links -->
     <!-- Font Awesome -->
     <script
-      src="https://kit.fontawesome.com/a549f23a3b.js"
-      crossorigin="anonymous"
+            src="https://kit.fontawesome.com/a549f23a3b.js"
+            crossorigin="anonymous"
     ></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2XVT1DJMD9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-2XVT1DJMD9');
+    </script>
+
     <!-- ----------------------Owl Carousel Slider -->
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+            crossorigin="anonymous"
     />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+            integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+            crossorigin="anonymous"
     />
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
     />
     <!-- animate css library -->
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-  </head>
-  <body>
-    <!-- Landing Page / Main Page -->
-    <div class="filter-theme">
-      <span class="first-theme" onclick="themeChange('first-theme')"></span>
-      <span class="second-theme" onclick="themeChange('second-theme')"></span>
-      <span class="third-theme" onclick="themeChange('third-theme')"></span>
-    </div>
-    <div class="wrapper">
-      <ul class="bg-bubbles">
+</head>
+<body>
+<!-- Landing Page / Main Page -->
+<div class="filter-theme">
+    <span class="first-theme" onclick="themeChange('first-theme')"></span>
+    <span class="second-theme" onclick="themeChange('second-theme')"></span>
+    <span class="third-theme" onclick="themeChange('third-theme')"></span>
+</div>
+<div class="wrapper">
+    <ul class="bg-bubbles">
         <li></li>
         <li></li>
         <li></li>
@@ -67,434 +82,434 @@
         <li></li>
         <li></li>
         <li></li>
-      </ul>
-    </div>
-    <main id="main-landing-page">
-      <!-- sidebar and navbar container -->
-      <header id="sidebar-navbar-container">
+    </ul>
+</div>
+<main id="main-landing-page">
+    <!-- sidebar and navbar container -->
+    <header id="sidebar-navbar-container">
         <!-- Navigation Bar -->
         <nav class="navbar">
-          <ul class="navbar-links">
-            <li class="navbar-link">
-              <!-- Attribute onclick used for java script -->
-              <a
-                class="navbar-button"
-                href="#about-me"
-                onclick="showTab('about-me',)"
-              >
+            <ul class="navbar-links">
+                <li class="navbar-link">
+                    <!-- Attribute onclick used for java script -->
+                    <a
+                            class="navbar-button"
+                            href="#about-me"
+                            onclick="showTab('about-me',)"
+                    >
                 <span class="icon-link"
-                  ><i class="fas fa-user-circle"></i
+                ><i class="fas fa-user-circle"></i
                 ></span>
-                <span class="nav-header">About Me</span>
-              </a>
-            </li>
-            <li class="navbar-link">
-              <a
-                class="navbar-button"
-                href="#work-education"
-                onclick="showTab('work-education')"
-              >
-                <span class="icon-link"><i class="fas fa-university"></i></span>
-                <span class="nav-header">Resume</span>
-              </a>
-            </li>
-            <li class="navbar-link">
-              <a
-                href="#skills"
-                class="navbar-button"
-                onclick="showTab('skills',)"
-              >
-                <span class="icon-link"><i class="fas fa-tools"></i></span>
-                <span class="nav-header">Skills</span>
-              </a>
-            </li>
-            <li class="navbar-link">
-              <a
-                class="navbar-button"
-                href="#projects"
-                onclick="showTab('projects',)"
-              >
+                        <span class="nav-header">About Me</span>
+                    </a>
+                </li>
+                <li class="navbar-link">
+                    <a
+                            class="navbar-button"
+                            href="#work-education"
+                            onclick="showTab('work-education')"
+                    >
+                        <span class="icon-link"><i class="fas fa-university"></i></span>
+                        <span class="nav-header">Resume</span>
+                    </a>
+                </li>
+                <li class="navbar-link">
+                    <a
+                            href="#skills"
+                            class="navbar-button"
+                            onclick="showTab('skills',)"
+                    >
+                        <span class="icon-link"><i class="fas fa-tools"></i></span>
+                        <span class="nav-header">Skills</span>
+                    </a>
+                </li>
+                <li class="navbar-link">
+                    <a
+                            class="navbar-button"
+                            href="#projects"
+                            onclick="showTab('projects',)"
+                    >
                 <span class="icon-link"
-                  ><i class="fas fa-project-diagram"></i
+                ><i class="fas fa-project-diagram"></i
                 ></span>
-                <span class="nav-header">Projects</span>
-              </a>
-            </li>
-            <li class="navbar-link">
-              <a
-                class="navbar-button"
-                href="#testimonials"
-                onclick="showTab('testimonials')"
-              >
-                <span class="icon-link"><i class="fas fa-users"></i></span>
-                <span class="nav-header">Testimonial</span>
-              </a>
-            </li>
-            <li class="navbar-link">
-              <a
-                class="navbar-button"
-                href="#contact-me"
-                onclick="showTab('contact-me')"
-              >
+                        <span class="nav-header">Projects</span>
+                    </a>
+                </li>
+                <li class="navbar-link">
+                    <a
+                            class="navbar-button"
+                            href="#testimonials"
+                            onclick="showTab('testimonials')"
+                    >
+                        <span class="icon-link"><i class="fas fa-users"></i></span>
+                        <span class="nav-header">Testimonial</span>
+                    </a>
+                </li>
+                <li class="navbar-link">
+                    <a
+                            class="navbar-button"
+                            href="#contact-me"
+                            onclick="showTab('contact-me')"
+                    >
                 <span class="icon-link"
-                  ><i class="fas fa-address-book"></i
+                ><i class="fas fa-address-book"></i
                 ></span>
-                <span class="nav-header">Contact</span>
-              </a>
-            </li>
-          </ul>
+                        <span class="nav-header">Contact</span>
+                    </a>
+                </li>
+            </ul>
         </nav>
-      </header>
-      <!-- content container -->
-      <main id="main-content-container">
+    </header>
+    <!-- content container -->
+    <main id="main-content-container">
         <!-- Left section [image, name, skills, social links,download cv and contact me] -->
         <section id="main" class="left-section">
-          <!-- image -->
-          <div class="image">
-            <img
-              src="./images/C8_Apr21_Gideon_Daniels__2_-removebg-preview.png"
-              alt="cover"
-            />
-          </div>
-          <div class="info">
-            <div><h3 class="name">Gideon Daniels</h3></div>
-            <!-- Skils -->
-            <div class="subtitle-skills">
-              <h3 class="tag">Junior</h3>
-              <h3
-                class="txt-type"
-                data-words='["Web Developer", "Software Developer", "Testing Developer"]'
-                data-wait="3000"
-              ></h3>
+            <!-- image -->
+            <div class="image">
+                <img
+                        src="./images/C8_Apr21_Gideon_Daniels__2_-removebg-preview.png"
+                        alt="cover"
+                />
             </div>
-            <!-- social links -->
-            <div class="social">
-              <ul class="links">
-                <li class="link">
-                  <a href="https://github.com/Gideon-Daniels" target="_blank"
-                    ><i class="fab fa-github"></i
-                  ></a>
-                </li>
-                <li class="link">
-                  <a
-                    href="https://web.facebook.com/gideondragoonix/"
-                    target="_blank"
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                </li>
-                <li class="link">
-                  <a
-                    href="https://www.linkedin.com/in/gideon-daniels"
-                    target="_blank"
-                    ><i class="fab fa-linkedin"></i
-                  ></a>
-                </li>
-                <li class="link">
-                  <a href="https://codepen.io/gideon-daniels" target="_blank"
-                    ><i class="fab fa-codepen"></i
-                  ></a>
-                </li>
-                <li class="link">
-                  <a href="https://twitter.com/GideonDragoonix" target="_blank"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                </li>
-              </ul>
+            <div class="info">
+                <div><h3 class="name">Gideon Daniels</h3></div>
+                <!-- Skils -->
+                <div class="subtitle-skills">
+                    <h3 class="tag">Junior</h3>
+                    <h3
+                            class="txt-type"
+                            data-words='["Web Developer", "Software Developer", "Testing Developer"]'
+                            data-wait="3000"
+                    ></h3>
+                </div>
+                <!-- social links -->
+                <div class="social">
+                    <ul class="links">
+                        <li class="link">
+                            <a href="https://github.com/Gideon-Daniels" target="_blank"
+                            ><i class="fab fa-github"></i
+                            ></a>
+                        </li>
+                        <li class="link">
+                            <a
+                                    href="https://web.facebook.com/gideondragoonix/"
+                                    target="_blank"
+                            ><i class="fab fa-facebook-f"></i
+                            ></a>
+                        </li>
+                        <li class="link">
+                            <a
+                                    href="https://www.linkedin.com/in/gideon-daniels"
+                                    target="_blank"
+                            ><i class="fab fa-linkedin"></i
+                            ></a>
+                        </li>
+                        <li class="link">
+                            <a href="https://codepen.io/gideon-daniels" target="_blank"
+                            ><i class="fab fa-codepen"></i
+                            ></a>
+                        </li>
+                        <li class="link">
+                            <a href="https://twitter.com/GideonDragoonix" target="_blank"
+                            ><i class="fab fa-twitter"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- buttons -->
+                <div class="buttons">
+                    <!-- Download CV - Downloads CV File -->
+                    <button class="button">
+                        <a href="./Gideon Daniels - CV.pdf" class="link" download>
+                            <span class="text">Download CV</span></a
+                        >
+                    </button>
+                    <!-- Contact Me Buttons - Opens Form -->
+                    <button class="button">
+                        <a
+                                href="#contact-me"
+                                onclick="showTab('contact-me')"
+                                class="link"
+                        >
+                            <span class="text">Contact Me</span></a
+                        >
+                    </button>
+                </div>
             </div>
-            <!-- buttons -->
-            <div class="buttons">
-              <!-- Download CV - Downloads CV File -->
-              <button class="button">
-                <a href="./Gideon Daniels - CV.pdf" class="link" download>
-                  <span class="text">Download CV</span></a
-                >
-              </button>
-              <!-- Contact Me Buttons - Opens Form -->
-              <button class="button">
-                <a
-                  href="#contact-me"
-                  onclick="showTab('contact-me')"
-                  class="link"
-                >
-                  <span class="text">Contact Me</span></a
-                >
-              </button>
-            </div>
-          </div>
         </section>
         <!-- Rigth section [Displaying content-About Section, Work and Education, Skills, Projects, Testimonial, Contact Me] -->
         <section class="right-section">
-          <!-----------------------------------------About Me Section ---------------------------------------------->
-          <div id="about-me" class="main-content-sidebar active">
-            <nav class="content-navbar">
-              <ul class="content-links">
-                <li class="link active" onclick="displayIntro()">Intro</li>
-                <li class="link" onclick="displayPersonalDetails()">
-                  Personal Details
-                </li>
-                <li class="link" onclick="displayPassion()">Passion</li>
-                <li class="link" onclick="passionBoard()">Passion Board</li>
-              </ul>
-            </nav>
-            <main class="content"></main>
-          </div>
-
-          <!-- ------------------------------------Skills Section --------------------------------------------------->
-          <div id="skills" class="main-content-sidebar">
-            <!-- Soft Skills -->
-            <nav class="content-navbar">
-              <ul class="content-links">
-                <li class="link" onclick=" renderSoftSkillsCards()">Soft Skills</li>
-                <li class="link" onclick=" renderTechnicalSkillsCards()">
-                  Technical Skills
-                </li>
-              </ul>
-            </nav>
-
-            <main class="skills-content"></main>
-          </div>
-
-          <!-- ------------------------------------Work and Education Section---------------------------------- -->
-          <div id="work-education" class="main-content-sidebar">
-            <nav class="content-navbar">
-              <ul class="content-links">
-                <li class="link" onclick="displayResume('Work')">Work</li>
-                <li class="link" onclick="displayResume('Education')">Education</li>
-              </ul>
-            </nav>
-            <div class="resume-wrapper">
-              <!-- <span class="icon"><i class="fas fa-university"></i></span> -->
+            <!-----------------------------------------About Me Section ---------------------------------------------->
+            <div id="about-me" class="main-content-sidebar active">
+                <nav class="content-navbar">
+                    <ul class="content-links">
+                        <li class="link active" onclick="displayIntro()">Intro</li>
+                        <li class="link" onclick="displayPersonalDetails()">
+                            Personal Details
+                        </li>
+                        <li class="link" onclick="displayPassion()">Passion</li>
+                        <li class="link" onclick="passionBoard()">Passion Board</li>
+                    </ul>
+                </nav>
+                <main class="content"></main>
             </div>
-          </div>
 
-          <div id="projects" class="main-content-sidebar">
-            <h2 class="heading">Projects</h2>
-            <!-- Navbar for projects -->
-            <ul class="projects-navbar-container">
-              <li class="project-filter" onclick="filterCards('All')">All</li>
-              <li class="project-filter" onclick="filterCards('HTML/CSS')">
-                HTML/CSS
-              </li>
-              <li class="project-filter" onclick="filterCards('Python')">
-                Python
-              </li>
-              <li class="project-filter" onclick="filterCards('Javascript')">
-                Javascript
-              </li>
-              <li class="project-filter" onclick="filterCards('Fullstack')">
-                Fullstack
-              </li>
-            </ul>
-            <!-- Projects-cards-container -->
-            <div class="project-cards-container"></div>
-          </div>
-          <!-- ---------------------------------------Testimonials -------------------------------------------------------->
-          <div id="testimonials" class="main-content-sidebar">
-            <div class="owl-carousel">
-              <!-- Testimonial-->
-              <div class="testimonial testimonial-2">
-                <div class="testimonial-image">
-                  <img
-                    src="./images/C8 Apr21 Retsepile Koloko (2).JPG"
-                    alt="img-1"
-                  />
-                </div>
-                <div class="testimonial-details">
-                  <h2 class="heading">Retshepile Koloko</h2>
-                  <h3 class="testimonial-role">Colleague</h3>
-                  <p class="testimonial-description">
-                    He s a very helpful colleague always willing to help others.
-                    He is a kind guy and very generous.
-                  </p>
-                </div>
-              </div>
-              <div class="testimonial testimonial-3">
-                <div class="testimonial-image">
-                  <img
-                    src="./images/C8 Apr21 Thandokazi Nkohla (1).JPG"
-                    alt="img-1"
-                  />
-                </div>
-                <div class="testimonial-details">
-                  <h2 class="heading">Thandokazi</h2>
-                  <h3 class="testimonial-role">Colleague</h3>
-                  <p class="testimonial-description">
-                    He has a pleasent personality, always willing to help. He
-                    works great alone and with a team.
-                  </p>
-                </div>
-              </div>
-              <div class="testimonial testimonial-4">
-                <div class="testimonial-image">
-                  <img
-                    src="./images/C8 Apr21 Aaliyah Jardien (4).JPG"
-                    alt="img-1"
-                  />
-                </div>
-                <div class="testimonial-details">
-                  <h2 class="heading">Aaliyah</h2>
-                  <h3 class="testimonial-role">Colleague</h3>
-                  <p class="testimonial-description">
-                    Gideon is a great team player, someone you can count on.He
-                    has great working ethics & goes out of his way to get the
-                    job done,someone to look up to.
-                  </p>
-                </div>
-              </div>
-              <div class="testimonial testimonial-5">
-                <div class="testimonial-image">
-                  <img src="./images/Godwin.png" alt="img-1" />
-                </div>
-                <div class="testimonial-details">
-                  <h2 class="heading">Godwin</h2>
-                  <h3 class="testimonial-role">
-                    Head of Curriculum and Learning
-                  </h3>
-                  <p class="testimonial-description">
-                    From my collaboration with him in class, I can conclude that
-                    Gideon has a strong passion in coding. Apart from being a
-                    fast learner, his analysis is always accurate and original .
-                  </p>
-                </div>
-              </div>
-              <div class="testimonial testimonial-6">
-                <div class="testimonial-image">
-                  <img src="./images/thapelo-tsotetsi.jpg" alt="img-1" />
-                </div>
-                <div class="testimonial-details">
-                  <h2 class="heading">Thapelo</h2>
-                  <h3 class="testimonial-role">Lecturer</h3>
-                  <p class="testimonial-description">
-                    Gideon is a great student. He has a wondeful way of solving
-                    critical thinking problems. He always break-down a problem
-                    into smaller pieces. He has great intellectual and
-                    communication skills. He works well within a team of
-                    different characters.
-                  </p>
-                </div>
-              </div>
+            <!-- ------------------------------------Skills Section --------------------------------------------------->
+            <div id="skills" class="main-content-sidebar">
+                <!-- Soft Skills -->
+                <nav class="content-navbar">
+                    <ul class="content-links">
+                        <li class="link" onclick=" renderSoftSkillsCards()">Soft Skills</li>
+                        <li class="link" onclick=" renderTechnicalSkillsCards()">
+                            Technical Skills
+                        </li>
+                    </ul>
+                </nav>
+
+                <main class="skills-content"></main>
             </div>
-            <!--------------------------------------End of Testimonials ----------------------------------------------------------->
-          </div>
-          <!-- Contact Form -->
-          <div id="contact-me" class="main-content-sidebar">
-            <h2 class="heading">Contact Me</h2>
-            <!-- Contact-Navigation Bar -->
-            <div class="contact-form-navbar">
-              <ul class="navbar-details">
-                <li class="details call-me">
-                  <span class="icon"><i class="fas fa-phone-alt"></i></span>
-                  <h3>Call Me</h3>
-                  <span>0683243284</span>
-                </li>
-                <li class="details Home">
+
+            <!-- ------------------------------------Work and Education Section---------------------------------- -->
+            <div id="work-education" class="main-content-sidebar">
+                <nav class="content-navbar">
+                    <ul class="content-links">
+                        <li class="link" onclick="displayResume('Work')">Work</li>
+                        <li class="link" onclick="displayResume('Education')">Education</li>
+                    </ul>
+                </nav>
+                <div class="resume-wrapper">
+                    <!-- <span class="icon"><i class="fas fa-university"></i></span> -->
+                </div>
+            </div>
+
+            <div id="projects" class="main-content-sidebar">
+                <h2 class="heading">Projects</h2>
+                <!-- Navbar for projects -->
+                <ul class="projects-navbar-container">
+                    <li class="project-filter" onclick="filterCards('All')">All</li>
+                    <li class="project-filter" onclick="filterCards('HTML/CSS')">
+                        HTML/CSS
+                    </li>
+                    <li class="project-filter" onclick="filterCards('Python')">
+                        Python
+                    </li>
+                    <li class="project-filter" onclick="filterCards('Javascript')">
+                        Javascript
+                    </li>
+                    <li class="project-filter" onclick="filterCards('Fullstack')">
+                        Fullstack
+                    </li>
+                </ul>
+                <!-- Projects-cards-container -->
+                <div class="project-cards-container"></div>
+            </div>
+            <!-- ---------------------------------------Testimonials -------------------------------------------------------->
+            <div id="testimonials" class="main-content-sidebar">
+                <div class="owl-carousel">
+                    <!-- Testimonial-->
+                    <div class="testimonial testimonial-2">
+                        <div class="testimonial-image">
+                            <img
+                                    src="./images/C8 Apr21 Retsepile Koloko (2).JPG"
+                                    alt="img-1"
+                            />
+                        </div>
+                        <div class="testimonial-details">
+                            <h2 class="heading">Retshepile Koloko</h2>
+                            <h3 class="testimonial-role">Colleague</h3>
+                            <p class="testimonial-description">
+                                He s a very helpful colleague always willing to help others.
+                                He is a kind guy and very generous.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial testimonial-3">
+                        <div class="testimonial-image">
+                            <img
+                                    src="./images/C8 Apr21 Thandokazi Nkohla (1).JPG"
+                                    alt="img-1"
+                            />
+                        </div>
+                        <div class="testimonial-details">
+                            <h2 class="heading">Thandokazi</h2>
+                            <h3 class="testimonial-role">Colleague</h3>
+                            <p class="testimonial-description">
+                                He has a pleasent personality, always willing to help. He
+                                works great alone and with a team.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial testimonial-4">
+                        <div class="testimonial-image">
+                            <img
+                                    src="./images/C8 Apr21 Aaliyah Jardien (4).JPG"
+                                    alt="img-1"
+                            />
+                        </div>
+                        <div class="testimonial-details">
+                            <h2 class="heading">Aaliyah</h2>
+                            <h3 class="testimonial-role">Colleague</h3>
+                            <p class="testimonial-description">
+                                Gideon is a great team player, someone you can count on.He
+                                has great working ethics & goes out of his way to get the
+                                job done,someone to look up to.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial testimonial-5">
+                        <div class="testimonial-image">
+                            <img src="./images/Godwin.png" alt="img-1"/>
+                        </div>
+                        <div class="testimonial-details">
+                            <h2 class="heading">Godwin</h2>
+                            <h3 class="testimonial-role">
+                                Head of Curriculum and Learning
+                            </h3>
+                            <p class="testimonial-description">
+                                From my collaboration with him in class, I can conclude that
+                                Gideon has a strong passion in coding. Apart from being a
+                                fast learner, his analysis is always accurate and original .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial testimonial-6">
+                        <div class="testimonial-image">
+                            <img src="./images/thapelo-tsotetsi.jpg" alt="img-1"/>
+                        </div>
+                        <div class="testimonial-details">
+                            <h2 class="heading">Thapelo</h2>
+                            <h3 class="testimonial-role">Lecturer</h3>
+                            <p class="testimonial-description">
+                                Gideon is a great student. He has a wondeful way of solving
+                                critical thinking problems. He always break-down a problem
+                                into smaller pieces. He has great intellectual and
+                                communication skills. He works well within a team of
+                                different characters.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--------------------------------------End of Testimonials ----------------------------------------------------------->
+            </div>
+            <!-- Contact Form -->
+            <div id="contact-me" class="main-content-sidebar">
+                <h2 class="heading">Contact Me</h2>
+                <!-- Contact-Navigation Bar -->
+                <div class="contact-form-navbar">
+                    <ul class="navbar-details">
+                        <li class="details call-me">
+                            <span class="icon"><i class="fas fa-phone-alt"></i></span>
+                            <h3>Call Me</h3>
+                            <span>0683243284</span>
+                        </li>
+                        <li class="details Home">
                   <span class="icon"
-                    ><i class="fas fa-map-marker-alt"></i
+                  ><i class="fas fa-map-marker-alt"></i
                   ></span>
-                  <h3>Home</h3>
-                  <span>Ravensmead, Western Cape</span>
-                </li>
-                <li class="details email">
-                  <span class="icon"><i class="far fa-envelope"></i></span>
-                  <h3>Email</h3>
-                  <span>gideondaniels.dragoonix@gmail.com</span>
-                </li>
-                <li class="details whatsapp">
-                  <span class="icon"><i class="fab fa-whatsapp"></i></span>
-                  <h3>WhatsApp</h3>
-                  <span>0683243284</span>
-                </li>
-              </ul>
+                            <h3>Home</h3>
+                            <span>Ravensmead, Western Cape</span>
+                        </li>
+                        <li class="details email">
+                            <span class="icon"><i class="far fa-envelope"></i></span>
+                            <h3>Email</h3>
+                            <span>gideondaniels.dragoonix@gmail.com</span>
+                        </li>
+                        <li class="details whatsapp">
+                            <span class="icon"><i class="fab fa-whatsapp"></i></span>
+                            <h3>WhatsApp</h3>
+                            <span>0683243284</span>
+                        </li>
+                    </ul>
+                </div>
+                <form
+                        class="form"
+                        action="https://formspree.io/f/mbjqlpgn"
+                        method="POST"
+                >
+                    <div class="name-email">
+                        <input
+                                type="text"
+                                class="contact-groups"
+                                name="name"
+                                id="email"
+                                placeholder="Name"
+                                required
+                        />
+                        <input
+                                type="email"
+                                class="contact-groups"
+                                name="email"
+                                id="email"
+                                placeholder="Email"
+                                required
+                        />
+                    </div>
+                    <input
+                            type="text"
+                            class="contact-groups"
+                            name="subject"
+                            id="subject"
+                            placeholder="Subject"
+                            required
+                    />
+                    <textarea
+                            style="resize: none"
+                            name="textarea"
+                            id="textarea"
+                            cols="30"
+                            rows="10"
+                            class="contact-groups"
+                            placeholder="Your Message"
+                            required
+                    ></textarea>
+                    <div class="buttons">
+                        <button class="button" type="submit">Submit</button>
+                    </div>
+                </form>
             </div>
-            <form
-              class="form"
-              action="https://formspree.io/f/mbjqlpgn"
-              method="POST"
-            >
-              <div class="name-email">
-                <input
-                  type="text"
-                  class="contact-groups"
-                  name="name"
-                  id="email"
-                  placeholder="Name"
-                  required
-                />
-                <input
-                  type="email"
-                  class="contact-groups"
-                  name="email"
-                  id="email"
-                  placeholder="Email"
-                  required
-                />
-              </div>
-              <input
-                type="text"
-                class="contact-groups"
-                name="subject"
-                id="subject"
-                placeholder="Subject"
-                required
-              />
-              <textarea
-                style="resize: none"
-                name="textarea"
-                id="textarea"
-                cols="30"
-                rows="10"
-                class="contact-groups"
-                placeholder="Your Message"
-                required
-              ></textarea>
-              <div class="buttons">
-                <button class="button" type="submit">Submit</button>
-              </div>
-            </form>
-          </div>
         </section>
-      </main>
-      <footer id="footer">
-        <p>
-          Made with <span><i class="fas fa-fire"></i></span> By Gideon Daniels
-        </p>
-      </footer>
-      <!-- button when clicked goes to the top of the screen -->
-      <!-- <a href="#main">A</a> -->
-      <!-- END Of Footer -->
     </main>
-    <!-- Script tags under here -->
-    <!-- owl carousel scripts -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      $(document).ready(function () {
+    <footer id="footer">
+        <p>
+            Made with <span><i class="fas fa-fire"></i></span> By Gideon Daniels
+        </p>
+    </footer>
+    <!-- button when clicked goes to the top of the screen -->
+    <!-- <a href="#main">A</a> -->
+    <!-- END Of Footer -->
+</main>
+<!-- Script tags under here -->
+<!-- owl carousel scripts -->
+<script
+        src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"
+></script>
+<script>
+    $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
-          items: 1,
-          loop: true,
-          bubbles: false,
-          autoplay: true,
+            items: 1,
+            loop: true,
+            bubbles: false,
+            autoplay: true,
         });
-      });
-    </script>
-    <!-- owl carousel end -->
+    });
+</script>
+<!-- owl carousel end -->
 
-    <!-- -----------------------------button on click script------------------------------- -->
-    <script src="./scripts/index.js"></script>
-    <script src="./scripts/typewriter.js"></script>
-    <script src="./scripts/project-cards.js"></script>
-    <script src="./scripts/colorChange.js"></script>
-    <script src="./scripts/aboutMe.js"></script>
-    <script src="./scripts/resume.js"></script>
-    <script src="./scripts/skills.js"></script>
+<!-- -----------------------------button on click script------------------------------- -->
+<script src="./scripts/index.js"></script>
+<script src="./scripts/typewriter.js"></script>
+<script src="./scripts/project-cards.js"></script>
+<script src="./scripts/colorChange.js"></script>
+<script src="./scripts/aboutMe.js"></script>
+<script src="./scripts/resume.js"></script>
+<script src="./scripts/skills.js"></script>
 
-  </body>
+</body>
 </html>
